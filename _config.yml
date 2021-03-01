@@ -83,12 +83,11 @@ frontpage_goals_grid:
 frontpage_cards:
   - title: frontpage.download_all
     include: components/download-all-data.html
-  - title: What are the Sustainable Development Goals?
+  - title: Canada’s 2030 Agenda National Strategy
     content: |
-      Read more regarding Statistics Canada and the 
-      Sustainable Development Goals.
+      
     button_label: Read more
-    button_link: https://www144.statcan.gc.ca/sdg-odd/brochure-depliant-eng.htm
+    button_link: https://www.canada.ca/en/employment-social-development/programs/agenda-2030/moving-forward.html
   - title: Global SDGs Data Hub
     content: |
       Welcome to the Government of Canada Sustainable Development Goals Data Hub, 
