@@ -141,7 +141,7 @@ non_global_metadata: indicator.national_metadata
 
 # Set a base for all goal image URLs. Note that the full goal image path will be
 # the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
-goal_image_base: https://github.com/JulienSTC/Canadian-Indicator-Framework/blob/develop/assets/img
+goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
