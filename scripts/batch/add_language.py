@@ -2,7 +2,7 @@
 This script adds a new language to this implementation of Open SDG.
 
 Usage example: the following would add Spanish (es) as a new language:
-    python scripts/batch/add_language.py es
+    python scripts/batch/add_language.py fr
 
 What this script actually does:
 1. This script creates new copies of all goals, indicators, and pages, in the new
