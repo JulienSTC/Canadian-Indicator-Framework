@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet"></script>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
+
+        <script>
+// This is where we initialise any global variables, namespaced in "opensdg".
+var opensdg = {
+
+  // A base URL for asynchronous calls to SDG data.
+  remoteDataBaseUrl: 'https://julienstc.github.io/CIF-Data/fr',
+
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
+  },
+
+  // A hook which can be replaced to alter whether/how the values that are
+  // displayed on indicator tables/graphs get rounded.
+  dataRounding: function(value) {
+    // Alterations go here.
+    return value;
+  },
+
+  language: 'fr',
+};
+
+// For backwards compatibility, some of these might need to be global.
+// @TODO: Remove these eventually.
+var remoteDataBaseUrl = opensdg.remoteDataBaseUrl;
+
+</script>
+
+        <script>
+// JavaScript container for translation data.
+var translations = {
+  //Javascript version of the "t" filter from jekyll-open-sdg-plugins.
+  t: function(key) {
+
+    if (!key || typeof key !== 'string') {
+      return '';
+    }
+
+    // The majority of uses of this function are to translate disaggregation
+    // data. To spare data providers of needing to enter "data." in front of
+    // their disaggregation data, we specifically look for that here.
+    if (typeof this.data === 'object' && this.data !== null && this.data[key]) {
+      return this.data[key];
+    }
+
+    var originalKey = key;
+    var drilled = this;
+    var levelsDrilled = 0;
+    var levels = key.split('.');
+
+    for (var level in levels) {
+      // If we have drilled down to soon, abort.
+      if (typeof drilled !== 'object') {
+        break;
+      }
+
+      if (levels[level] in drilled) {
+        drilled = drilled[levels[level]];
+        levelsDrilled += 1;
+      }
+    }
+
+    // If we didn't drill the right number of levels, return the original string.
+    if (levels.length != levelsDrilled) {
+      return originalKey;
+    }
+
+    // Otherwise we must have drilled all the way.
+    return drilled;
+  },
+};
+</script>
+
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title and meta description
+        ================================================== -->
+
+        
+    <title>Indicateur 11.b.2 - Proportion d’administrations locales ayant adopté et mis en place des stratégies locales de réduction des risques de catastrophe, conformément aux stratégies suivies à l’échelle nationale - Indicators For The Sustainable Development Goals</title>
+
+
+
+        <meta name="description" content="">
+        <meta property="og:description" content="">
+        
+        <meta name="robots" content="noindex, nofollow">
+        
+        <link rel="canonical" href="/">
+
+        
+
+        <!--[if IE 9]>
+        <script src="/Canadian-Indicator-Framework/assets/js/lib/classList.js"></script>
+        <![endif]-->
+
+        <!-- Favicons ================================================== -->
+        <!-- 128x128 -->
+        <link rel="shortcut icon" type="image/ico" href="/Canadian-Indicator-Framework/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/Canadian-Indicator-Framework/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+        -->
+
+        
+
+        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210319123915">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
+        <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
+        <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
+
+    </head>
+<body class="language-fr layout-indicator">
+<!-- <div class="container"> -->
+
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site de développement. Nous apprécions vos <a href=\"mailto:%email_address\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","high_contrast":"contraste élevé","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
+
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
+<div id="disclaimer">
+  <div class="container">
+  <div class="disclaimer-alert">
+    <strong class="phase-tag">Alpha</strong>
+    
+    Ceci est un site de développement. Nous apprécions vos <a href="mailto:statcan.sdg-odd.statcan@canada.ca">commentaires</a>.
+  </div>
+</div>
+
+</div>
+
+<header role="banner">
+  <div class="container">
+
+    <div class="logo-and-mobile-widgets">
+      <a class="navbar-brand" href="/Canadian-Indicator-Framework/fr/" id="home">
+        <img src="/Canadian-Indicator-Framework/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
+      </a>
+
+      <div class="mobile-widgets">
+        <ul id='accessibility-nav' class='contrast-switcher'></ul><div class="language-toggle-mobile">
+          <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
+      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/Canadian-Indicator-Framework/11-b-2/">
+              English
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+        </div></div>
+    </div>
+
+    <nav class="navbar navbar-default" id="main-nav">
+
+      <ul class="top-level">
+        <li id="menuToggle"
+            aria-label="Interrupteur du menu. Cliquez pour développer ou réduire le menu."
+            aria-haspopup="true">
+          <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+          <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/goals">Objectifs</a>
+    </li><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/reporting-status">Statut de rapport</a>
+    </li><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/about">À propos</a>
+    </li><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/guidance">Orientation</a>
+    </li><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/faq">FAQ</a>
+    </li><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/news">Mises à jour</a>
+    </li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
+      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/Canadian-Indicator-Framework/11-b-2/">
+              English
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+</li></ul>
+
+        </li>
+        <li id="searchToggle"
+            aria-label="Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."
+            aria-haspopup="true">
+          <button data-target="search-mobile" aria-expanded="false">Chercher</button>
+          <div id="search-mobile" class="menu-target">
+  <form action="/Canadian-Indicator-Framework/fr/search">
+    <input type="text" name="q" id="indicator_search-mobile" title="Chercher" />
+    <label class="sr-only" for="indicator_search-mobile">Chercher</label>
+    <button aria-label="Chercher" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
+
+        </li>
+      </ul>
+
+      <div id="search" class="menu-target">
+  <form action="/Canadian-Indicator-Framework/fr/search">
+    <input type="text" name="q" id="indicator_search" title="Chercher" />
+    <label class="sr-only" for="indicator_search">Chercher</label>
+    <button aria-label="Chercher" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
+
+
+      <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/goals">Objectifs</a>
+    </li><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/reporting-status">Statut de rapport</a>
+    </li><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/about">À propos</a>
+    </li><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/guidance">Orientation</a>
+    </li><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/faq">FAQ</a>
+    </li><li class="nav-link ">
+    <a href="/Canadian-Indicator-Framework/fr/news">Mises à jour</a>
+    </li><li class="language-toggle-menu-header">
+    
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown ">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
+      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+    <ul class="dropdown-menu"><li>
+            <a href="/Canadian-Indicator-Framework/11-b-2/">
+              English
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+
+</li></ul>
+
+
+    </nav>
+  </div>
+
+</header>
+<div id="top" tabindex=-1></div>
+
+
+<script type="text/template" id="item_template">
+  <% _.each(fields, function(fieldItem) { %>
+    <div class="variable-selector<% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed child<% }%>" data-field="<%=fieldItem.field%>">
+      <button class='accessBtn' tabindex='0' aria-expanded='false'
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
+        aria-describedby='variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>'
+        <% }%>
+      >
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
+          <span aria-hidden="true"><%=translations.t(fieldItem.field)%><i class="fa fa-chevron-down"></i></span>
+          <span class="sr-only">Afficher les sous-catégories : <%=translations.t(fieldItem.field)%></span>
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
+      </button>
+      <div class="bar">
+        <div class="selected"></div>
+      </div>
+      <div class="variable-options">
+        <fieldset>
+          <legend class="sr-only">Sous-catégories - <%=translations.t(fieldItem.field)%></legend>
+          <div>
+            <button data-type="select">Tout sélectionner</button>
+            <button data-type="clear">Tout effacer</button>
+          </div>
+          <% _.each(fieldItem.values, function(item) { %>
+            <label>
+              <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
+            </label>
+          <% }); %>
+        </fieldset>
+      </div>
+
+      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
+        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Disponible lorsque le champ '<%= translations.t(_.findWhere(edges, { To: fieldItem.field }).From) %>' est sélectionné
+        </div>
+        <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
+          Aucune option disponible en raison des filtres ci-dessus
+        </div>
+      <% }%>
+
+    </div>
+  <% }); %>
+</script>
+
+<script type="text/template" id="units_template">
+  <% if(units.length) { %>
+    <h4>Type d&#39;unités</h4>
+    <fieldset>
+      <legend class="sr-only">Type d&#39;unités</legend>
+      <% _.each(units, function(unitsItem, index) { %>
+        <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
+        <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
+      <% }); %>
+    </fieldset>
+  <% } %>
+</script>
+
+<script type="text/template" id="series_template">
+  <% if(serieses.length) { %>
+    <h4>Séries</h4>
+    <fieldset>
+      <legend class="sr-only">Séries</legend>
+      <% _.each(serieses, function(seriesItem, index) { %>
+        <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
+        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
+      <% }); %>
+    </fieldset>
+  <% } %>
+</script>
+
+<script>translations['indicator'] = {"annotation_2030_target":"Objectif 2030","announce_data_added":"Graphique et tableau mis à jour pour inclure des données.","announce_data_not_available":"Le graphique et le tableau ne montrent aucune donnée.","announce_data_removed":"Graphique et tableau mis à jour pour exclure les données.","chart":"Graphique","chart_annotation":"Annotation du graphique","clear_all":"Tout effacer","clear_selections":"Effacer les sélections","data_keyboard_navigation":"Appuyez sur Entrée pour parcourir les points de données avec les touches fléchées gauche et droite.","data_not_available":"Ces données ne sont pas disponibles. Veuillez choisir des données alternatives à afficher.","data_tabular_alternative":"Pour une alternative aux données tabulaires, voir l’onglet Tableau.","dataset_size_warning":"Il y a trop de jeux de données à afficher sur le graphique. Tout ne sera pas affiché jusqu&#39;à ce que vous supprimiez certaines sélections.","download_chart":"Télécharger le graphique CSV","download_chart_image":"Télécharger l'image graphique","download_chart_image_title":"Télécharger le graphique en image","download_csv":"Télécharger CSV","download_csv_title":"Télécharger en format CSV","download_geojson":"Télécharger GeoJSON","download_geojson_title":"Télécharger en format GeoJSON","download_headline":"Télécharger Headline CSV","download_headline_title":"Télécharger les données de titre au format CSV","download_source":"Télécharger Source CSV","download_source_sdmx":"Télécharger Source SDMX","download_source_sdmx_title":"Télécharger les données source au format SDMX","download_source_title":"Télécharger les données source au format CSV","download_table":"Télécharger le tableau CSV","edit":"Modifier","edit_data":"Modifier les données","edit_metadata":"Modifier les métadonnées","footnote":"note de bas de page","geographical_area":"Zone géographique","global_metadata":"Métadonnées globales","global_metadata_blurb":"Ce tableau fournit des informations sur les métadonnées pour les indicateurs SDG définis par la Commission de statistique des Nations Unies. <a href=\"https://unstats.un.org/sdgs/metadata/\">Les métadonnées globales complètes</a> sont fournies par la Division de statistique de l&#39;ONU.","legend_help":"Cliquez sur la légende pour supprimer les lignes individuelles du graphique.","loading":"Chargement","loading_map":"Chargement de la carte","map":"Carte","map_search":"Rechercher","map_search_hide":"Masquer la recherche","map_search_show":"Afficher la recherche","map_year_slider":"Curseur d’année","national_metadata":"Métadonnées nationales","national_metadata_blurb":"Cette table fournit des métadonnées pour l&#39;indicateur réel disponible à partir des statistiques %country_name les plus proches de l&#39;indicateur SDG global correspondant. Veuillez noter que même lorsque l&#39;indicateur global des ODD est entièrement disponible à partir des statistiques %country_adjective, ce tableau devrait être consulté pour obtenir des informations sur la méthodologie nationale et d&#39;autres informations sur les métadonnées spécifiques à un pays_adjectif.","no_data_hint":"Aucune option disponible en raison des filtres ci-dessus","plot_legend_description":"Légende du tracé : liste des lignes incluses dans le graphique","select_all":"Tout sélectionner","series":"Séries","series_help":"Choisissez des catégories dans les listes déroulantes ci-dessous pour voir différentes répartitions des données. Certains ne seront pas disponibles jusqu&#39;à ce qu&#39;un niveau supérieur soit choisi.","source":"La source","sources":"Sources","status":"État de l’indicateur","sub_categories":"Sous-catégories","sub_categories_show":"Afficher les sous-catégories :","table":"Table","table_column_sort":"Cliquez pour trier par cette colonne","tags":"Étiquettes","unit_of_measurement":"Unité de mesure","units_type":"Type d&#39;unités","variable_hint":"Disponible lorsque le champ '%field' est sélectionné","view_indicator_list":"Voir la liste des indicateurs de cet objectif"};</script>
+
+<script>translations['data'] = null;</script>
+
+
+<div class="container">
+  <ol class="breadcrumb">
+  
+  <li><a href="/Canadian-Indicator-Framework/fr/">Accueil</a></li>
+  <li><a href="/Canadian-Indicator-Framework/fr/goals">Objectifs</a></li>
+  
+  <li><a href="/Canadian-Indicator-Framework/fr/11" title="Faire en sorte que les villes et les établissements humains soient ouverts à tous, sûrs, résilients et durables">Objectif 11</a></li>
+  
+</ol>
+
+</div>
+<div class="heading goal-banner indicator goal-11">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+        <a href="/Canadian-Indicator-Framework/fr/11" title="Voir la liste des indicateurs de cet objectif">
+          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fr/11.png" alt="Villes et communautés durables - Objectif 11" id="goal-11"/>
+        </a>
+      </div>
+      <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
+        <div>
+          <h1>
+            Indicateur 11.b.2
+            <span class="lead-copy">Proportion d’administrations locales ayant adopté et mis en place des stratégies locales de réduction des risques de catastrophe, conformément aux stratégies suivies à l’échelle nationale</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="main-content" class="container goal-11" role="main">
+  
+
+  
+
+  
+
+
+  
+
+
+<div class="row"
+  id="indicatorData"
+  data-indicatorid='indicator_11-b-2'
+  data-id="11-b-2"
+  data-country="Statistics Canada"
+  data-charttitle="Proportion d’administrations locales ayant adopté et mis en place des stratégies locales de réduction des risques de catastrophe, conformément aux stratégies suivies à l’échelle nationale"
+  data-charttitles="null"
+  data-measurementunit=""
+  data-showdata="false"
+  data-graphtype="line"
+  data-geocoderegex=""
+  data-showmap=""
+  data-startvalues="null"
+  data-graphlimits="null"
+  data-stackeddisaggregation=""
+  data-graphannotations="null"
+  data-indicatordownloads="null"
+>
+  
+  <div id="indicator-main" class="indicator-main col-md-12">
+  
+  <ul class="nav nav-tabs spacer medium" role="tablist">
+
+  <li role="presentation" class="nav-item active">
+  <a class="nav-link" data-toggle="tab" id="tab-national" href="#national" aria-controls="national" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to National Metadata tab"
+>Métadonnées nationales</a>
+</li>
+<li role="presentation" class="nav-item">
+  <a class="nav-link" data-toggle="tab" id="tab-global" href="#global" aria-controls="global" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Global Metadata tab"
+>Métadonnées globales</a>
+</li>
+<li role="presentation" class="nav-item">
+  <a class="nav-link" data-toggle="tab" id="tab-sources" href="#sources" aria-controls="sources" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Sources tab"
+>Sources</a>
+</li>
+
+
+  
+  <li role="presentation" class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Modifier</a>
+  </li>
+  
+</ul>
+
+<div class="tab-content">
+  
+    <div role="tabpanel" class="tab-pane active" id="national">
+  <!-- National Metadata -->
+  <div >
+    <article>
+      <p>
+        
+        
+        Cette table fournit des métadonnées pour l&#39;indicateur réel disponible à partir des statistiques Statistics Canada les plus proches de l&#39;indicateur SDG global correspondant. Veuillez noter que même lorsque l&#39;indicateur global des ODD est entièrement disponible à partir des statistiques Canadian, ce tableau devrait être consulté pour obtenir des informations sur la méthodologie nationale et d&#39;autres informations sur les métadonnées spécifiques à un pays_adjectif.
+      </p>
+      <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      <tr>
+        <th scope="row">Indicateur disponible </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Description de l&#39;indicateur </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Couverture géographique </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Unité de mesure </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Définitions </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Calculs </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Les autres informations </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Assurance qualité </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Comparabilité avec les données / normes internationales </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Commentaires et limitations </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">metadata_fields.rationale_interpretation </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Données mises à jour en dernier </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/10ca4754719e457326ed156ca8a5b7f86a11d5a7" target="_blank">
+                2021-01-26: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Dernière mise à jour des métadonnées </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/10ca4754719e457326ed156ca8a5b7f86a11d5a7" target="_blank">
+                2021-01-26: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </article>
+  </div>
+</div>
+<div role="tabpanel" class="tab-pane" id="global">
+  <!-- Global Metadata -->
+  <div>
+    <article>
+      <p>Ce tableau fournit des informations sur les métadonnées pour les indicateurs SDG définis par la Commission de statistique des Nations Unies. <a href="https://unstats.un.org/sdgs/metadata/">Les métadonnées globales complètes</a> sont fournies par la Division de statistique de l&#39;ONU.</p>
+      <table class="table">
+  
+  
+  
+  
+  
+      
+      
+      <tr>
+        <th scope="row">Nom de l&#39;indicateur </th>
+        <td>
+          
+            <p>Proportion d’administrations locales ayant adopté et mis en place des stratégies locales de réduction des risques de catastrophe, conformément aux stratégies suivies à l’échelle nationale</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Numéro de l&#39;indicateur </th>
+        <td>
+          
+            <p>11.b.2</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Nom de la cible </th>
+        <td>
+          
+            <p>D’ici à 2020, accroître nettement le nombre de villes et d’établissements humains qui adoptent et mettent en œuvre des politiques et plans d’action intégrés en faveur de l’insertion de tous, de l’utilisation rationnelle des ressources, de l’adaptation aux effets des changements climatiques et de leur atténuation et de la résilience face aux catastrophes, et élaborer et mettre en œuvre, conformément au Cadre de Sendai pour la réduction des risques de catastrophe (2015‐2030), une gestion globale des risques de catastrophe à tous les niveaux</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Numéro cible </th>
+        <td>
+          
+            <p>11.b</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Description de l&#39;indicateur global </th>
+        <td>
+          
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Niveau désigné par les Nations Unies </th>
+        <td>
+          
+            <p>3</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Agence dépositaire des Nations Unies </th>
+        <td>
+          
+            <p>UNISDR</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      <tr>
+        <th scope="row">Lien vers les métadonnées UN </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="http://unstats.un.org/sdgs/files/metadata-compilation/Metadata-Goal-11.pdf" target="_blank">
+                United Nations Sustainable Development Goals Metadata (pdf 2066kB) <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </article>
+  </div>
+</div>
+<div role="tabpanel" class="tab-pane" id="sources">
+  <!-- Count the non-empty sources (up to 5) -->
+
+
+
+
+
+</div>
+
+  
+  
+  <div role="tabpanel" class="tab-pane" id="edit">
+    <div class="edit-container">
+  
+  <a class="btn btn-primary" href="http://prose.io/#JulienSTC/CIF-Data/edit/develop/data/indicator_11-b-2.csv">Modifier les données</a>
+  
+
+  
+  <a class="btn btn-primary" href="http://prose.io/#JulienSTC/CIF-Data/edit/develop/meta/11-b-2.md">Modifier les métadonnées</a>
+  
+
+  
+</div>
+
+  </div>
+  
+</div>
+
+
+  </div>
+</div>
+
+</div>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="footerLinks">
+          <ul>
+            <li><a href="https://open-sdg.org">Construit en utilisant Open SDG</a></li>
+            
+              <li>
+                
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contactez-nous</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
+                
+                </li>
+              <li>
+                <a href="/Canadian-Indicator-Framework/fr/about/cookies-and-privacy/">Cookies</a>
+                
+                </li>
+              
+            
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+<!-- <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA"></script> -->
+<!-- Google Analytics -->
+
+<!-- /.container </div> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+<script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+<script>translations['general'] = translations['general'] || {};
+    translations['general']['hide'] = 'masquer';</script>
+
+<script>translations['search'] = translations['search'] || {};
+    translations['search']['search'] = 'Chercher';</script>
+
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210319123915'></script>
+
+
+    
+    
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210319123915"></script><script>
+$(function() {
+    if($('#indicatorData').length) {
+      var domData = $('#indicatorData').data();
+
+      if (domData.showdata) {
+
+        $('.async-loading').each(function(i, obj) {
+            $(obj).append($('<img />').attr('src', $(obj).data('img')).attr('alt', translations.indicator.loading));
+        });
+
+        var remoteUrl = '/comb/' + domData.id + '.json';
+        if (opensdg.remoteDataBaseUrl !== '/') {
+          remoteUrl = opensdg.remoteDataBaseUrl + remoteUrl;
+        }
+
+        $.ajax({
+          url: remoteUrl,
+          success: function(res) {
+
+            $('.async-loading').remove();
+            $('.async-loaded').show();
+
+            var model = new indicatorModel({
+              data: res.data,
+              edgesData: res.edges,
+              showMap: domData.showmap,
+              country: domData.country,
+              indicatorId: domData.indicatorid,
+              shortIndicatorId: domData.id,
+              chartTitle: domData.charttitle,
+              chartTitles: domData.charttitles,
+              measurementUnit: domData.measurementunit,
+              showData: domData.showdata,
+              graphType: domData.graphtype,
+              startValues: domData.startvalues,
+              graphLimits: domData.graphlimits,
+              stackedDisaggregation: domData.stackeddisaggregation,
+              graphAnnotations: domData.graphannotations,
+              indicatorDownloads: domData.indicatordownloads,
+            }),
+            view  = new indicatorView(model, {
+              rootElement: '#indicatorData',
+              legendElement: '#plotLegend',
+              maxChartHeight: 420,
+              tableColumnDefs: [
+                { maxCharCount: 25 }, // nowrap
+                { maxCharCount: 35, width: 200 },
+                { maxCharCount: Infinity, width: 250 }
+              ]
+            }),
+            controller = new indicatorController(model, view);
+            controller.initialise();
+          }
+        });
+      }
+    }
+
+    var switcher = new accessibilitySwitcher();
+
+
+});
+</script>
+
+
+
+
+</body>
+</html>
+
