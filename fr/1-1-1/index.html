@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210319134139">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210319140656">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -413,7 +413,7 @@ var translations = {
   data-country="Canada, Provinces"
   data-charttitle="Pourcentage de personnes à faible revenu"
   data-charttitles="null"
-  data-measurementunit="Percentage"
+  data-measurementunit="Pourcentage"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
@@ -466,13 +466,13 @@ var translations = {
 
   <div id="datatableFooter">
     
-    <p>La source: Statistics Canada</p>
+    <p>La source: Statistique Canada</p>
     
     
     <p>Zone géographique: Canada, Provinces</p>
     
     
-    <p>Unité de mesure: Percentage</p>
+    <p>Unité de mesure: Pourcentage</p>
     
     
   </div>
@@ -763,7 +763,7 @@ opensdg.chartConfigAlter(function(config, info) {
     <dl>
         
         <dt>La source:</dt>
-        <dd>Statistics Canada</dd>
+        <dd>Statistique Canada</dd>
         
 
         
@@ -773,7 +773,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Unité de mesure:</dt>
-        <dd>Percentage</dd>
+        <dd>Pourcentage</dd>
         
 
         
@@ -808,7 +808,7 @@ opensdg.chartConfigAlter(function(config, info) {
     <dl>
         
         <dt>La source:</dt>
-        <dd>Statistics Canada</dd>
+        <dd>Statistique Canada</dd>
         
 
         
@@ -818,7 +818,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Unité de mesure:</dt>
-        <dd>Percentage</dd>
+        <dd>Pourcentage</dd>
         
 
         
@@ -902,7 +902,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indicateur disponible </th>
         <td>
           
-            <p>Poverty rate, as measured by Canada’s official poverty line</p>
+            <p>Taux de pauvreté selon la définition officielle du seuil de la pauvreté du Canada</p>
 
           
         </td>
@@ -944,7 +944,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Unité de mesure </th>
         <td>
           
-            <p>Percentage</p>
+            <p>Pourcentage</p>
 
           
         </td>
@@ -1488,7 +1488,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>Statistics Canada</p>
+            <p>Statistique Canada</p>
 
           
         </td>
@@ -1502,7 +1502,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Périodicité </th>
         <td>
           
-            <p>Annual</p>
+            <p>Annuelle</p>
 
           
         </td>
@@ -1530,7 +1530,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada, Province and Census metropolitan area</p>
+            <p>Canada, Province ou territoire, Région métropolitaine de recensement</p>
 
           
         </td>
@@ -1550,8 +1550,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110013501" target="_blank">
-                https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=5200 <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1110013501&request_locale=fr" target="_blank">
+                https://www23.statcan.gc.ca/imdb/p2SV_f.pl?Function=getSurvey&SDDS=5200 <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1790,12 +1790,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210319134139'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210319140656'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210319134139"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210319140656"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
