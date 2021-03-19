@@ -20,7 +20,7 @@ metadata_edit_url: http://prose.io/#JulienSTC/CIF-Data/edit/develop/meta/[id].md
 # The list of languages that are translated. The first one is the default.
 languages:
   - en
-  - es
+  - fr
 #
 # That's enough for the Quick Start! The remaining settings can be configured later.
 
