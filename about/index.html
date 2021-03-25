@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://julienstc.github.io/CIF-Data/fr',
+  remoteDataBaseUrl: 'https://julienstc.github.io/CIF-Data/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -26,7 +26,7 @@ var opensdg = {
     return value;
   },
 
-  language: 'fr',
+  language: 'en',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>À propos - Indicators For The Sustainable Development Goals</title>
+    <title>About - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210325200847">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210325201658">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,18 +132,18 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-fr layout-page">
+<body class="language-en layout-page">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site de développement. Nous apprécions vos <a href=\"mailto:%email_address\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","high_contrast":"contraste élevé","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Passer au contenu principal</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    Ceci est un site de développement. Nous apprécions vos <a href="mailto:statcan.sdg-odd.statcan@canada.ca">commentaires</a>.
+    This is a development website. We welcome your <a href="mailto:statcan.sdg-odd.statcan@canada.ca">feedback</a>.
   </div>
 </div>
 
@@ -153,8 +153,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/Canadian-Indicator-Framework/fr/" id="home">
-        <img src="/Canadian-Indicator-Framework/assets/img/SDG_logo.png" alt="Objectifs de développement durable - 17 objectifs pour transformer notre monde" />
+      <a class="navbar-brand" href="/Canadian-Indicator-Framework/" id="home">
+        <img src="/Canadian-Indicator-Framework/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
       </a>
 
       <div class="mobile-widgets">
@@ -163,11 +163,11 @@ var translations = {
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/Canadian-Indicator-Framework/about/">
-              English
+            <a href="/Canadian-Indicator-Framework/fr/about/">
+              Français
             </a>
           </li></ul>
   </div>
@@ -180,21 +180,21 @@ var translations = {
 
       <ul class="top-level">
         <li id="menuToggle"
-            aria-label="Interrupteur du menu. Cliquez pour développer ou réduire le menu."
+            aria-label="Menu toggle. Click to expand or collapse the menu."
             aria-haspopup="true">
           <button data-target="menu-mobile" aria-expanded="false">Menu</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/Canadian-Indicator-Framework/fr/goals">Objectifs</a>
+    <a href="/Canadian-Indicator-Framework/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/Canadian-Indicator-Framework/fr/reporting-status">Statut de rapport</a>
+    <a href="/Canadian-Indicator-Framework/reporting-status">Reporting Status</a>
     </li><li class="nav-link active">
-    <a href="/Canadian-Indicator-Framework/fr/about">À propos</a>
+    <a href="/Canadian-Indicator-Framework/about">About</a>
     </li><li class="nav-link ">
-    <a href="/Canadian-Indicator-Framework/fr/guidance">Orientation</a>
+    <a href="/Canadian-Indicator-Framework/guidance">Guidance</a>
     </li><li class="nav-link ">
-    <a href="/Canadian-Indicator-Framework/fr/faq">FAQ</a>
+    <a href="/Canadian-Indicator-Framework/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/Canadian-Indicator-Framework/fr/news">Mises à jour</a>
+    <a href="/Canadian-Indicator-Framework/news">Updates</a>
     </li><li class="language-toggle-menu-header">
     
 
@@ -206,11 +206,11 @@ var translations = {
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/Canadian-Indicator-Framework/about/">
-              English
+            <a href="/Canadian-Indicator-Framework/fr/about/">
+              Français
             </a>
           </li></ul>
   </div>
@@ -222,14 +222,14 @@ var translations = {
 
         </li>
         <li id="searchToggle"
-            aria-label="Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."
+            aria-label="Search toggle. Click to expand or collapse the search bar."
             aria-haspopup="true">
-          <button data-target="search-mobile" aria-expanded="false">Chercher</button>
+          <button data-target="search-mobile" aria-expanded="false">Search</button>
           <div id="search-mobile" class="menu-target">
-  <form action="/Canadian-Indicator-Framework/fr/search">
-    <input type="text" name="q" id="indicator_search-mobile" title="Chercher" />
-    <label class="sr-only" for="indicator_search-mobile">Chercher</label>
-    <button aria-label="Chercher" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  <form action="/Canadian-Indicator-Framework/search">
+    <input type="text" name="q" id="indicator_search-mobile" title="Search" />
+    <label class="sr-only" for="indicator_search-mobile">Search</label>
+    <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -237,26 +237,26 @@ var translations = {
       </ul>
 
       <div id="search" class="menu-target">
-  <form action="/Canadian-Indicator-Framework/fr/search">
-    <input type="text" name="q" id="indicator_search" title="Chercher" />
-    <label class="sr-only" for="indicator_search">Chercher</label>
-    <button aria-label="Chercher" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  <form action="/Canadian-Indicator-Framework/search">
+    <input type="text" name="q" id="indicator_search" title="Search" />
+    <label class="sr-only" for="indicator_search">Search</label>
+    <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/Canadian-Indicator-Framework/fr/goals">Objectifs</a>
+    <a href="/Canadian-Indicator-Framework/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/Canadian-Indicator-Framework/fr/reporting-status">Statut de rapport</a>
+    <a href="/Canadian-Indicator-Framework/reporting-status">Reporting Status</a>
     </li><li class="nav-link active">
-    <a href="/Canadian-Indicator-Framework/fr/about">À propos</a>
+    <a href="/Canadian-Indicator-Framework/about">About</a>
     </li><li class="nav-link ">
-    <a href="/Canadian-Indicator-Framework/fr/guidance">Orientation</a>
+    <a href="/Canadian-Indicator-Framework/guidance">Guidance</a>
     </li><li class="nav-link ">
-    <a href="/Canadian-Indicator-Framework/fr/faq">FAQ</a>
+    <a href="/Canadian-Indicator-Framework/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/Canadian-Indicator-Framework/fr/news">Mises à jour</a>
+    <a href="/Canadian-Indicator-Framework/news">Updates</a>
     </li><li class="language-toggle-menu-header">
     
 
@@ -268,11 +268,11 @@ var translations = {
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Français</span>
-      <span class="language-abbreviation">fr</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li>
-            <a href="/Canadian-Indicator-Framework/about/">
-              English
+            <a href="/Canadian-Indicator-Framework/fr/about/">
+              Français
             </a>
           </li></ul>
   </div>
@@ -293,17 +293,17 @@ var translations = {
 
 <div id="main-content" class="container" role="main">
     <div>
-        <h1>À propos</h1>
+        <h1>About</h1>
         
-            <p>Ce site est présentement au stage Alpha du développement, alors ne devrait pas être utilisé comme produit officiel.</p>
+            <p>Please note that we are at an Alpha stage in development, therefore the site is still a ‘work in progress’ and should not be taken as an official product.</p>
 
-<p>Bienvenue au Carrefour de données liées aux objectifs de développement durable du gouvernement du Canada, hébergé par Statistique Canada.</p>
+<p>Welcome to the Canadian Indicator Framework for the Sustainable Development Goals Data Hub, hosted by Statistics Canada.</p>
 
-<p>Statistique Canada agit comme centre de liaison pour la déclaration des données canadiennes relatives aux indicateurs mondiaux des objectifs de développement durable (ODD) et coordonne le système statistique national. Il est chargé de la collecte, la planification, l’analyse, la présentation et la diffusion des données qui permettent de surveiller les progrès du Canada par rapport aux indicateurs mondiaux, et il a créé ce carrefour de données en ligne pour diffuser les données sur les ODD du Canada.</p>
+<p>Statistics Canada is central focal point for reporting Canada’s data for the global SDG indicators and works as a co-ordinating body for the National Statistical System. Statistics Canada is responsible for the collection, collation, analysis, presentation and dissemination of data for regular monitoring of Canadian progress against the global indicators and has developed this on-line data hub for disseminating Canada’s SDG data.</p>
 
-<p>Statistique Canada continue d’examiner les sources de données qui pourraient servir à déclarer les ODD et, au cours des prochains mois, il continuera d’ajouter des données, des statistiques et des fonctions de visualisation des données. En cliquant sur chaque objectif, vous trouverez les statistiques canadiennes concernant les indicateurs relatifs aux objectifs de développement durable.</p>
+<p>Statistics Canada is continuing to examine data sources that may be useful for reporting on SDGs and over the coming months will continue to add data, statistics, and data visualization features. By clicking on each Goal you will find Canada’s Statistics for the Sustainable Development Goal Indicators.</p>
 
-<p>Si vous avez d’autres questions, ou si vous souhaitez formuler des commentaires sur le Carrefour de données liées aux objectifs de développement durable, veuillez communiquer avec : <a href="mailto:statcan.sdg-odd.statcan@canada.ca">statcan.sdg-odd.statcan@canada.ca</a>. Les réponses aux questions populaire peuvent être disponible dans l’onglet FAQ: <a href="/Canadian-Indicator-Framework/faq/">FAQ</a>.</p>
+<p>If you have further questions, or would like to provide feedback on the SDG Data Hub please contact us at: <a href="mailto:statcan.sdg-odd.statcan@canada.ca">statcan.sdg-odd.statcan@canada.ca</a>. The answers to some frequently asked questions are also available in our <a href="/Canadian-Indicator-Framework/faq/">FAQ</a>.</p>
 
         
     </div>
@@ -315,11 +315,11 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Construit en utilisant Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
             
               <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contactez-nous</a>
+                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
                 
                 </li>
               <li>
@@ -333,7 +333,7 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/Canadian-Indicator-Framework/fr/about/cookies-and-privacy/">Cookies</a>
+                <a href="/Canadian-Indicator-Framework/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
@@ -365,17 +365,17 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'masquer';</script>
+    translations['general']['hide'] = 'hide';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Chercher';</script>
+    translations['search']['search'] = 'Search';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210325200847'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210325201658'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210325200847"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210325201658"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
