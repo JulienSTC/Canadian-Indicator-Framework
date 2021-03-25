@@ -5,8 +5,12 @@ permalink: /about/
 layout: page
 ---
 
-This website is for disseminating SDG indicator data. We are at an Alpha stage in development, so the site is still 'work in progress'.
+Please note that we are at an Alpha stage in development, therefore the site is still a 'work in progress' and should not be taken as an official product.
 
-Other countries wishing to reuse this site's underlying platform are welcome to do so for free. Our [Guidance page]({{ site.baseurl }}/guidance/) highlights key information on how to do this, linking to detailed technical instructions available in the platform's [documentation](https://open-sdg.readthedocs.io). The [Center for Open Data Enterprise (CODE)](http://www.opendataenterprise.org/) can also provide guidance and support through their [SDG National Reporting Initiative](https://www.sdgreporting.org/).
+Welcome to the Government of Canada Sustainable Development Goals Data Hub, hosted by Statistics Canada.
 
-If you have any feedback on this website or SDG data then please contact us at <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>. The answers to some frequently asked questions are also available in our [FAQ]({{ site.baseurl }}/faq/).
+Statistics Canada is central focal point for reporting Canada's data for the global SDG indicators and works as a co-ordinating body for the National Statistical System. Statistics Canada is responsible for the collection, collation, analysis, presentation and dissemination of data for regular monitoring of Canadian progress against the global indicators and has developed this on-line data hub for disseminating Canada's SDG data.
+
+Statistics Canada is continuing to examine data sources that may be useful for reporting on SDGs and over the coming months will continue to add data, statistics, and data visualization features. By clicking on each Goal you will find Canada's Statistics for the Sustainable Development Goal Indicators.
+
+If you have further questions, or would like to provide feedback on the SDG Data Hub please contact us at: <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>. The answers to some frequently asked questions are also available in our [FAQ]({{ site.baseurl }}/faq/).
