@@ -7,7 +7,7 @@ layout: page
 
 Please note that we are at an Alpha stage in development, therefore the site is still a 'work in progress' and should not be taken as an official product.
 
-Welcome to the Government of Canada Sustainable Development Goals Data Hub, hosted by Statistics Canada.
+Welcome to the Canadian Indicator Framework for the Sustainable Development Goals Data Hub, hosted by Statistics Canada.
 
 Statistics Canada is central focal point for reporting Canada's data for the global SDG indicators and works as a co-ordinating body for the National Statistical System. Statistics Canada is responsible for the collection, collation, analysis, presentation and dissemination of data for regular monitoring of Canadian progress against the global indicators and has developed this on-line data hub for disseminating Canada's SDG data.
 
