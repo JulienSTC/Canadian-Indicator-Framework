@@ -1,7 +1,7 @@
 ---
 title: À propos
 language: fr
-permalink: /about/
+permalink: /fr/about/
 layout: page
 ---
 
