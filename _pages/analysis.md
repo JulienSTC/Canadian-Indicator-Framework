@@ -1,7 +1,7 @@
 ---
 title: Analytical Products
 language: en
-permalink: /Analysis/
+permalink: /analysis/
 layout: page
 ---
 
