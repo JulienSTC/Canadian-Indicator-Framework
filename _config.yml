@@ -118,7 +118,7 @@ menu:
     translation_key: menu.reporting_status
   - path: /about
     translation_key: menu.about
-  - path: /guidance
+  - path: /analysis
     translation_key: menu.guidance
   - path: /faq
     translation_key: menu.faq
