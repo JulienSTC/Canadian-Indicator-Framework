@@ -38,100 +38,12 @@
           "status": "complete"
         },
         {
-          "id": "2-1-2",
-          "title": "Prévalence d’une insécurité alimentaire modérée ou grave, évaluée selon l’échelle de mesure du sentiment d’insécurité alimentaire",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/2-1-2",
-          "status": "notstarted"
-        },
-        {
           "id": "2-2-1",
           "title": "Index of Agri-Environmental Sustainability",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/2-2-1",
           "status": "complete"
-        },
-        {
-          "id": "2-2-2",
-          "title": "Prévalence de la malnutrition (indice poids/taille supérieur à +2 écarts types ou inférieur à -2 écarts types par rapport à la médiane des normes de croissance de l’enfant définies par l’OMS chez les enfants de moins de 5 ans, par forme (surpoids et émaciation)",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/2-2-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "2-3-1",
-          "title": "Volume de production par unité de travail, en fonction de la taille de l’exploitation agricole, pastorale ou forestière",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/2-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "2-3-2",
-          "title": "Revenu moyen des petits producteurs alimentaires, selon le sexe et le statut d’autochtone",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/2-3-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "2-4-1",
-          "title": "Proportion des zones agricoles exploitées de manière productive et durable",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/2-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "2-5-1",
-          "title": "Nombre de ressources génétiques animales et végétales destinées à l’alimentation et à l’agriculture sécurisées dans des installations de conservation à moyen ou à long terme",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/2-5-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "2-5-2",
-          "title": "Proportion des variétés et races locales considérées comme en danger, hors de danger ou exposées à un risque d’extinction de niveau non connu",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/2-5-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "2-a-1",
-          "title": "Indice d’orientation agricole des dépenses publiques",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/2-a-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "2-a-2",
-          "title": "Total des apports publics (aide publique au développement plus autres apports publics) alloués au secteur agricole",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/2-a-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "2-b-1",
-          "title": "Subventions agricoles à l&#39;exportation",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/2-b-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "2-c-1",
-          "title": "Indicateur des anomalies tarifaires pour les denrées alimentaires",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/2-c-1",
-          "status": "notstarted"
         }]
     }
   },
