@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210329195409">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210329200937">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,7 +132,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-fr layout-indicator">
+<body class="language-fr layout-goal-by-target">
 <!-- <div class="container"> -->
 
 <script>translations['header'] = {"alpha":"Alpha","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site de développement. Nous apprécions vos <a href=\"mailto:%email_address\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","high_contrast":"contraste élevé","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
@@ -290,1160 +290,119 @@ var translations = {
 <div id="top" tabindex=-1></div>
 
 
-<script type="text/template" id="item_template">
-  <% _.each(fields, function(fieldItem) { %>
-    <div class="variable-selector<% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed child<% }%>" data-field="<%=fieldItem.field%>">
-      <button class='accessBtn' tabindex='0' aria-expanded='false'
-        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        aria-describedby='variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>'
-        <% }%>
-      >
-        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
-          <span aria-hidden="true"><%=translations.t(fieldItem.field)%><i class="fa fa-chevron-down"></i></span>
-          <span class="sr-only">Afficher les sous-catégories : <%=translations.t(fieldItem.field)%></span>
-        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
-      </button>
-      <div class="bar">
-        <div class="selected"></div>
-      </div>
-      <div class="variable-options">
-        <fieldset>
-          <legend class="sr-only">Sous-catégories - <%=translations.t(fieldItem.field)%></legend>
-          <div>
-            <button data-type="select">Tout sélectionner</button>
-            <button data-type="clear">Tout effacer</button>
-          </div>
-          <% _.each(fieldItem.values, function(item) { %>
-            <label>
-              <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
-            </label>
-          <% }); %>
-        </fieldset>
-      </div>
-
-      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Disponible lorsque le champ '<%= translations.t(_.findWhere(edges, { To: fieldItem.field }).From) %>' est sélectionné
-        </div>
-        <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
-          Aucune option disponible en raison des filtres ci-dessus
-        </div>
-      <% }%>
-
-    </div>
-  <% }); %>
-</script>
-
-<script type="text/template" id="units_template">
-  <% if(units.length) { %>
-    <h4>Type d&#39;unités</h4>
-    <fieldset>
-      <legend class="sr-only">Type d&#39;unités</legend>
-      <% _.each(units, function(unitsItem, index) { %>
-        <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
-        <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
-      <% }); %>
-    </fieldset>
-  <% } %>
-</script>
-
-<script type="text/template" id="series_template">
-  <% if(serieses.length) { %>
-    <h4>Séries</h4>
-    <fieldset>
-      <legend class="sr-only">Séries</legend>
-      <% _.each(serieses, function(seriesItem, index) { %>
-        <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
-        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
-      <% }); %>
-    </fieldset>
-  <% } %>
-</script>
-
-<script>translations['indicator'] = {"annotation_2030_target":"Objectif 2030","announce_data_added":"Graphique et tableau mis à jour pour inclure des données.","announce_data_not_available":"Le graphique et le tableau ne montrent aucune donnée.","announce_data_removed":"Graphique et tableau mis à jour pour exclure les données.","chart":"Graphique","chart_annotation":"Annotation du graphique","clear_all":"Tout effacer","clear_selections":"Effacer les sélections","data_keyboard_navigation":"Appuyez sur Entrée pour parcourir les points de données avec les touches fléchées gauche et droite.","data_not_available":"Ces données ne sont pas disponibles. Veuillez choisir des données alternatives à afficher.","data_tabular_alternative":"Pour une alternative aux données tabulaires, voir l’onglet Tableau.","dataset_size_warning":"Il y a trop de jeux de données à afficher sur le graphique. Tout ne sera pas affiché jusqu&#39;à ce que vous supprimiez certaines sélections.","download_chart":"Télécharger le graphique CSV","download_chart_image":"Télécharger l'image graphique","download_chart_image_title":"Télécharger le graphique en image","download_csv":"Télécharger CSV","download_csv_title":"Télécharger en format CSV","download_geojson":"Télécharger GeoJSON","download_geojson_title":"Télécharger en format GeoJSON","download_headline":"Télécharger Headline CSV","download_headline_title":"Télécharger les données de titre au format CSV","download_source":"Télécharger Source CSV","download_source_sdmx":"Télécharger Source SDMX","download_source_sdmx_title":"Télécharger les données source au format SDMX","download_source_title":"Télécharger les données source au format CSV","download_table":"Télécharger le tableau CSV","edit":"Modifier","edit_data":"Modifier les données","edit_metadata":"Modifier les métadonnées","footnote":"note de bas de page","geographical_area":"Zone géographique","global_metadata":"Métadonnées globales","global_metadata_blurb":"Ce tableau fournit des informations sur les métadonnées pour les indicateurs SDG définis par la Commission de statistique des Nations Unies. <a href=\"https://unstats.un.org/sdgs/metadata/\">Les métadonnées globales complètes</a> sont fournies par la Division de statistique de l&#39;ONU.","legend_help":"Cliquez sur la légende pour supprimer les lignes individuelles du graphique.","loading":"Chargement","loading_map":"Chargement de la carte","map":"Carte","map_search":"Rechercher","map_search_hide":"Masquer la recherche","map_search_show":"Afficher la recherche","map_year_slider":"Curseur d’année","national_metadata":"Métadonnées nationales","national_metadata_blurb":"Cette table fournit des métadonnées pour l&#39;indicateur réel disponible à partir des statistiques %country_name les plus proches de l&#39;indicateur SDG global correspondant. Veuillez noter que même lorsque l&#39;indicateur global des ODD est entièrement disponible à partir des statistiques %country_adjective, ce tableau devrait être consulté pour obtenir des informations sur la méthodologie nationale et d&#39;autres informations sur les métadonnées spécifiques à un pays_adjectif.","no_data_hint":"Aucune option disponible en raison des filtres ci-dessus","plot_legend_description":"Légende du tracé : liste des lignes incluses dans le graphique","select_all":"Tout sélectionner","series":"Séries","series_help":"Choisissez des catégories dans les listes déroulantes ci-dessous pour voir différentes répartitions des données. Certains ne seront pas disponibles jusqu&#39;à ce qu&#39;un niveau supérieur soit choisi.","source":"La source","sources":"Sources","status":"État de l’indicateur","sub_categories":"Sous-catégories","sub_categories_show":"Afficher les sous-catégories :","table":"Table","table_column_sort":"Cliquez pour trier par cette colonne","tags":"Étiquettes","unit_of_measurement":"Unité de mesure","units_type":"Type d&#39;unités","variable_hint":"Disponible lorsque le champ '%field' est sélectionné","view_indicator_list":"Voir la liste des indicateurs de cet objectif"};</script>
-
-<script>translations['data'] = null;</script>
-
-
 <div class="container">
   <ol class="breadcrumb">
   
   <li><a href="/Canadian-Indicator-Framework/fr/">Accueil</a></li>
   <li><a href="/Canadian-Indicator-Framework/fr/goals">Objectifs</a></li>
   
-  <li><a href="/Canadian-Indicator-Framework/fr/2" title="Éliminer la faim, assurer la sécurité alimentaire, améliorer la nutrition et promouvoir l’agriculture durable">Objectif 2</a></li>
   
 </ol>
 
 </div>
-<div class="heading goal-banner indicator goal-2">
+
+<div class="heading goal-banner goal-2">
   <div class="container">
     <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-        <a href="/Canadian-Indicator-Framework/fr/2" title="Voir la liste des indicateurs de cet objectif">
-          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fr/2.png" alt="Faim &quot;zéro&quot; - Objectif 2" id="goal-2"/>
+      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fr/2.png" alt="Faim &quot;zéro&quot; - Objectif 2" id="goal-2" />
+      </div>
+      <div class="col-xs-8 col-md-9 col-lg-10">
+        <h1>
+          <span class="hidden-sm hidden-md hidden-lg">Objectif 2: </span>Éliminer la faim, assurer la sécurité alimentaire, améliorer la nutrition et promouvoir l’agriculture durable
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="main-content" class="container goal-indicators goal-2 goal-by-target" role="main">
+
+  
+
+
+
+  <div class="visible-md-block visible-lg-block">
+    <div class="col-md-6">
+      <h2>Les cibles</h2>
+    </div>
+    <div class="col-md-6">
+      <h2>Indicateurs</h2>
+    </div>
+  </div>
+
+  
+  
+    
+    <div class="indicator-cards target goal-target col-md-6">
+      <span>
+        <label class="hidden-md hidden-lg">Cible</label>
+        2.1
+      </span>
+      D’ici à 2030, éliminer la faim et faire en sorte que chacun, en particulier les pauvres et les personnes en situation vulnérable, y compris les nourrissons, ait accès toute l’année à une alimentation saine, nutritive et suffisante
+    </div>
+    <div class="indicator-cards col-md-6 row no-gutters">
+    
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.1.1
+          <span class="status complete">
+            Signalé en ligne
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/2-1-1">
+          Prevalence of food insecurity
         </a>
+        
       </div>
-      <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
-        <div>
-          <h1>
-            Indicateur 2.1.1
-            <span class="lead-copy">Prevalence of food insecurity</span>
-          </h1>
-        </div>
+    
+    </div>
+  
+    
+    <div class="indicator-cards target goal-target col-md-6">
+      <span>
+        <label class="hidden-md hidden-lg">Cible</label>
+        2.2
+      </span>
+      D’ici à 2030, mettre fin à toutes les formes de malnutrition, y compris en atteignant d’ici à 2025 les objectifs arrêtés à l’échelle internationale relatifs aux retards de croissance et à l’émaciation chez les enfants de moins de 5 ans, et répondre aux besoins nutritionnels des adolescentes, des femmes enceintes ou allaitantes et des personnes âgées
+    </div>
+    <div class="indicator-cards col-md-6 row no-gutters">
+    
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          2.2.1
+          <span class="status complete">
+            Signalé en ligne
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/2-2-1">
+          Agri-Environmental Sustainability Performance Indices
+        </a>
+        
       </div>
+    
     </div>
-  </div>
-</div>
-
-<div id="main-content" class="container goal-2" role="main">
   
-
-  
-
-  
-
-
-  
-
-
-<div class="row"
-  id="indicatorData"
-  data-indicatorid='indicator_2-1-1'
-  data-id="2-1-1"
-  data-country="Canada, Provinces & Territories"
-  data-charttitle="Proportion of household living with food insecurity"
-  data-charttitles="null"
-  data-measurementunit="Percentage"
-  data-showdata="true"
-  data-graphtype="bar"
-  data-geocoderegex=""
-  data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Living arrangement&quot;,&quot;value&quot;:&quot;Total all living arrangements&quot;},{&quot;field&quot;:&quot;Household food security status&quot;,&quot;value&quot;:&quot;Food insecure, moderate and severe&quot;}]"
-  data-graphlimits="null"
-  data-stackeddisaggregation=""
-  data-graphannotations="null"
-  data-indicatordownloads="null"
->
-  
-  <span role="status" class="sr-only" id="indicator-data-view-status"></span>
-  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
-    <div id="serieses"></div>
-<div id="units"></div>
-<div id="toolbar">
-  <span id="series-help">
-    <h4>Sous-catégories</h4>
-    <p>Choisissez des catégories dans les listes déroulantes ci-dessous pour voir différentes répartitions des données. Certains ne seront pas disponibles jusqu&#39;à ce qu&#39;un niveau supérieur soit choisi.</p>
-  </span>
-  <div id="fields">
-    <p class="async-loading" data-img="/Canadian-Indicator-Framework/assets/img/loading-small.gif"></p>
-  </div>
-</div>
-
-  </div>
-  <div id="indicator-main" class="indicator-main col-md-9">
-    
-
-
-<div id="headlineTable">
-
-  <div id="datatables">
-
-    <a href="https://julienstc.github.io/CIF-Data/fr/headline/2-1-1.csv" class="btn btn-primary btn-download" download="indicator_2-1-1.csv" tabindex="0" role="button">Télécharger Headline CSV</a>
-
-    <a href="https://julienstc.github.io/CIF-Data/fr/data/2-1-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_2-1-1.csv' tabindex='0' role='button'>Télécharger Source CSV</a>
-
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Proportion of household living with food insecurity</caption>
-      <thead>
-        
-      </thead>
-      <tbody>
-        
-      </tbody>
-    </table>
-  </div>
-
-  <div id="datatableFooter">
-    
-    <p>La source: Statistics Canada</p>
-    
-    
-    <p>Zone géographique: Canada, Provinces & Territories</p>
-    
-    
-    <p>Unité de mesure: Percentage</p>
-    
-    
-  </div>
-
-</div>
-
-
-<section>
-
-  <p class="async-loading" data-img="/Canadian-Indicator-Framework/assets/img/loading-small.gif"></p>
-
-  <div class="async-loaded spacer medium" style="display:none;">
-
-    <div style="display: none;">
-  <span id="table-alternative">Pour une alternative aux données tabulaires, voir l’onglet Tableau.</span>
-</div>
-<ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
-  <li role="presentation" class="nav-item active">
-    <a class="nav-link" data-toggle="tab" id="tab-chartview" href="#chartview" aria-controls="chartview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Chart tab"
- aria-describedby="table-alternative">Graphique</a>
-  </li>
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" id="tab-tableview" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Table tab"
->Table</a>
-  </li></ul>
-
-    <div class="tab-content data-view">
-  <div role="tabpanel" class="tab-pane active" id="chartview">
-    
-
-    <div id="dataset-size-warning" style="display:none" role="alert">
-      <i class="fa fa-bolt"><span class="sr-only">Avertissement :</span></i>
-      Il y a trop de jeux de données à afficher sur le graphique. Tout ne sera pas affiché jusqu&#39;à ce que vous supprimiez certaines sélections.
-    </div>
-
-    
-    
-    <div id="selectionsChart">
-      <figure role="group">
-        <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Proportion of household living with food insecurity</h4>
-          <div id="chart" class="plot-container">
-            
-<canvas
-    role="img"
-    aria-labelledby="chart-heading"
-    aria-describedby="table-alternative chart-annotations"
-    tabindex="0"
- ></canvas>
-
-<script>
-// Add a chart alteration to support the chart_graph_limits metadata field.
-opensdg.chartConfigAlter(function(config, info) {
-  if (info.graphLimits && info.graphLimits.length > 0) {
-    var limit = _.findWhere(info.graphLimits, { unit: info.selectedUnit }) || info.graphLimits[0];
-    var overrides = {
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              min: limit.minimum,
-              max: limit.maximum,
-            }
-          }]
-        }
-      }
-    }
-    // Add these overrides onto the normal config.
-    $.extend(true, config, overrides);
-  }
-});
-</script>
-
-<span style="display: none;" id="chart-annotations" role="status"></span>
-<script>
-opensdg.annotationPresets = {
-    common: {
-        // This "common" preset is applied to all annotations automatically.
-        borderColor: '#505a5f',
-        type: 'line',
-        label: {
-            backgroundColor: 'black',
-            fontColor: 'white',
-        },
-        // This "highContrast" overrides colors when in high-contrast mode.
-        highContrast: {
-            label: {
-                backgroundColor: 'white',
-                fontColor: 'black'
-            }
-        },
-        // This callback is used to generate a generic description for screenreaders.
-        // This can be overridden to be a more specific string, eg:
-        //
-        //     description: 'Chart annotation showing a 2030 target of 15%'
-        //
-        description: function() {
-            var descriptionParts = [translations.indicator.chart_annotation];
-            if (this.label && this.label.content) {
-                descriptionParts.push(translations.t(this.label.content));
-            }
-            else {
-                // If there is no label, just specify whether it is a box or line.
-                if (this.type == 'line') {
-                    descriptionParts.push(this.mode + ' line');
-                }
-                if (this.type == 'box') {
-                    descriptionParts.push('box');
-                }
-            }
-            if (typeof this.value !== 'undefined') {
-                descriptionParts.push(this.value);
-            }
-            return descriptionParts.join(': ');
-        },
-    },
-    target_line: {
-        mode: 'horizontal',
-        borderDash: [5, 5],
-        label: {
-            position: 'right',
-            content: translations.indicator.annotation_2030_target,
-        },
-    },
-};
-
-// Add a chart alteration to support the chart_annotations metadata field.
-opensdg.chartConfigAlter(function(config, info) {
-    if (info.graphAnnotations && info.graphAnnotations.length > 0) {
-        var annotations = info.graphAnnotations.filter(function(annotation) {
-            var match = true;
-            if (match && info.selectedUnit) {
-                match = (info.selectedUnit === annotation.unit);
-            }
-            if (match && info.selectedSeries) {
-                match = (info.selectedSeries === annotation.series);
-            }
-            return match;
-        });
-        // Apply some helpers/fixes to the annotations.
-        annotations = annotations.map(function(annotation) {
-            // Apply the "common" preset.
-            if (opensdg.annotationPresets.common) {
-                annotation = $.extend(true, {}, opensdg.annotationPresets.common, annotation);
-            }
-            // Apply any specified presets.
-            if (annotation.preset) {
-                var preset = annotation.preset;
-                if (opensdg.annotationPresets[preset]) {
-                    annotation = $.extend(true, {}, opensdg.annotationPresets[preset], annotation);
-                }
-            }
-            // Default to horizontal lines.
-            if (!annotation.mode && annotation.type === 'line') {
-                annotation.mode = 'horizontal';
-            }
-            // Provide the obscure scaleID properties on user's behalf.
-            if (!annotation.scaleID && annotation.type === 'line') {
-                if (annotation.mode === 'horizontal') {
-                    annotation.scaleID = 'y-axis-0';
-                }
-                if (annotation.mode === 'vertical') {
-                    annotation.scaleID = 'x-axis-0';
-                }
-            }
-            if (!annotation.xScaleID && annotation.type === 'box') {
-                annotation.xScaleID = 'x-axis-0';
-            }
-            if (!annotation.yScaleID && annotation.type === 'box') {
-                annotation.yScaleID = 'y-axis-0';
-            }
-            // Provide the "enabled" label property on the user's behalf.
-            if (annotation.label && annotation.label.content) {
-                annotation.label.enabled = true;
-            }
-            // Translate any label content.
-            if (annotation.label && annotation.label.content) {
-                annotation.label.content = translations.t(annotation.label.content);
-            }
-            // Save some original values for later used when contrast mode is switched.
-            if (typeof annotation.defaultContrast === 'undefined') {
-                annotation.defaultContrast = {};
-                if (annotation.borderColor) {
-                    annotation.defaultContrast.borderColor = annotation.borderColor;
-                }
-                if (annotation.backgroundColor) {
-                    annotation.defaultContrast.backgroundColor = annotation.backgroundColor;
-                }
-                if (annotation.label) {
-                    annotation.defaultContrast.label = {};
-                    if (annotation.label.fontColor) {
-                        annotation.defaultContrast.label.fontColor = annotation.label.fontColor;
-                    }
-                    if (annotation.label.backgroundColor) {
-                        annotation.defaultContrast.label.backgroundColor = annotation.label.backgroundColor;
-                    }
-                }
-            }
-            return annotation;
-        });
-        if (annotations.length > 0) {
-            var overrides = {
-                options: {
-                    annotation: {
-                        drawTime: 'afterDatasetsDraw',
-                        annotations: annotations
-                    }
-                }
-            };
-            // Add these overrides onto the normal config.
-            $.extend(true, config, overrides);
-
-            // Update the chart annotations element.
-            var descriptions = annotations.map(function(annotation) {
-                var description = '';
-                if (annotation.description) {
-                    if (typeof annotation.description === 'function') {
-                        description = annotation.description.call(annotation);
-                    }
-                    else {
-                        description = translations.t(annotation.description);
-                    }
-                }
-                return description;
-            }).filter(function(description) { return description != ''; });
-
-            var currentDescription = $('#chart-annotations').text();
-            var newDescription = descriptions.join('. ');
-            if (currentDescription != newDescription) {
-                $('#chart-annotations').text(newDescription);
-            }
-        }
-    }
-});
-</script>
-
-<script>
-opensdg.chartConfigAlter(function(config, info) {
-  if (info.stackedDisaggregation) {
-    var overrides = {
-      options: {
-        scales: {
-          xAxes: [{ stacked: true }],
-          yAxes: [{ stacked: true }],
-        }
-      }
-    };
-    // If we have stackedDisaggregation, we need to group datasets into stacks.
-    config.data.datasets.forEach(function(dataset) {
-      var disaggregation = $.extend({}, dataset.disaggregation);
-      // We're going to "stringify" each combination of disaggregations in order
-      // to place them in their own "stacks". To place "stacked" disaggregations
-      // into the same stack, we set them as "samestack" before stringifying.
-      // Note that the string "samestack" is completely arbitrary.
-      if (typeof disaggregation[info.stackedDisaggregation] !== 'undefined') {
-        disaggregation[info.stackedDisaggregation] = 'samestack';
-      }
-      // Use the disaggregation as a unique id for each stack.
-      dataset.stack = JSON.stringify(disaggregation);
-    });
-    // Add these overrides onto the normal config, and return it.
-    $.extend(true, config, overrides);
-  }
-});
-</script>
-
-          </div>
-          <div id="plotLegend"></div>
-          
-
-
-
-<div id="selectionChartFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-
-        
-        <dt>Zone géographique:</dt>
-        <dd>Canada, Provinces & Territories</dd>
-        
-
-        
-        <dt>Unité de mesure:</dt>
-        <dd>Percentage</dd>
-        
-
-        
-
-        
-    <dl>
-</div>
-
-        </div>
-      </figure>
-      <div id="chartSelectionDownload" class="clearfix">
-        <button id="btnSave" title="Télécharger le graphique en image" class='btn btn-primary btn-download'>
-          Télécharger l'image graphique
-        </button>
-      </div>
-    </div>
-
-
-
-  </div>
-  <div role="tabpanel" class="tab-pane" id="tableview">
-    <div style="display: none;">
-      <span id="column-sort-info">Cliquez pour trier par cette colonne</span>
-    </div>
-    <div id="selectionsTable"></div>
-
-
-
-
-<div id="selectionTableFooter" class="table-footer-text">
-  <h5 class="sr-only">Chart details</h5>
-    <dl>
-        
-
-        
-        <dt>Zone géographique:</dt>
-        <dd>Canada, Provinces & Territories</dd>
-        
-
-        
-        <dt>Unité de mesure:</dt>
-        <dd>Percentage</dd>
-        
-
-        
-
-        
-    <dl>
-</div>
-
-<div id="tableSelectionDownload" class="clearfix"></div>
-
-  </div>
-</div>
-
-
-  </div>
-
-</section>
-
-  
-  <ul class="nav nav-tabs spacer medium" role="tablist">
-
-  <li role="presentation" class="nav-item active">
-  <a class="nav-link" data-toggle="tab" id="tab-national" href="#national" aria-controls="national" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change metadata view"
-data-event-label="Change to National Metadata tab"
->Métadonnées nationales</a>
-</li>
-<li role="presentation" class="nav-item">
-  <a class="nav-link" data-toggle="tab" id="tab-global" href="#global" aria-controls="global" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change metadata view"
-data-event-label="Change to Global Metadata tab"
->Métadonnées globales</a>
-</li>
-<li role="presentation" class="nav-item">
-  <a class="nav-link" data-toggle="tab" id="tab-sources" href="#sources" aria-controls="sources" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change metadata view"
-data-event-label="Change to Sources tab"
->Sources</a>
-</li>
-
-
-  
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Modifier</a>
-  </li>
-  
-</ul>
-
-<div class="tab-content">
-  
-    <div role="tabpanel" class="tab-pane active" id="national">
-  <!-- National Metadata -->
-  <div >
-    <article>
-      <p>
-        
-        
-        Cette table fournit des métadonnées pour l&#39;indicateur réel disponible à partir des statistiques Statistics Canada les plus proches de l&#39;indicateur SDG global correspondant. Veuillez noter que même lorsque l&#39;indicateur global des ODD est entièrement disponible à partir des statistiques Canadian, ce tableau devrait être consulté pour obtenir des informations sur la méthodologie nationale et d&#39;autres informations sur les métadonnées spécifiques à un pays_adjectif.
-      </p>
-      <table class="table">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      <tr>
-        <th scope="row">Indicateur disponible </th>
-        <td>
-          
-            <p>Prevalence of food insecurity</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Description de l&#39;indicateur </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Couverture géographique </th>
-        <td>
-          
-            <p>Canada, Provinces &amp; Territories</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Unité de mesure </th>
-        <td>
-          
-            <p>Percentage</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Définitions </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Calculs </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Les autres informations </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Assurance qualité </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Comparabilité avec les données / normes internationales </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Commentaires et limitations </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">metadata_fields.rationale_interpretation </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Données mises à jour en dernier </th>
-        <td>
-          
-            
-            
-            
-            
-
-            
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/eaf4cb7ec438607e5334750ad9056e9ea9acb5cc" target="_blank">
-                2021-03-19: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Dernière mise à jour des métadonnées </th>
-        <td>
-          
-            
-            
-            
-            
-
-            
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/7b67882cffa63a4711e8cc7bbd030f567837d876" target="_blank">
-                2021-03-29: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</table>
-
-    </article>
-  </div>
-</div>
-<div role="tabpanel" class="tab-pane" id="global">
-  <!-- Global Metadata -->
-  <div>
-    <article>
-      <p>Ce tableau fournit des informations sur les métadonnées pour les indicateurs SDG définis par la Commission de statistique des Nations Unies. <a href="https://unstats.un.org/sdgs/metadata/">Les métadonnées globales complètes</a> sont fournies par la Division de statistique de l&#39;ONU.</p>
-      <table class="table">
-  
-  
-  
-  
-  
-      
-      
-      <tr>
-        <th scope="row">Nom de l&#39;indicateur </th>
-        <td>
-          
-            <p>Prevalence of food insecurity</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Numéro de l&#39;indicateur </th>
-        <td>
-          
-            <p>2.1.1</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Nom de la cible </th>
-        <td>
-          
-            <p>No target</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Numéro cible </th>
-        <td>
-          
-            <p>2.1</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Description de l&#39;indicateur global </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Niveau désigné par les Nations Unies </th>
-        <td>
-          
-            <p>false</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Agence dépositaire des Nations Unies </th>
-        <td>
-          
-            <p>false</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Lien vers les métadonnées UN </th>
-        <td>
-          
-            
-            
-            
-            
-
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</table>
-
-    </article>
-  </div>
-</div>
-<div role="tabpanel" class="tab-pane" id="sources">
-  <!-- Count the non-empty sources (up to 5) -->
-
-
-
-
-
-</div>
-
-  
-  
-  <div role="tabpanel" class="tab-pane" id="edit">
-    <div class="edit-container">
-  
-  <a class="btn btn-primary" href="http://prose.io/#JulienSTC/CIF-Data/edit/develop/data/indicator_2-1-1.csv">Modifier les données</a>
-  
-
-  
-  <a class="btn btn-primary" href="http://prose.io/#JulienSTC/CIF-Data/edit/develop/meta/2-1-1.md">Modifier les métadonnées</a>
-  
-
-  
-</div>
-
-  </div>
-  
-</div>
-
-
-  </div>
-</div>
-
 </div>
 
 <footer role="contentinfo">
@@ -1507,12 +466,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210329195409'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210329200937'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210329195409"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210329200937"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210329195409">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210329200937">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -132,7 +132,7 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-fr layout-indicator">
+<body class="language-fr layout-goal-by-target">
 <!-- <div class="container"> -->
 
 <script>translations['header'] = {"alpha":"Alpha","default_contrast":"contraste standard","disable_high_contrast":"Désactiver le contraste élevé","disclaimer":"Ceci est un site de développement. Nous apprécions vos <a href=\"mailto:%email_address\">commentaires</a>.","enable_high_contrast":"Activer le contraste élevé","high_contrast":"contraste élevé","skip_link":"Passer au contenu principal","tag_line":"17 objectifs pour transformer notre monde","toggle_menu":"Interrupteur du menu. Cliquez pour développer ou réduire le menu.","toggle_search":"Interrupteur de la barre. Cliquez pour développer ou réduire la barre de recherche."};</script>
@@ -290,762 +290,524 @@ var translations = {
 <div id="top" tabindex=-1></div>
 
 
-<script type="text/template" id="item_template">
-  <% _.each(fields, function(fieldItem) { %>
-    <div class="variable-selector<% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed child<% }%>" data-field="<%=fieldItem.field%>">
-      <button class='accessBtn' tabindex='0' aria-expanded='false'
-        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        aria-describedby='variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>'
-        <% }%>
-      >
-        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
-          <span aria-hidden="true"><%=translations.t(fieldItem.field)%><i class="fa fa-chevron-down"></i></span>
-          <span class="sr-only">Afficher les sous-catégories : <%=translations.t(fieldItem.field)%></span>
-        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
-      </button>
-      <div class="bar">
-        <div class="selected"></div>
-      </div>
-      <div class="variable-options">
-        <fieldset>
-          <legend class="sr-only">Sous-catégories - <%=translations.t(fieldItem.field)%></legend>
-          <div>
-            <button data-type="select">Tout sélectionner</button>
-            <button data-type="clear">Tout effacer</button>
-          </div>
-          <% _.each(fieldItem.values, function(item) { %>
-            <label>
-              <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
-            </label>
-          <% }); %>
-        </fieldset>
-      </div>
-
-      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Disponible lorsque le champ '<%= translations.t(_.findWhere(edges, { To: fieldItem.field }).From) %>' est sélectionné
-        </div>
-        <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
-          Aucune option disponible en raison des filtres ci-dessus
-        </div>
-      <% }%>
-
-    </div>
-  <% }); %>
-</script>
-
-<script type="text/template" id="units_template">
-  <% if(units.length) { %>
-    <h4>Type d&#39;unités</h4>
-    <fieldset>
-      <legend class="sr-only">Type d&#39;unités</legend>
-      <% _.each(units, function(unitsItem, index) { %>
-        <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
-        <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
-      <% }); %>
-    </fieldset>
-  <% } %>
-</script>
-
-<script type="text/template" id="series_template">
-  <% if(serieses.length) { %>
-    <h4>Séries</h4>
-    <fieldset>
-      <legend class="sr-only">Séries</legend>
-      <% _.each(serieses, function(seriesItem, index) { %>
-        <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
-        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
-      <% }); %>
-    </fieldset>
-  <% } %>
-</script>
-
-<script>translations['indicator'] = {"annotation_2030_target":"Objectif 2030","announce_data_added":"Graphique et tableau mis à jour pour inclure des données.","announce_data_not_available":"Le graphique et le tableau ne montrent aucune donnée.","announce_data_removed":"Graphique et tableau mis à jour pour exclure les données.","chart":"Graphique","chart_annotation":"Annotation du graphique","clear_all":"Tout effacer","clear_selections":"Effacer les sélections","data_keyboard_navigation":"Appuyez sur Entrée pour parcourir les points de données avec les touches fléchées gauche et droite.","data_not_available":"Ces données ne sont pas disponibles. Veuillez choisir des données alternatives à afficher.","data_tabular_alternative":"Pour une alternative aux données tabulaires, voir l’onglet Tableau.","dataset_size_warning":"Il y a trop de jeux de données à afficher sur le graphique. Tout ne sera pas affiché jusqu&#39;à ce que vous supprimiez certaines sélections.","download_chart":"Télécharger le graphique CSV","download_chart_image":"Télécharger l'image graphique","download_chart_image_title":"Télécharger le graphique en image","download_csv":"Télécharger CSV","download_csv_title":"Télécharger en format CSV","download_geojson":"Télécharger GeoJSON","download_geojson_title":"Télécharger en format GeoJSON","download_headline":"Télécharger Headline CSV","download_headline_title":"Télécharger les données de titre au format CSV","download_source":"Télécharger Source CSV","download_source_sdmx":"Télécharger Source SDMX","download_source_sdmx_title":"Télécharger les données source au format SDMX","download_source_title":"Télécharger les données source au format CSV","download_table":"Télécharger le tableau CSV","edit":"Modifier","edit_data":"Modifier les données","edit_metadata":"Modifier les métadonnées","footnote":"note de bas de page","geographical_area":"Zone géographique","global_metadata":"Métadonnées globales","global_metadata_blurb":"Ce tableau fournit des informations sur les métadonnées pour les indicateurs SDG définis par la Commission de statistique des Nations Unies. <a href=\"https://unstats.un.org/sdgs/metadata/\">Les métadonnées globales complètes</a> sont fournies par la Division de statistique de l&#39;ONU.","legend_help":"Cliquez sur la légende pour supprimer les lignes individuelles du graphique.","loading":"Chargement","loading_map":"Chargement de la carte","map":"Carte","map_search":"Rechercher","map_search_hide":"Masquer la recherche","map_search_show":"Afficher la recherche","map_year_slider":"Curseur d’année","national_metadata":"Métadonnées nationales","national_metadata_blurb":"Cette table fournit des métadonnées pour l&#39;indicateur réel disponible à partir des statistiques %country_name les plus proches de l&#39;indicateur SDG global correspondant. Veuillez noter que même lorsque l&#39;indicateur global des ODD est entièrement disponible à partir des statistiques %country_adjective, ce tableau devrait être consulté pour obtenir des informations sur la méthodologie nationale et d&#39;autres informations sur les métadonnées spécifiques à un pays_adjectif.","no_data_hint":"Aucune option disponible en raison des filtres ci-dessus","plot_legend_description":"Légende du tracé : liste des lignes incluses dans le graphique","select_all":"Tout sélectionner","series":"Séries","series_help":"Choisissez des catégories dans les listes déroulantes ci-dessous pour voir différentes répartitions des données. Certains ne seront pas disponibles jusqu&#39;à ce qu&#39;un niveau supérieur soit choisi.","source":"La source","sources":"Sources","status":"État de l’indicateur","sub_categories":"Sous-catégories","sub_categories_show":"Afficher les sous-catégories :","table":"Table","table_column_sort":"Cliquez pour trier par cette colonne","tags":"Étiquettes","unit_of_measurement":"Unité de mesure","units_type":"Type d&#39;unités","variable_hint":"Disponible lorsque le champ '%field' est sélectionné","view_indicator_list":"Voir la liste des indicateurs de cet objectif"};</script>
-
-<script>translations['data'] = null;</script>
-
-
 <div class="container">
   <ol class="breadcrumb">
   
   <li><a href="/Canadian-Indicator-Framework/fr/">Accueil</a></li>
   <li><a href="/Canadian-Indicator-Framework/fr/goals">Objectifs</a></li>
   
-  <li><a href="/Canadian-Indicator-Framework/fr/16" title="Promouvoir l’avènement de sociétés pacifiques et inclusives aux fins du développement durable, assurer l’accès de tous à la justice et mettre en place, à tous les niveaux, des institutions efficaces, responsables et ouvertes à tous">Objectif 16</a></li>
   
 </ol>
 
 </div>
-<div class="heading goal-banner indicator goal-16">
+
+<div class="heading goal-banner goal-16">
   <div class="container">
     <div class="row">
-      <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-        <a href="/Canadian-Indicator-Framework/fr/16" title="Voir la liste des indicateurs de cet objectif">
-          <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fr/16.png" alt="Paix, justice et institutions efficaces - Objectif 16" id="goal-16"/>
-        </a>
+      <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fr/16.png" alt="Paix, justice et institutions efficaces - Objectif 16" id="goal-16" />
       </div>
-      <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
-        <div>
-          <h1>
-            Indicateur 16.6.1
-            <span class="lead-copy">Dépenses publiques primaires en proportion du budget initial approuvé, par secteur (ou par code budgétaire ou autre critère similaire)</span>
-          </h1>
-        </div>
+      <div class="col-xs-8 col-md-9 col-lg-10">
+        <h1>
+          <span class="hidden-sm hidden-md hidden-lg">Objectif 16: </span>Promouvoir l’avènement de sociétés pacifiques et inclusives aux fins du développement durable, assurer l’accès de tous à la justice et mettre en place, à tous les niveaux, des institutions efficaces, responsables et ouvertes à tous
+        </h1>
       </div>
     </div>
   </div>
 </div>
 
-<div id="main-content" class="container goal-16" role="main">
-  
-
-  
-
-  
-
+<div id="main-content" class="container goal-indicators goal-16 goal-by-target" role="main">
 
   
 
 
-<div class="row"
-  id="indicatorData"
-  data-indicatorid='indicator_16-6-1'
-  data-id="16-6-1"
-  data-country="Statistics Canada"
-  data-charttitle="Dépenses publiques primaires en proportion du budget initial approuvé, par secteur (ou par code budgétaire ou autre critère similaire)"
-  data-charttitles="null"
-  data-measurementunit=""
-  data-showdata="false"
-  data-graphtype="line"
-  data-geocoderegex=""
-  data-showmap=""
-  data-startvalues="null"
-  data-graphlimits="null"
-  data-stackeddisaggregation=""
-  data-graphannotations="null"
-  data-indicatordownloads="null"
->
-  
-  <div id="indicator-main" class="indicator-main col-md-12">
-  
-  <ul class="nav nav-tabs spacer medium" role="tablist">
 
-  <li role="presentation" class="nav-item active">
-  <a class="nav-link" data-toggle="tab" id="tab-national" href="#national" aria-controls="national" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change metadata view"
-data-event-label="Change to National Metadata tab"
->Métadonnées nationales</a>
-</li>
-<li role="presentation" class="nav-item">
-  <a class="nav-link" data-toggle="tab" id="tab-global" href="#global" aria-controls="global" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change metadata view"
-data-event-label="Change to Global Metadata tab"
->Métadonnées globales</a>
-</li>
-<li role="presentation" class="nav-item">
-  <a class="nav-link" data-toggle="tab" id="tab-sources" href="#sources" aria-controls="sources" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change metadata view"
-data-event-label="Change to Sources tab"
->Sources</a>
-</li>
-
-
-  
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Modifier</a>
-  </li>
-  
-</ul>
-
-<div class="tab-content">
-  
-    <div role="tabpanel" class="tab-pane active" id="national">
-  <!-- National Metadata -->
-  <div >
-    <article>
-      <p>
-        
-        
-        Cette table fournit des métadonnées pour l&#39;indicateur réel disponible à partir des statistiques Statistics Canada les plus proches de l&#39;indicateur SDG global correspondant. Veuillez noter que même lorsque l&#39;indicateur global des ODD est entièrement disponible à partir des statistiques Canadian, ce tableau devrait être consulté pour obtenir des informations sur la méthodologie nationale et d&#39;autres informations sur les métadonnées spécifiques à un pays_adjectif.
-      </p>
-      <table class="table">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      <tr>
-        <th scope="row">Indicateur disponible </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Description de l&#39;indicateur </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Couverture géographique </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Unité de mesure </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Définitions </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Calculs </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Les autres informations </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Assurance qualité </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Comparabilité avec les données / normes internationales </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Commentaires et limitations </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">metadata_fields.rationale_interpretation </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Données mises à jour en dernier </th>
-        <td>
-          
-            
-            
-            
-            
-
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Dernière mise à jour des métadonnées </th>
-        <td>
-          
-            
-            
-            
-            
-
-            
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/10ca4754719e457326ed156ca8a5b7f86a11d5a7" target="_blank">
-                2021-01-26: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</table>
-
-    </article>
+  <div class="visible-md-block visible-lg-block">
+    <div class="col-md-6">
+      <h2>Les cibles</h2>
+    </div>
+    <div class="col-md-6">
+      <h2>Indicateurs</h2>
+    </div>
   </div>
-</div>
-<div role="tabpanel" class="tab-pane" id="global">
-  <!-- Global Metadata -->
-  <div>
-    <article>
-      <p>Ce tableau fournit des informations sur les métadonnées pour les indicateurs SDG définis par la Commission de statistique des Nations Unies. <a href="https://unstats.un.org/sdgs/metadata/">Les métadonnées globales complètes</a> sont fournies par la Division de statistique de l&#39;ONU.</p>
-      <table class="table">
-  
-  
-  
-  
-  
-      
-      
-      <tr>
-        <th scope="row">Nom de l&#39;indicateur </th>
-        <td>
-          
-            <p>Dépenses publiques primaires en proportion du budget initial approuvé, par secteur (ou par code budgétaire ou autre critère similaire)</p>
 
-          
-        </td>
-        </tr>
+  
+  
+    
+    <div class="indicator-cards target goal-target col-md-6">
+      <span>
+        <label class="hidden-md hidden-lg">Cible</label>
+        16.1
+      </span>
+      Réduire nettement, partout dans le monde, toutes les formes de violence et les taux de mortalité qui y sont associés
+    </div>
+    <div class="indicator-cards col-md-6 row no-gutters">
+    
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.1.1
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-1-1">
+          Nombre de victimes d’homicide volontaire pour 100 000 habitants, par sexe et âge
+        </a>
         
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Numéro de l&#39;indicateur </th>
-        <td>
-          
-            <p>16.6.1</p>
+      </div>
+    
 
-          
-        </td>
-        </tr>
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.1.2
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-1-2">
+          Nombre de décès liés à des conflits pour 100 000 habitants, par sexe, âge et cause
+        </a>
         
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Nom de la cible </th>
-        <td>
-          
-            <p>Mettre en place des institutions efficaces, responsables et transparentes à tous les niveaux</p>
+      </div>
+    
 
-          
-        </td>
-        </tr>
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.1.3
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-1-3">
+          Proportion de la population victime, au cours des 12 mois précédents : a) de violences physiques ; b) de violences psychologiques ; c) de violences sexuelles
+        </a>
         
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Numéro cible </th>
-        <td>
-          
-            <p>16.6</p>
+      </div>
+    
 
-          
-        </td>
-        </tr>
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.1.4
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-1-4">
+          Nombre de personnes considérant qu’il n’y a pas de danger à se déplacer seules à pied dans leur zone de résidence, en proportion de la population totale
+        </a>
         
-      
+      </div>
+    
+    </div>
   
-      
-      
-      <tr>
-        <th scope="row">Description de l&#39;indicateur global </th>
-        <td>
-          
-            
+    
+    <div class="indicator-cards target goal-target col-md-6">
+      <span>
+        <label class="hidden-md hidden-lg">Cible</label>
+        16.2
+      </span>
+      Mettre un terme à la maltraitance, à l’exploitation et à la traite, et à toutes les formes de violence et de torture dont sont victimes les enfants
+    </div>
+    <div class="indicator-cards col-md-6 row no-gutters">
+    
 
-          
-        </td>
-        </tr>
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.2.1
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-2-1">
+          Proportion des enfants âgés de 1 à 17 ans ayant subi des châtiments corporels ou des agressions psychologiques infligés par une personne s’occupant d’eux au cours du mois précédent
+        </a>
         
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Niveau désigné par les Nations Unies </th>
-        <td>
-          
-            <p>1</p>
+      </div>
+    
 
-          
-        </td>
-        </tr>
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.2.2
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-2-2">
+          Nombre de victimes de la traite d’êtres humains pour 100 000 habitants, par sexe, âge et forme d’exploitation
+        </a>
         
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Agence dépositaire des Nations Unies </th>
-        <td>
-          
-            <p>World Bank</p>
+      </div>
+    
 
-          
-        </td>
-        </tr>
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.2.3
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-2-3">
+          Proportion de jeunes femmes et hommes de 18 à 29 ans ayant été victimes de violences sexuelles avant l’âge de 18 ans
+        </a>
         
-      
+      </div>
+    
+    </div>
   
+    
+    <div class="indicator-cards target goal-target col-md-6">
+      <span>
+        <label class="hidden-md hidden-lg">Cible</label>
+        16.3
+      </span>
+      Promouvoir l’état de droit dans l’ordre interne et international et garantir à tous un égal accès à la justice
+    </div>
+    <div class="indicator-cards col-md-6 row no-gutters">
+    
+
       
       
-      <tr>
-        <th scope="row">Lien vers les métadonnées UN </th>
-        <td>
-          
-            
-            
-            
-            
+      
+      
+      
+      
+      
+      
 
-            
-              <a href="http://unstats.un.org/sdgs/files/metadata-compilation/Metadata-Goal-16.pdf" target="_blank">
-                United Nations Sustainable Development Goals Metadata (pdf 1361kB) <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.3.1
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-3-1">
+          Proportion des personnes victimes de violences au cours des 12 mois précédents ayant signalé les faits aux autorités compétentes ou recouru à d’autres mécanismes de règlement des différends officiellement reconnus
+        </a>
         
+      </div>
+    
+
       
-  
       
       
       
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</table>
+      
+      
+      
+      
 
-    </article>
-  </div>
-</div>
-<div role="tabpanel" class="tab-pane" id="sources">
-  <!-- Count the non-empty sources (up to 5) -->
-
-
-
-
-
-</div>
-
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.3.2
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-3-2">
+          Proportion de la population carcérale en instance de jugement
+        </a>
+        
+      </div>
+    
+    </div>
   
-  
-  <div role="tabpanel" class="tab-pane" id="edit">
-    <div class="edit-container">
-  
-  <a class="btn btn-primary" href="http://prose.io/#JulienSTC/CIF-Data/edit/develop/data/indicator_16-6-1.csv">Modifier les données</a>
-  
+    
+    <div class="indicator-cards target goal-target col-md-6">
+      <span>
+        <label class="hidden-md hidden-lg">Cible</label>
+        16.4
+      </span>
+      D’ici à 2030, réduire nettement les flux financiers illicites et le trafic d’armes, renforcer les activités de récupération et de restitution des biens volés et lutter contre toutes les formes de criminalité organisée
+    </div>
+    <div class="indicator-cards col-md-6 row no-gutters">
+    
 
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.4.1
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-4-1">
+          Valeur totale des flux financiers illicites entrants et sortants (en dollars des États‐Unis courants)
+        </a>
+        
+      </div>
+    
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.4.2
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-4-2">
+          Proportion des armes saisies, trouvées ou rendues volontairement dont la provenance ou l’utilisation illicite a été retracée ou établie par des autorités compétentes, conformément aux instruments internationaux
+        </a>
+        
+      </div>
+    
+    </div>
   
-  <a class="btn btn-primary" href="http://prose.io/#JulienSTC/CIF-Data/edit/develop/meta/16-6-1.md">Modifier les métadonnées</a>
+    
+    <div class="indicator-cards target goal-target col-md-6">
+      <span>
+        <label class="hidden-md hidden-lg">Cible</label>
+        16.5
+      </span>
+      Réduire nettement la corruption et la pratique des pots-de-vin sous toutes leurs formes
+    </div>
+    <div class="indicator-cards col-md-6 row no-gutters">
+    
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.5.1
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-5-1">
+          Proportion de personnes ayant eu, au moins une fois, affaire à un agent public auquel elles ont versé un pot-de-vin ou qui leur a demandé un pot-de-vin au cours des 12 mois précédents
+        </a>
+        
+      </div>
+    
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.5.2
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-5-2">
+          Proportion d’entreprises ayant eu au moins une fois affaire à un agent public auquel elles ont versé un pot‐de‐vin ou qui leur a demandé un pot‐de‐vin au cours des 12 mois précédents
+        </a>
+        
+      </div>
+    
+    </div>
   
+    
+    <div class="indicator-cards target goal-target col-md-6">
+      <span>
+        <label class="hidden-md hidden-lg">Cible</label>
+        16.6
+      </span>
+      Mettre en place des institutions efficaces, responsables et transparentes à tous les niveaux
+    </div>
+    <div class="indicator-cards col-md-6 row no-gutters">
+    
 
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.6.1
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-6-1">
+          Dépenses publiques primaires en proportion du budget initial approuvé, par secteur (ou par code budgétaire ou autre critère similaire)
+        </a>
+        
+      </div>
+    
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.6.2
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-6-2">
+          Proportion de la population dont la dernière expérience avec les services publics a été satisfaisante
+        </a>
+        
+      </div>
+    
+    </div>
   
-</div>
+    
+    <div class="indicator-cards target goal-target col-md-6">
+      <span>
+        <label class="hidden-md hidden-lg">Cible</label>
+        16.10
+      </span>
+      Garantir l’accès public à l’information et protéger les libertés fondamentales, conformément à la législation nationale et aux accords internationaux
+    </div>
+    <div class="indicator-cards col-md-6 row no-gutters">
+    
 
-  </div>
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.10.1
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-10-1">
+          Nombre de cas avérés de meurtres, d’enlèvements, de disparitions forcées, de détentions arbitraires et d’actes de torture dont ont été victimes des journalistes, des personnes travaillant dans les médias, des syndicalistes et des défenseurs des droits de l’homme au cours des 12 mois précédents
+        </a>
+        
+      </div>
+    
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <div class="col-md-12  goal-indicator">
+        <span>
+          16.10.2
+          <span class="status notstarted">
+            Explorer les sources de données
+          </span>
+        </span>
+        <a href="/Canadian-Indicator-Framework/fr/16-10-2">
+          Nombre de pays qui adoptent et mettent en œuvre des dispositions constitutionnelles, réglementaires et politiques pour garantir l’accès public à l’information
+        </a>
+        
+      </div>
+    
+    </div>
   
-</div>
-
-
-  </div>
-</div>
-
 </div>
 
 <footer role="contentinfo">
@@ -1109,12 +871,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210329195409'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210329200937'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210329195409"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210329200937"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
