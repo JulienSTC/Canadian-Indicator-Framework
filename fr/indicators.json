@@ -39,7 +39,7 @@
         },
         {
           "id": "2-2-1",
-          "title": "Index of Agri-Environmental Sustainability",
+          "title": "Agri-Environmental Sustainability Performance Indices",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/2-2-1",
@@ -220,54 +220,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-9-3",
           "status": "notstarted"
-        },
-        {
-          "id": "3-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "3-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-b-1",
-          "status": "complete"
-        },
-        {
-          "id": "3-b-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-b-2",
-          "status": "complete"
-        },
-        {
-          "id": "3-b-3",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-b-3",
-          "status": "complete"
-        },
-        {
-          "id": "3-c-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-c-1",
-          "status": "complete"
-        },
-        {
-          "id": "3-d-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-d-1",
-          "status": "complete"
         }]
     }
   },
@@ -292,78 +244,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/4-2-1",
           "status": "notstarted"
-        },
-        {
-          "id": "4-2-2",
-          "title": "Taux de participation à des activités d’apprentissage organisées (un an avant l’âge officiel de scolarisation dans le primaire), par sexe",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/4-2-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "4-3-1",
-          "title": "Taux de participation des jeunes et des adultes à un programme d’éducation et de formation scolaire ou non scolaire au cours des 12 mois précédents, par sexe",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/4-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "4-4-1",
-          "title": "Proportion de jeunes et d’adultes ayant des compétences en informatique et en communication, par type de compétence",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/4-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "4-5-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/4-5-1",
-          "status": "complete"
-        },
-        {
-          "id": "4-6-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/4-6-1",
-          "status": "complete"
-        },
-        {
-          "id": "4-7-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/4-7-1",
-          "status": "complete"
-        },
-        {
-          "id": "4-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/4-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "4-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/4-b-1",
-          "status": "complete"
-        },
-        {
-          "id": "4-c-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/4-c-1",
-          "status": "complete"
         }]
     }
   },
@@ -436,54 +316,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/5-5-2",
           "status": "notstarted"
-        },
-        {
-          "id": "5-6-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/5-6-1",
-          "status": "complete"
-        },
-        {
-          "id": "5-6-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/5-6-2",
-          "status": "complete"
-        },
-        {
-          "id": "5-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/5-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "5-a-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/5-a-2",
-          "status": "complete"
-        },
-        {
-          "id": "5-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/5-b-1",
-          "status": "complete"
-        },
-        {
-          "id": "5-c-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/5-c-1",
-          "status": "complete"
         }]
     }
   },
@@ -556,30 +388,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/6-5-2",
           "status": "complete"
-        },
-        {
-          "id": "6-6-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/6-6-1",
-          "status": "complete"
-        },
-        {
-          "id": "6-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/6-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "6-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/6-b-1",
-          "status": "complete"
         }]
     }
   },
@@ -611,14 +419,6 @@
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/7-2-1",
-          "status": "complete"
-        },
-        {
-          "id": "7-3-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/7-3-1",
           "status": "complete"
         }]
     }
@@ -686,54 +486,6 @@
           "status": "complete"
         },
         {
-          "id": "8-6-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-6-1",
-          "status": "complete"
-        },
-        {
-          "id": "8-7-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-7-1",
-          "status": "complete"
-        },
-        {
-          "id": "8-8-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-8-1",
-          "status": "complete"
-        },
-        {
-          "id": "8-8-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-8-2",
-          "status": "complete"
-        },
-        {
-          "id": "8-9-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-9-1",
-          "status": "complete"
-        },
-        {
-          "id": "8-9-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-9-2",
-          "status": "complete"
-        },
-        {
           "id": "8-10-1",
           "title": "a) Nombre de succursales de banques commerciales pour 100 000 adultes et b) nombre de distributeurs automatiques de billets pour 100 000 adultes",
           "description": "",
@@ -748,22 +500,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-10-2",
           "status": "notstarted"
-        },
-        {
-          "id": "8-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "8-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-b-1",
-          "status": "complete"
         }]
     }
   },
@@ -844,30 +580,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/9-5-2",
           "status": "notstarted"
-        },
-        {
-          "id": "9-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/9-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "9-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/9-b-1",
-          "status": "complete"
-        },
-        {
-          "id": "9-c-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/9-c-1",
-          "status": "complete"
         }]
     }
   },
@@ -916,54 +628,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/10-5-1",
           "status": "notstarted"
-        },
-        {
-          "id": "10-6-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/10-6-1",
-          "status": "complete"
-        },
-        {
-          "id": "10-7-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/10-7-1",
-          "status": "complete"
-        },
-        {
-          "id": "10-7-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/10-7-2",
-          "status": "complete"
-        },
-        {
-          "id": "10-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/10-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "10-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/10-b-1",
-          "status": "complete"
-        },
-        {
-          "id": "10-c-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/10-c-1",
-          "status": "complete"
         }]
     }
   },
@@ -1028,70 +692,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-5-2",
           "status": "notstarted"
-        },
-        {
-          "id": "11-6-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/11-6-1",
-          "status": "complete"
-        },
-        {
-          "id": "11-6-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/11-6-2",
-          "status": "complete"
-        },
-        {
-          "id": "11-7-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/11-7-1",
-          "status": "complete"
-        },
-        {
-          "id": "11-7-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/11-7-2",
-          "status": "complete"
-        },
-        {
-          "id": "11-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/11-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "11-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/11-b-1",
-          "status": "complete"
-        },
-        {
-          "id": "11-b-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/11-b-2",
-          "status": "complete"
-        },
-        {
-          "id": "11-c-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/11-c-1",
-          "status": "complete"
         }]
     }
   },
@@ -1156,54 +756,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/12-5-1",
           "status": "notstarted"
-        },
-        {
-          "id": "12-6-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/12-6-1",
-          "status": "complete"
-        },
-        {
-          "id": "12-7-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/12-7-1",
-          "status": "complete"
-        },
-        {
-          "id": "12-8-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/12-8-1",
-          "status": "complete"
-        },
-        {
-          "id": "12-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/12-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "12-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/12-b-1",
-          "status": "complete"
-        },
-        {
-          "id": "12-c-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/12-c-1",
-          "status": "complete"
         }]
     }
   },
@@ -1260,22 +812,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/13-3-2",
           "status": "notstarted"
-        },
-        {
-          "id": "13-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/13-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "13-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/13-b-1",
-          "status": "complete"
         }]
     }
   },
@@ -1316,54 +852,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/14-4-1",
           "status": "notstarted"
-        },
-        {
-          "id": "14-5-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/14-5-1",
-          "status": "complete"
-        },
-        {
-          "id": "14-6-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/14-6-1",
-          "status": "complete"
-        },
-        {
-          "id": "14-7-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/14-7-1",
-          "status": "complete"
-        },
-        {
-          "id": "14-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/14-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "14-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/14-b-1",
-          "status": "complete"
-        },
-        {
-          "id": "14-c-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/14-c-1",
-          "status": "complete"
         }]
     }
   },
@@ -1436,54 +924,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/15-6-1",
           "status": "notstarted"
-        },
-        {
-          "id": "15-7-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/15-7-1",
-          "status": "complete"
-        },
-        {
-          "id": "15-8-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/15-8-1",
-          "status": "complete"
-        },
-        {
-          "id": "15-9-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/15-9-1",
-          "status": "complete"
-        },
-        {
-          "id": "15-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/15-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "15-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/15-b-1",
-          "status": "complete"
-        },
-        {
-          "id": "15-c-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/15-c-1",
-          "status": "complete"
         }]
     }
   },
@@ -1614,38 +1054,6 @@
           "status": "notstarted"
         },
         {
-          "id": "16-7-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-7-1",
-          "status": "complete"
-        },
-        {
-          "id": "16-7-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-7-2",
-          "status": "complete"
-        },
-        {
-          "id": "16-8-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-8-1",
-          "status": "complete"
-        },
-        {
-          "id": "16-9-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-9-1",
-          "status": "complete"
-        },
-        {
           "id": "16-10-1",
           "title": "Nombre de cas avérés de meurtres, d’enlèvements, de disparitions forcées, de détentions arbitraires et d’actes de torture dont ont été victimes des journalistes, des personnes travaillant dans les médias, des syndicalistes et des défenseurs des droits de l’homme au cours des 12 mois précédents",
           "description": "",
@@ -1660,22 +1068,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-10-2",
           "status": "notstarted"
-        },
-        {
-          "id": "16-a-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-a-1",
-          "status": "complete"
-        },
-        {
-          "id": "16-b-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-b-1",
-          "status": "complete"
         }]
     }
   },
@@ -1748,134 +1140,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-6-1",
           "status": "notstarted"
-        },
-        {
-          "id": "17-6-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-6-2",
-          "status": "complete"
-        },
-        {
-          "id": "17-7-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-7-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-8-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-8-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-10-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-10-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-11-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-11-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-12-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-12-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-13-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-13-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-14-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-14-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-15-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-15-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-16-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-16-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-17-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-17-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-18-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-18-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-18-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-18-2",
-          "status": "complete"
-        },
-        {
-          "id": "17-18-3",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-18-3",
-          "status": "complete"
-        },
-        {
-          "id": "17-19-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-19-1",
-          "status": "complete"
-        },
-        {
-          "id": "17-19-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-19-2",
-          "status": "complete"
         }]
     }
   }]

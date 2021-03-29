@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210329104753">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210329181430">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -410,15 +410,15 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_2-1-1'
   data-id="2-1-1"
-  data-country="Canada, Provinces and Territories"
-  data-charttitle="Household food security by living arrangement"
+  data-country="Canada, Provinces & Territories"
+  data-charttitle="Proportion of household living with food insecurity"
   data-charttitles="null"
   data-measurementunit="Percentage"
   data-showdata="true"
   data-graphtype="bar"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Living arrangement&quot;,&quot;value&quot;:&quot;Total all living arrangements&quot;},{&quot;field&quot;:&quot;Household food security status&quot;,&quot;value&quot;:&quot;Food insecure moderate and severe&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Living arrangement&quot;,&quot;value&quot;:&quot;Total all living arrangements&quot;},{&quot;field&quot;:&quot;Household food security status&quot;,&quot;value&quot;:&quot;Food insecure, moderate and severe&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -454,7 +454,7 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Household food security by living arrangement</caption>
+      <caption>Proportion of household living with food insecurity</caption>
       <thead>
         
       </thead>
@@ -469,7 +469,7 @@ var translations = {
     <p>Source: Statistics Canada</p>
     
     
-    <p>Geographical Area: Canada, Provinces and Territories</p>
+    <p>Geographical Area: Canada, Provinces & Territories</p>
     
     
     <p>Unit of Measurement: Percentage</p>
@@ -519,7 +519,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Household food security by living arrangement</h4>
+          <h4 id="chart-heading" class="chart-title">Proportion of household living with food insecurity</h4>
           <div id="chart" class="plot-container">
             
 <canvas
@@ -755,13 +755,10 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>Source:</dt>
-        <dd>Statistics Canada</dd>
-        
 
         
         <dt>Geographical Area:</dt>
-        <dd>Canada, Provinces and Territories</dd>
+        <dd>Canada, Provinces & Territories</dd>
         
 
         
@@ -800,13 +797,10 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>Source:</dt>
-        <dd>Statistics Canada</dd>
-        
 
         
         <dt>Geographical Area:</dt>
-        <dd>Canada, Provinces and Territories</dd>
+        <dd>Canada, Provinces & Territories</dd>
         
 
         
@@ -923,7 +917,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>Canada, Provinces and Territories</p>
+            <p>Canada, Provinces &amp; Territories</p>
 
           
         </td>
@@ -1082,8 +1076,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/338654e6598a002a91c26a8a893ff078d8b75f53" target="_blank">
-                2021-03-23: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/7b67882cffa63a4711e8cc7bbd030f567837d876" target="_blank">
+                2021-03-29: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1229,7 +1223,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Target name </th>
         <td>
           
-            <p>Canadians have access to sufficient, affordable and nutritious food</p>
+            <p>No target</p>
 
           
         </td>
@@ -1271,7 +1265,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN designated tier </th>
         <td>
           
-            <p>1</p>
+            <p>false</p>
 
           
         </td>
@@ -1285,7 +1279,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">UN custodian agency </th>
         <td>
           
-            
+            <p>false</p>
 
           
         </td>
@@ -1304,10 +1298,6 @@ data-event-label="Change to Sources tab"
             
             
 
-            
-              <a href="https://www144.statcan.gc.ca/sdg-odd/index-eng.htm" target="_blank">
-                SDG Hub - Statistics Canada <span class="visuallyhidden">opens in a new window</span>
-              </a>
             
 
           
@@ -1428,272 +1418,6 @@ data-event-label="Change to Sources tab"
 
 
 
-  <div class="row no-gutters">
-  
-    
-    
-    <div class="col-md-6">
-      
-      <table class="table">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Statistics Canada</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Periodicity </th>
-        <td>
-          
-            <p>Occasional</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Earliest available data </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Geographical coverage </th>
-        <td>
-          
-            <p>Canada, Province and Territories</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Link to data source </th>
-        <td>
-          
-            
-            
-            
-            
-
-            
-              <a href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=3226" target="_blank">
-                https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=1310038501 <span class="visuallyhidden">opens in a new window</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Release date </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Next release </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Statistical classification </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Contact details </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      <tr>
-        <th scope="row">Other information </th>
-        <td>
-          
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</table>
-
-    </div>
-    
-  </div>
-
 
 </div>
 
@@ -1783,12 +1507,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210329104753'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210329181430'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210329104753"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210329181430"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
