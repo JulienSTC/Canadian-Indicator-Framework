@@ -43,12 +43,12 @@ create_pages:
     - folder: /
       layout: frontpage-alt
     - folder: /goals
-      layout: goal-by-target-vertical
+      layout: goals
     - folder: /reporting-status
       layout: reportingstatus
     - filename: indicators.json
       folder: /
-      layout: indicator-json
+      layout: goal-by-target-vertical
     - folder: /search
       layout: search
 
