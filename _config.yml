@@ -43,7 +43,7 @@ create_pages:
     - folder: /
       layout: frontpage-alt
     - folder: /goals
-      layout: goals
+      layout: goal-by-target-vertical
     - folder: /reporting-status
       layout: reportingstatus
     - filename: indicators.json
