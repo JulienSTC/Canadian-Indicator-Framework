@@ -35,9 +35,9 @@ environment: staging
 # Automatically create indicator pages, goal pages,
 # and some other required pages.
 create_indicators:
-  layout: goal-by-target-horizontal
+  layout: indicator
 create_goals:
-  layout: goal-by-target-vertical
+  layout: goal-by-target-horizontal
 create_pages:
   pages:
     - folder: /
