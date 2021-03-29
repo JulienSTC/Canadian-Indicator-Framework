@@ -620,22 +620,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/7-3-1",
           "status": "notstarted"
-        },
-        {
-          "id": "7-a-1",
-          "title": "Flux financiers internationaux à destination des pays en développement à l’appui de la recherche-développement dans le domaine des énergies propres et de la production d’énergie renouvelable, notamment au moyen de systèmes hybrides",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/7-a-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "7-b-1",
-          "title": "Investissements dans l’efficacité énergétique en proportion du PIB et montant de l’investissement étranger direct sous la forme de transferts financiers destinés à l’infrastructure et à la technologie nécessaires aux services de développement durable",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/7-b-1",
-          "status": "notstarted"
         }]
     }
   },
@@ -703,51 +687,51 @@
         },
         {
           "id": "8-6-1",
-          "title": "Proportion de jeunes (âgés de 15 à 24 ans) non scolarisés et sans emploi ni formation",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-7-1",
-          "title": "Proportion et nombre d’enfants âgés de 5 à 17 ans qui travaillent, par sexe et âge",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-7-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-8-1",
-          "title": "Fréquence des accidents du travail mortels et non mortels, par sexe et statut au regard de l’immigration",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-8-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-8-2",
-          "title": "Niveau de respect des droits du travail (liberté d’association et droit de négociation collective) au niveau national, eu égard aux textes de l’Organisation internationale du Travail (OIT) et à la législation nationale, par sexe et statut migratoire",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-8-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-9-1",
-          "title": "PIB directement tiré du tourisme, en proportion du PIB total et en taux de croissance",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-9-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-9-2",
-          "title": "Proportion d’emplois dans le secteur du tourisme durable, par rapport au nombre total d’emplois dans l’industrie du tourisme",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-9-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-10-1",
@@ -767,19 +751,19 @@
         },
         {
           "id": "8-a-1",
-          "title": "Engagements pris et décaissements effectués dans le cadre de l’initiative Aide pour le commerce",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-b-1",
-          "title": "Existence d’une stratégie nationale de promotion de l’emploi des jeunes, qu’il s’agisse d’une stratégie à part entière ou d’une composante d’une stratégie nationale de promotion de l’emploi, et application de cette stratégie",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-b-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -943,43 +927,43 @@
         },
         {
           "id": "10-7-1",
-          "title": "Dépenses de recrutement à la charge du salarié en proportion de son revenu annuel dans le pays de destination",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/10-7-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-7-2",
-          "title": "Nombre de pays ayant mis en œuvre des politiques migratoires bien gérées",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/10-7-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-a-1",
-          "title": "Proportion de lignes tarifaires concernées par les importations en provenance des pays les moins avancés et des pays en développement bénéficiant d’une franchise de droits",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/10-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-b-1",
-          "title": "Montant total des ressources allouées au développement, par pays bénéficiaire et donateur et type d’apport (aide publique au développement, investissement étranger direct et autres)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/10-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-c-1",
-          "title": "Coûts des envois de fonds en proportion du montant transféré",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/10-c-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -1047,67 +1031,67 @@
         },
         {
           "id": "11-6-1",
-          "title": "Proportion de déchets urbains solides régulièrement collectés et éliminés de façon adéquate sur le total des déchets urbains solides générés, par ville",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-6-2",
-          "title": "Niveau moyen annuel de particules fines (PM 2,5 et PM 10, par exemple) dans les villes, pondéré en fonction du nombre d’habitants",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-6-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-7-1",
-          "title": "Proportion moyenne de la surface urbaine construite consacrée à des espaces publics, par sexe, âge et situation au regard du handicap",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-7-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-7-2",
-          "title": "Proportion de personnes victimes de harcèlement physique ou sexuel, par sexe, âge, situation au regard du handicap et lieu des faits (au cours des 12 mois précédents)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-7-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-a-1",
-          "title": "Proportion d’habitants vivant dans des villes qui mettent en œuvre des plans de développement urbains et régionaux tenant compte des projections démographiques et des ressources nécessaires, selon la taille de la ville",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-b-1",
-          "title": "Nombre de pays ayant adopté et mis en place des stratégies nationales de réduction des risques de catastrophe, conformément au Cadre de Sendai pour la réduction des risques de catastrophe (2015‐2030)",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-b-2",
-          "title": "Proportion d’administrations locales ayant adopté et mis en place des stratégies locales de réduction des risques de catastrophe, conformément aux stratégies suivies à l’échelle nationale",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-b-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-c-1",
-          "title": "Proportion de l’assistance financière allouée aux pays les moins avancés qui est consacrée à la construction de bâtiments durables, résilients et économes en ressources et à la remise à niveau d’anciens bâtiments, en utilisant des matériaux locaux",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-c-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -1175,51 +1159,51 @@
         },
         {
           "id": "12-6-1",
-          "title": "Nombre de sociétés publiant des rapports sur la viabilité",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/12-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "12-7-1",
-          "title": "Nombre de pays mettant en œuvre des politiques et plans d’action en faveur des pratiques durables de passation des marchés publics",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/12-7-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "12-8-1",
-          "title": "Degré d’intégration de i) l’éducation à la citoyenneté mondiale et ii) l’éducation au développement durable (y compris l’éducation aux changements climatiques) dans a) les politiques nationales d’éducation, b) les programmes d’enseignement, c) la formation des enseignants et d) l’évaluation des étudiants",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/12-8-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "12-a-1",
-          "title": "Montant de l’aide apportée aux pays en développement au titre d’activités de recherche-développement consacrées aux modes de consommation et de production durables et aux technologies écologiquement rationnelles",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/12-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "12-b-1",
-          "title": "Nombre de stratégies ou de politiques en place dans le domaine du tourisme durable et de plans d’action mis en œuvre en appliquant des outils d’évaluation et de suivi convenus",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/12-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "12-c-1",
-          "title": "Montant des subventions aux combustibles fossiles par unité de PIB (production et consommation) et en proportion des dépenses nationales totales consacrées à ces combustibles",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/12-c-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -1279,19 +1263,19 @@
         },
         {
           "id": "13-a-1",
-          "title": "Montant (en dollars des États‐Unis) des ressources mobilisées par année, de 2020 à 2025, au titre de l’engagement de 100 milliards de dollars",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/13-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "13-b-1",
-          "title": "Nombre de pays les moins avancés et de petits États insulaires en développement recevant un appui spécialisé aux fins de la mise en place de moyens efficaces de planification et de gestion face aux changements climatiques, en privilégiant notamment les femmes, les jeunes, la population locale et les groupes marginalisés, et importance de cet appui en termes de financement, de technologie et de renforcement des capacités",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/13-b-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -1335,51 +1319,51 @@
         },
         {
           "id": "14-5-1",
-          "title": "Surface des aires marines protégées, en proportion de la surface totale",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/14-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "14-6-1",
-          "title": "Progrès réalisés par les pays dans la mise en œuvre des instruments internationaux visant à combattre la pêche illicite, non déclarée et non réglementée",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/14-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "14-7-1",
-          "title": "Proportion du PIB correspondant aux activités de pêche viables dans les petits États insulaires en développement, les pays les moins avancés et tous les pays",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/14-7-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "14-a-1",
-          "title": "Proportion du budget total de la recherche allouée à la recherche sur les techniques marines",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/14-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "14-b-1",
-          "title": "Progrès réalisés par les pays dans la mise en œuvre d’un cadre juridique, réglementaire, politique ou institutionnel reconnaissant et protégeant les droits d’accès des petits pêcheurs",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/14-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "14-c-1",
-          "title": "Nombre de pays progressant dans la ratification, l’acceptation et la mise en œuvre, au moyen de cadres juridiques, opérationnels et institutionnels, des instruments relatifs aux océans visant à donner effet aux dispositions du droit international énoncées dans la Convention des Nations Unies sur le droit de la mer qui concernent la conservation et de l’utilisation durable des océans et de leurs ressources",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/14-c-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -1455,51 +1439,51 @@
         },
         {
           "id": "15-7-1",
-          "title": "Proportion du braconnage et du trafic illicite dans le commerce des espèces de faune et de flore sauvages",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/15-7-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-8-1",
-          "title": "Proportion de pays ayant adopté une législation nationale pertinente et allouant des ressources suffisantes à la prévention ou au contrôle des espèces exotiques envahissantes",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/15-8-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-9-1",
-          "title": "Progrès accomplis dans la réalisation des objectifs nationaux établis conformément à l’objectif 2 d’Aichi pour la biodiversité du Plan stratégique pour la diversité biologique 2011‐2020",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/15-9-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-a-1",
-          "title": "Aide publique au développement et dépenses publiques consacrées à la préservation et à l’exploitation durable de la biodiversité et des écosystèmes",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/15-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-b-1",
-          "title": "Aide publique au développement et dépenses publiques consacrées à la préservation et à l’exploitation durable de la biodiversité et des écosystèmes",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/15-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-c-1",
-          "title": "Proportion du braconnage et du trafic illicite dans le commerce des espèces de faune et de flore sauvages",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/15-c-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -1631,35 +1615,35 @@
         },
         {
           "id": "16-7-1",
-          "title": "Répartition des postes (par sexe, âge, situation au regard du handicap et groupe de population) dans les institutions publiques (organes législatifs, services publics et organes judiciaires aux niveaux local et national), par rapport à la répartition nationale",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-7-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-7-2",
-          "title": "Proportion de la population qui estime que la prise de décisions est ouverte et réactive, par sexe, âge, situation au regard du handicap et groupe de la population",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-7-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-8-1",
-          "title": "Proportion de pays en développement qui sont membres d’organisations internationales et y disposent du droit de vote",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-8-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-9-1",
-          "title": "Proportion d’enfants de moins de 5 ans ayant été enregistrés par une autorité d’état civil, par âge",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-9-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-10-1",
@@ -1679,19 +1663,19 @@
         },
         {
           "id": "16-a-1",
-          "title": "Existence d’institutions nationales des droits de l’homme indépendantes et conformes aux Principes de Paris",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-b-1",
-          "title": "Proportion de la population ayant déclaré avoir personnellement fait l’objet de discrimination ou de harcèlement au cours des 12 mois précédents pour des motifs interdits par le droit international des droits de l’homme",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-b-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -1767,131 +1751,131 @@
         },
         {
           "id": "17-6-2",
-          "title": "Abonnements à une connexion à Internet à haut débit fixe pour 100 habitants, par vitesse de connexion",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-6-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-7-1",
-          "title": "Montant total des financements approuvés pour les pays en développement aux fins de la promotion de la mise au point, du transfert et de la diffusion de technologies respectueuses de l’environnement",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-7-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-8-1",
-          "title": "Proportion de la population utilisant Internet",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-8-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-10-1",
-          "title": "Moyenne mondiale pondérée des taux de droits de douane",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-10-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-11-1",
-          "title": "Part des pays en développement et des pays les moins avancés dans les exportations mondiales",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-11-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-12-1",
-          "title": "Droits de douane moyens appliqués aux pays en développement, aux pays les moins avancés et aux petits États insulaires en développement",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-12-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-13-1",
-          "title": "Tableau de bord macroéconomique",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-13-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-14-1",
-          "title": "Nombre de pays ayant mis en place des mécanismes pour renforcer la cohérence des politiques de développement durable",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-14-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-15-1",
-          "title": "Ampleur du recours par les prestataires de la coopération pour le développement à des cadres de résultats et à des outils de planification propres aux pays",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-15-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-16-1",
-          "title": "Nombre de pays faisant état de progrès dans la mise en place de cadres multipartites de suivi de l’efficacité du développement favorisant la réalisation des objectifs de développement durable",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-16-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-17-1",
-          "title": "Montant (en dollars des États-Unis) des ressources allouées : a) aux partenariats public-privé ; b) aux partenariats avec la société civile",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-17-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-18-1",
-          "title": "Proportion d’indicateurs du développement durable établis à l’échelle nationale, ventilés de manière exhaustive en fonction de la cible conformément aux Principes fondamentaux de la statistique officielle",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-18-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-18-2",
-          "title": "Nombre de pays dotés d’une législation nationale relative à la statistique conforme aux Principes fondamentaux de la statistique officielle",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-18-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-18-3",
-          "title": "Nombre de pays dotés d’un plan statistique national intégralement financé et en cours de mise en œuvre, par source de financement",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-18-3",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-19-1",
-          "title": "Valeur (en dollars) de l’ensemble des ressources allouées au renforcement des capacités statistiques des pays en développement",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-19-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-19-2",
-          "title": "Proportion de pays qui a) ont procédé à au moins un recensement de la population et du logement au cours des 10 dernières années, et b) ont atteint un taux d’enregistrement des naissances de 100 pour cent et un taux d’enregistrement des décès de 80 pour cent",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-19-2",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   }]
