@@ -2383,10 +2383,12 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .goal-banner h1, .goal-banner p {
   color: white; }
 
-.goal-1.goal-banner {
-  background-color: #E52B3D;
+.goal-banner {
   padding-top: 15px;
   padding-bottom: 15px; }
+
+.goal-1.goal-banner {
+  background-color: #E52B3D; }
 
 .goal-2.goal-banner {
   background-color: #DDA63A; }
