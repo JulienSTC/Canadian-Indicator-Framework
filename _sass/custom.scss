@@ -10,12 +10,17 @@
 .goal-banner h1, .goal-banner p {
     color: white;
 }
+
+// Narrowing goal banners
+.goal-banner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 // Goal banners - set background colours.
 
 .goal-1.goal-banner {
     background-color: #E52B3D;
-    padding-top: 15px;
-    padding-bottom: 15px;
+
 }
 .goal-2.goal-banner {
     background-color: #DDA63A;
