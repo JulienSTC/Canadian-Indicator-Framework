@@ -62,14 +62,6 @@
           "status": "notstarted"
         },
         {
-          "id": "3-1-2",
-          "title": "Proportion d’accouchements assistés par du personnel de santé qualifié",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-1-2",
-          "status": "notstarted"
-        },
-        {
           "id": "3-2-1",
           "title": "Taux de mortalité des enfants de moins de 5 ans",
           "description": "",
@@ -78,52 +70,12 @@
           "status": "notstarted"
         },
         {
-          "id": "3-2-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-2-2",
-          "status": "complete"
-        },
-        {
           "id": "3-3-1",
           "title": "Nombre de nouvelles infections à VIH pour 1 000 personnes séronégatives, par sexe, âge et appartenance à un groupe de population à risque",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-3-1",
           "status": "notstarted"
-        },
-        {
-          "id": "3-3-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-3-2",
-          "status": "complete"
-        },
-        {
-          "id": "3-3-3",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-3-3",
-          "status": "complete"
-        },
-        {
-          "id": "3-3-4",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-3-4",
-          "status": "complete"
-        },
-        {
-          "id": "3-3-5",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-3-5",
-          "status": "complete"
         },
         {
           "id": "3-4-1",
@@ -271,11 +223,11 @@
         
         {
           "id": "6-1-1",
-          "title": "Proportion de la population utilisant des services d’alimentation en eau potable gérés en toute sécurité",
-          "description": "",
+          "title": "Number of long-term drinking water advisories affecting First Nations drinking water systems",
+          "description": "This indicator monitor the number of long-term drinking water advisories on public systems on First Nations communities.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/6-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "6-2-1",

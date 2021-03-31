@@ -62,14 +62,6 @@
           "status": "notstarted"
         },
         {
-          "id": "3-1-2",
-          "title": "Proportion of births attended by skilled health personnel",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/3-1-2",
-          "status": "notstarted"
-        },
-        {
           "id": "3-2-1",
           "title": "Under‐five mortality rate",
           "description": "",
@@ -78,52 +70,12 @@
           "status": "notstarted"
         },
         {
-          "id": "3-2-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/3-2-2",
-          "status": "complete"
-        },
-        {
           "id": "3-3-1",
           "title": "Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/3-3-1",
           "status": "notstarted"
-        },
-        {
-          "id": "3-3-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/3-3-2",
-          "status": "complete"
-        },
-        {
-          "id": "3-3-3",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/3-3-3",
-          "status": "complete"
-        },
-        {
-          "id": "3-3-4",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/3-3-4",
-          "status": "complete"
-        },
-        {
-          "id": "3-3-5",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/3-3-5",
-          "status": "complete"
         },
         {
           "id": "3-4-1",
@@ -271,11 +223,11 @@
         
         {
           "id": "6-1-1",
-          "title": "Proportion of population using safely managed drinking water services",
-          "description": "",
+          "title": "Number of long-term drinking water advisories affecting First Nations drinking water systems",
+          "description": "This indicator monitor the number of long-term drinking water advisories on public systems on First Nations communities.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/6-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "6-2-1",
