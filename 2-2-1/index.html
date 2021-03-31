@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Indicator 2.2.1 - Agri-Environmental Sustainability Performance Indices - Indicators For The Sustainable Development Goals</title>
+    <title>Indicator 2.2.1 - Index of Agri-Environmental Sustainability - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210331120931">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210331122737">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -387,7 +387,7 @@ var translations = {
         <div>
           <h1>
             Indicator 2.2.1
-            <span class="lead-copy">Agri-Environmental Sustainability Performance Indices</span>
+            <span class="lead-copy">Index of Agri-Environmental Sustainability</span>
           </h1>
         </div>
       </div>
@@ -466,7 +466,7 @@ var translations = {
 
   <div id="datatableFooter">
     
-    <p>Source: Agriculture and Agri-Food Canada</p>
+    <p>Source: Agriculture and Agri-Food Canada and Statistics Canada Census of Agriculture</p>
     
     
     <p>Geographical Area: Canada</p>
@@ -755,9 +755,6 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>Source:</dt>
-        <dd>Agriculture and Agri-Food Canada</dd>
-        
 
         
         <dt>Geographical Area:</dt>
@@ -799,9 +796,6 @@ opensdg.chartConfigAlter(function(config, info) {
 <div id="selectionTableFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
-        
-        <dt>Source:</dt>
-        <dd>Agriculture and Agri-Food Canada</dd>
         
 
         
@@ -895,22 +889,6 @@ data-event-label="Change to indicator.sources tab"
   
   
   
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Target name </th>
-        <td>
-          
-            <p>By 2030, support improvement in the environmental performance of the agriculture sector by achieving a score of 71 or higher for the Index of Agri-Environmental Sustainability</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
   
   
   
@@ -951,7 +929,20 @@ data-event-label="Change to indicator.sources tab"
   
       
         
+      
+      
+      <tr>
+        <th scope="row">Indicator description </th>
+        <td>
           
+            <p>Agriculture and Agri-Food Canada has developed a set of science-based agri-environmental indicators (AEIs) that integrate information on soils, climate and topography with statistics on land use and crop and livestock management practices. The indicators provide valuable information on the overall environmental risks and conditions in agriculture and how these change over time. The indicators are designed to be sensitive to the considerable differences in conditions and in the commodity mix across Canada, which are reflected in the significant variations in environmental performance between regions.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -989,7 +980,20 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Calculations </th>
+        <td>
           
+            <p>The agri-environmental performance index shows environmental performance state and trends over time, based on weighting the percentage of agricultural land in each indicator class, such that the index ranges from 0 (all land in the most undesirable category) to 100 (all land in the most desirable category). The equation is simply “(% in poor class multiplied by .25) plus (% in moderate class multiplied by .5) plus (% in good class multiplied by .75) plus (% in desired class).” As the percentage of land in the “at risk” class is multiplied by zero, it is not included in the algorithm.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
           
@@ -1001,10 +1005,36 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Comments and limitations </th>
+        <td>
           
+            <p>The AEIs are calculated using mathematical models or formulas that integrate information on soil, climate and landscape, mainly derived from the Soil Landscapes of Canada (Soil Landscapes of Canada Working Group, 2007), with information on crops, land use, land management and livestock from the Census of Agriculture and other custom data sets from provincial agencies, private sector, and remote sensing. Results are generalized to provide a snapshot of an environmental condition on the landscape at a given time. The calculations and models for each indicator differ considerably, but all mathematical models and formulas have been adapted or developed from solid scientific knowledge and understanding of the interactions between various aspects of agricultural practices and the environment.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
+      
+      
+      <tr>
+        <th scope="row">Rational and interpretation </th>
+        <td>
           
+            <p>The indices are divided in five “health classes”, defined as: 80-100 Desired; 60-79 Good; 40-59 Moderate; 20-39 Poor; 0-19 At risk.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -1050,8 +1080,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/1879b6be33108a01ac22c166afa1c6bec08e0591" target="_blank">
-                2021-03-29: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/6a43b0cf996ac5faf1e874ee69ab315caa077ba8" target="_blank">
+                2021-03-31: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1170,230 +1200,6 @@ data-event-label="Change to indicator.sources tab"
 
 
 
-  <div class="row no-gutters">
-  
-    
-    
-    <div class="col-md-6">
-      
-      <table class="table">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Agriculture and Agri-Food Canada</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Periodicity </th>
-        <td>
-          
-            <p>Occasional</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-          
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Geographical coverage </th>
-        <td>
-          
-            <p>Canada</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Link to data source </th>
-        <td>
-          
-            
-            
-            
-            
-
-            
-              <a href="https://www.agr.gc.ca/eng/agriculture-and-the-environment/agricultural-practices/environmental-sustainability-of-canadian-agriculture-agri-environmental-indicator-report-series-report-4/?id=1467307820931" target="_blank">
-                https://www.agr.gc.ca/eng/agriculture-and-the-environment/agricultural-practices/environmental-sustainability-of-canadian-agriculture-agri-environmental-indicator-report-series-report-4/?id=1467307820931 <span class="visuallyhidden">opens in a new window</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-      
-      
-      
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Release date </th>
-        <td>
-          
-            <p>2016-10-19</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-          
-      
-        
-          
-      
-        
-          
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</table>
-
-    </div>
-    
-  </div>
-
 
       </article>
     </div>
@@ -1484,12 +1290,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210331120931'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210331122737'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210331120931"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210331122737"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
