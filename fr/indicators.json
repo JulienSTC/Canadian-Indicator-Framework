@@ -32,7 +32,7 @@
         {
           "id": "2-1-1",
           "title": "Prevalence of food insecurity",
-          "description": "",
+          "description": "This variable is based on a set of 18 questions and indicates whether households both with and without children were able to afford the food they needed in the previous 12 months.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/2-1-1",
           "status": "complete"
@@ -79,11 +79,11 @@
         },
         {
           "id": "3-2-2",
-          "title": "Taux de mortalité néonatale",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-2-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-3-1",
@@ -95,35 +95,35 @@
         },
         {
           "id": "3-3-2",
-          "title": "Incidence de la tuberculose pour 100 000 habitants",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-3-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-3-3",
-          "title": "Incidence du paludisme pour 1 000 habitants",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-3-3",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-3-4",
-          "title": "Incidence de l’hépatite B pour 100 000 habitants",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-3-4",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-3-5",
-          "title": "Nombre de personnes pour lesquelles des interventions contre les maladies tropicales négligées sont nécessaires",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-3-5",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-4-1",
@@ -135,11 +135,11 @@
         },
         {
           "id": "3-4-2",
-          "title": "Taux de mortalité par suicide",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-4-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-5-1",
@@ -151,11 +151,11 @@
         },
         {
           "id": "3-5-2",
-          "title": "Abus d’alcool, défini en fonction du contexte national par la consommation d’alcool pur (en litres) par habitant (âgé de 15 ans ou plus) au cours d’une année civile",
+          "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-5-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-6-1",
@@ -174,14 +174,6 @@
           "status": "notstarted"
         },
         {
-          "id": "3-7-2",
-          "title": "Taux de natalité chez les adolescentes (10 à 14 ans et 15 à 19 ans) pour 1 000 adolescentes du même groupe d’âge",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-7-2",
-          "status": "notstarted"
-        },
-        {
           "id": "3-8-1",
           "title": "Couverture des services de santé essentiels (définie comme la couverture moyenne des services essentiels mesurée à partir des interventions de référence concernant notamment la santé procréative, maternelle, néonatale et infantile, les maladies infectieuses, les maladies non transmissibles, la capacité d’accueil et l’accessibilité des services pour la population en général et les plus défavorisés en particulier)",
           "description": "",
@@ -190,35 +182,11 @@
           "status": "notstarted"
         },
         {
-          "id": "3-8-2",
-          "title": "Proportion de la population consacrant une grande part de ses dépenses ou de ses revenus domestiques aux services de soins de santé",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-8-2",
-          "status": "notstarted"
-        },
-        {
           "id": "3-9-1",
           "title": "Taux de mortalité attribuable à la pollution de l’air dans les habitations et à la pollution de l’air ambiant",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-9-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "3-9-2",
-          "title": "Taux de mortalité attribuable à l’insalubrité de l’eau, aux déficiences du système d’assainissement et au manque d’hygiène (accès à des services WASH inadéquats)",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-9-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "3-9-3",
-          "title": "Taux de mortalité attribuable à un empoisonnement accidentel",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-9-3",
           "status": "notstarted"
         }]
     }
@@ -270,27 +238,11 @@
           "status": "notstarted"
         },
         {
-          "id": "5-2-2",
-          "title": "Proportion de femmes et de filles âgées de 15 ans ou plus victimes de violences sexuelles infligées au cours des 12 mois précédents par une personne autre que leur partenaire intime, par âge et lieu des faits",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/5-2-2",
-          "status": "notstarted"
-        },
-        {
           "id": "5-3-1",
           "title": "Proportion de femmes âgées de 20 à 24 ans qui étaient mariées ou en couple avant l’âge de 15 ans ou de 18 ans",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/5-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "5-3-2",
-          "title": "Proportion de filles et de femmes âgées de 15 à 49 ans ayant subi une mutilation ou une ablation génitale, par âge",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/5-3-2",
           "status": "notstarted"
         },
         {
@@ -307,14 +259,6 @@
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/5-5-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "5-5-2",
-          "title": "Proportion de femmes occupant des postes de direction",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/5-5-2",
           "status": "notstarted"
         }]
     }
@@ -348,46 +292,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/6-3-1",
           "status": "notstarted"
-        },
-        {
-          "id": "6-3-2",
-          "title": "Proportion des plans d’eau dont la qualité de l’eau ambiante est bonne",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/6-3-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "6-4-1",
-          "title": "Variation de l’efficacité de l’utilisation des ressources en eau",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/6-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "6-4-2",
-          "title": "Niveau de stress hydrique : prélèvements d’eau douce en proportion des ressources en eau douce disponibles",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/6-4-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "6-5-1",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/6-5-1",
-          "status": "complete"
-        },
-        {
-          "id": "6-5-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/6-5-2",
-          "status": "complete"
         }]
     }
   },
@@ -406,19 +310,19 @@
           "status": "complete"
         },
         {
-          "id": "7-1-2",
+          "id": "7-2-1",
           "title": "Total energy consumption",
           "description": "",
           "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/7-1-2",
+          "href": "/Canadian-Indicator-Framework/fr/7-2-1",
           "status": "complete"
         },
         {
-          "id": "7-2-1",
+          "id": "7-3-1",
           "title": "Proportion of electricity generated from renewable and non-greenhouse gas emitting sources",
           "description": "",
           "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/7-2-1",
+          "href": "/Canadian-Indicator-Framework/fr/7-3-1",
           "status": "complete"
         }]
     }
@@ -462,44 +366,12 @@
           "status": "notstarted"
         },
         {
-          "id": "8-4-2",
-          "title": "Consommation matérielle nationale, consommation matérielle nationale par habitant et consommation matérielle nationale par unité de PIB",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-4-2",
-          "status": "notstarted"
-        },
-        {
           "id": "8-5-1",
           "title": "",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-5-1",
           "status": "complete"
-        },
-        {
-          "id": "8-5-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-5-2",
-          "status": "complete"
-        },
-        {
-          "id": "8-10-1",
-          "title": "a) Nombre de succursales de banques commerciales pour 100 000 adultes et b) nombre de distributeurs automatiques de billets pour 100 000 adultes",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-10-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "8-10-2",
-          "title": "Proportion d’adultes (15 ans ou plus) possédant un compte dans une banque ou dans une autre institution financière ou faisant appel à des services monétaires mobiles",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/8-10-2",
-          "status": "notstarted"
         }]
     }
   },
@@ -518,14 +390,6 @@
           "status": "notstarted"
         },
         {
-          "id": "9-1-2",
-          "title": "Nombre de passagers et volume de fret transportés, par mode de transport",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/9-1-2",
-          "status": "notstarted"
-        },
-        {
           "id": "9-2-1",
           "title": "Valeur ajoutée dans l’industrie manufacturière, en proportion du PIB et par habitant",
           "description": "",
@@ -534,27 +398,11 @@
           "status": "notstarted"
         },
         {
-          "id": "9-2-2",
-          "title": "Emploi dans l’industrie manufacturière, en proportion de l’emploi total",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/9-2-2",
-          "status": "notstarted"
-        },
-        {
           "id": "9-3-1",
           "title": "Proportion des petites entreprises dans la valeur ajoutée totale de l’industrie",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/9-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "9-3-2",
-          "title": "Proportion des petites entreprises industrielles ayant contracté un prêt ou une ligne de crédit",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/9-3-2",
           "status": "notstarted"
         },
         {
@@ -571,14 +419,6 @@
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/9-5-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "9-5-2",
-          "title": "Nombre de chercheurs (équivalent plein temps) par million d’habitants",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/9-5-2",
           "status": "notstarted"
         }]
     }
@@ -611,22 +451,6 @@
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/10-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "10-4-1",
-          "title": "Part du travail dans le PIB, y compris les salaires et les transferts sociaux",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/10-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "10-5-1",
-          "title": "Indicateurs de solidité financière",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/10-5-1",
           "status": "notstarted"
         }]
     }
@@ -662,14 +486,6 @@
           "status": "notstarted"
         },
         {
-          "id": "11-3-2",
-          "title": "Proportion de villes dotées d’une structure de participation directe de la société civile à la gestion et à l’aménagement des villes, fonctionnant de façon régulière et démocratique",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/11-3-2",
-          "status": "notstarted"
-        },
-        {
           "id": "11-4-1",
           "title": "Dépenses totales (publiques et privées) par habitant consacrées à la préservation, à la protection et à la conservation de l’ensemble du patrimoine culturel et naturel, par type de patrimoine (culturel, naturel, mixte, inscrit au patrimoine mondial), niveau d’administration (national, régional et local/municipal), type de dépense (dépenses de fonctionnement/investissement) et type de financement privé (dons en nature, secteur privé à but non lucratif, parrainage)",
           "description": "",
@@ -683,14 +499,6 @@
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-5-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "11-5-2",
-          "title": "Pertes économiques directes mesurées par rapport au PIB mondial, dommages causés aux infrastructures critiques et nombre de perturbations des services de base résultant de catastrophes",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/11-5-2",
           "status": "notstarted"
         }]
     }
@@ -718,43 +526,11 @@
           "status": "notstarted"
         },
         {
-          "id": "12-2-2",
-          "title": "Consommation matérielle nationale, consommation matérielle nationale par habitant et consommation matérielle nationale par unité de PIB",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/12-2-2",
-          "status": "notstarted"
-        },
-        {
           "id": "12-3-1",
           "title": "Indice mondial des pertes alimentaires",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/12-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "12-4-1",
-          "title": "Nombre de parties aux accords internationaux multilatéraux sur l’environnement relatifs aux substances chimiques et autres déchets dangereux ayant satisfait à leurs engagements et obligations en communiquant les informations requises par chaque accord",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/12-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "12-4-2",
-          "title": "Production de déchets dangereux par habitant et proportion de déchets dangereux traités, par type de traitement",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/12-4-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "12-5-1",
-          "title": "Taux de recyclage national, tonnes de matériaux recyclés",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/12-5-1",
           "status": "notstarted"
         }]
     }
@@ -836,22 +612,6 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/14-2-1",
           "status": "notstarted"
-        },
-        {
-          "id": "14-3-1",
-          "title": "Acidité moyenne des mers (pH) mesurée à plusieurs points de prélèvement représentatifs",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/14-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "14-4-1",
-          "title": "Proportion de stocks de poissons dont le niveau est biologiquement viable",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/14-4-1",
-          "status": "notstarted"
         }]
     }
   },
@@ -867,14 +627,6 @@
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/15-1-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "15-1-2",
-          "title": "Proportion des sites importants pour la biodiversité terrestre et la biodiversité des eaux douces qui se trouvent dans des aires protégées (par type d’écosystème)",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/15-1-2",
           "status": "notstarted"
         },
         {
@@ -899,14 +651,6 @@
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/15-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "15-4-2",
-          "title": "Indice de couvert végétal montagneux",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/15-4-2",
           "status": "notstarted"
         },
         {
@@ -942,51 +686,11 @@
           "status": "notstarted"
         },
         {
-          "id": "16-1-2",
-          "title": "Nombre de décès liés à des conflits pour 100 000 habitants, par sexe, âge et cause",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-1-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-1-3",
-          "title": "Proportion de la population victime, au cours des 12 mois précédents : a) de violences physiques ; b) de violences psychologiques ; c) de violences sexuelles",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-1-3",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-1-4",
-          "title": "Nombre de personnes considérant qu’il n’y a pas de danger à se déplacer seules à pied dans leur zone de résidence, en proportion de la population totale",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-1-4",
-          "status": "notstarted"
-        },
-        {
           "id": "16-2-1",
           "title": "Proportion des enfants âgés de 1 à 17 ans ayant subi des châtiments corporels ou des agressions psychologiques infligés par une personne s’occupant d’eux au cours du mois précédent",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-2-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-2-2",
-          "title": "Nombre de victimes de la traite d’êtres humains pour 100 000 habitants, par sexe, âge et forme d’exploitation",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-2-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-2-3",
-          "title": "Proportion de jeunes femmes et hommes de 18 à 29 ans ayant été victimes de violences sexuelles avant l’âge de 18 ans",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-2-3",
           "status": "notstarted"
         },
         {
@@ -998,27 +702,11 @@
           "status": "notstarted"
         },
         {
-          "id": "16-3-2",
-          "title": "Proportion de la population carcérale en instance de jugement",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-3-2",
-          "status": "notstarted"
-        },
-        {
           "id": "16-4-1",
           "title": "Valeur totale des flux financiers illicites entrants et sortants (en dollars des États‐Unis courants)",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-4-2",
-          "title": "Proportion des armes saisies, trouvées ou rendues volontairement dont la provenance ou l’utilisation illicite a été retracée ou établie par des autorités compétentes, conformément aux instruments internationaux",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-4-2",
           "status": "notstarted"
         },
         {
@@ -1030,43 +718,11 @@
           "status": "notstarted"
         },
         {
-          "id": "16-5-2",
-          "title": "Proportion d’entreprises ayant eu au moins une fois affaire à un agent public auquel elles ont versé un pot‐de‐vin ou qui leur a demandé un pot‐de‐vin au cours des 12 mois précédents",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-5-2",
-          "status": "notstarted"
-        },
-        {
           "id": "16-6-1",
           "title": "Dépenses publiques primaires en proportion du budget initial approuvé, par secteur (ou par code budgétaire ou autre critère similaire)",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-6-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-6-2",
-          "title": "Proportion de la population dont la dernière expérience avec les services publics a été satisfaisante",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-6-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-10-1",
-          "title": "Nombre de cas avérés de meurtres, d’enlèvements, de disparitions forcées, de détentions arbitraires et d’actes de torture dont ont été victimes des journalistes, des personnes travaillant dans les médias, des syndicalistes et des défenseurs des droits de l’homme au cours des 12 mois précédents",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-10-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "16-10-2",
-          "title": "Nombre de pays qui adoptent et mettent en œuvre des dispositions constitutionnelles, réglementaires et politiques pour garantir l’accès public à l’information",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/16-10-2",
           "status": "notstarted"
         }]
     }
@@ -1086,59 +742,11 @@
           "status": "notstarted"
         },
         {
-          "id": "17-1-2",
-          "title": "Proportion du budget national financé par les impôts nationaux",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-1-2",
-          "status": "notstarted"
-        },
-        {
           "id": "17-2-1",
           "title": "Aide publique au développement nette, montant total et montant alloué aux pays les moins avancés, en proportion du revenu national brut (RNB) des pays donateurs membres du Comité d’aide au développement de l’Organisation de coopération et de développement économiques (OCDE)",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-2-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-3-1",
-          "title": "Investissements étrangers directs, aide publique au développement et coopération Sud-Sud, en proportion du budget national total",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-3-2",
-          "title": "Volume des envois de fonds de travailleurs migrants (en dollars des États‐Unis) en proportion du PIB total",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-3-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-4-1",
-          "title": "Service de la dette en proportion des exportations de biens et services",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-5-1",
-          "title": "Nombre de pays qui adoptent et mettent en œuvre des dispositifs visant à encourager l’investissement en faveur des pays les moins avancés",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-5-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "17-6-1",
-          "title": "Nombre d’accords et de programmes de coopération scientifique et technologique entre pays, par type de coopération",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/17-6-1",
           "status": "notstarted"
         }]
     }

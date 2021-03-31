@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210331011510">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210331111339">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -466,7 +466,7 @@ var translations = {
 
   <div id="datatableFooter">
     
-    <p>La source: Statistics Canada</p>
+    <p>La source: Statistics Canada, Canadian Community Health Survey</p>
     
     
     <p>Zone géographique: Canada, Provinces & Territories</p>
@@ -945,7 +945,20 @@ data-event-label="Change to indicator.sources tab"
   
       
         
+      
+      
+      <tr>
+        <th scope="row">Description de l&#39;indicateur </th>
+        <td>
           
+            <p>This variable is based on a set of 18 questions and indicates whether households both with and without children were able to afford the food they needed in the previous 12 months.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -983,7 +996,20 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Calculs </th>
+        <td>
           
+            <p>This table presents estimates from two-year combined data. These estimates are less current than annual estimates, but have higher precision given the larger sample (less variability).</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
           
@@ -995,10 +1021,36 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Commentaires et limitations </th>
+        <td>
           
+            <p>In 2020, Health Canada updated its recommended derivation of food insecurity measures to include the level “marginal food insecurity”. Historically, this category was considered part of the population defined as “food secure”. Users wishing to compare estimates from this table to earlier cycles of the survey that do not include “marginal food insecurity” should add the totals of the categories “marginally insecure” and “food secure” from this table to compare to the “food secure” category of the earlier table. For international comparability, food insecurity is typically considered to be the combination of “moderate” and “severe” insecurity.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
+      
+      
+      <tr>
+        <th scope="row">metadata_fields.rationale_interpretation </th>
+        <td>
           
+            <p>The levels of food security are defined as: 1- Food secure: No indication of difficulty with income-related food access; 2- Marginally food insecure: Exactly one indication of difficulty with income-related food access; 3- Moderately food insecure: Indication of compromise in quality and/or quantity of food consumed; 4- Severely food insecure: Indication of reduced food intake and disrupted eating patterns.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
       
@@ -1044,8 +1096,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/7b67882cffa63a4711e8cc7bbd030f567837d876" target="_blank">
-                2021-03-29: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/424297cd4ca272f089574cf755f14c0ae565f9b3" target="_blank">
+                2021-03-31: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1254,12 +1306,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210331011510'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210331111339'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210331011510"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210331111339"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
