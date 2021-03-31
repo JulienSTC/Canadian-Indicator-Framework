@@ -1,0 +1,11 @@
+
+// Goal banners - set background colours.
+
+.goal-1.heading {
+  background-color: white;
+  border-bottom: 15px solid #E52B3D;
+  border-top: 15px solid #E52B3D; }
+
+.goal-1.goal-indicators div span {
+  border-color: #c51829;
+  color: #c51829; }
