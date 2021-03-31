@@ -2379,3 +2379,9 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 
 .navbar-brand img {
   width: 50%; }
+
+.goal-1.goal-banner {
+  background-color: #E52B3D; }
+
+.goal-1.goal-banner h1, .goal-banner p {
+  color: white; }
