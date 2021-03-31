@@ -86,28 +86,12 @@
           "status": "notstarted"
         },
         {
-          "id": "3-4-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-4-2",
-          "status": "complete"
-        },
-        {
           "id": "3-5-1",
           "title": "Couverture des interventions thérapeutiques (services pharmacologiques, psychosociaux, services de désintoxication et de postcure) pour les troubles liés à la toxicomanie",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-5-1",
           "status": "notstarted"
-        },
-        {
-          "id": "3-5-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/3-5-2",
-          "status": "complete"
         },
         {
           "id": "3-6-1",
@@ -239,11 +223,11 @@
         },
         {
           "id": "6-3-1",
-          "title": "Proportion des eaux usées traitées sans danger",
-          "description": "",
+          "title": "Water use growth rate",
+          "description": "This indicator measure the growth rate in water use in different sector of the economy as well as by households.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/6-3-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },

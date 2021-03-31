@@ -86,28 +86,12 @@
           "status": "notstarted"
         },
         {
-          "id": "3-4-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/3-4-2",
-          "status": "complete"
-        },
-        {
           "id": "3-5-1",
           "title": "Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/3-5-1",
           "status": "notstarted"
-        },
-        {
-          "id": "3-5-2",
-          "title": "",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/3-5-2",
-          "status": "complete"
         },
         {
           "id": "3-6-1",
@@ -239,11 +223,11 @@
         },
         {
           "id": "6-3-1",
-          "title": "Proportion of wastewater safely treated",
-          "description": "",
+          "title": "Water use growth rate",
+          "description": "This indicator measure the growth rate in water use in different sector of the economy as well as by households.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/6-3-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
