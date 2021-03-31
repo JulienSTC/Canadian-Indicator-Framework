@@ -135,11 +135,11 @@
         
         {
           "id": "4-1-1",
-          "title": "Proportion d’enfants et de jeunes a) en cours élémentaire ; b) en fin de cycle primaire ; c) en fin de premier cycle du secondaire qui maîtrisent au moins les normes d’aptitudes minimales en i) lecture et ii) mathématiques, par sexe",
-          "description": "",
+          "title": "High school completion rate",
+          "description": "Indicator description goes here",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/4-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "4-2-1",
