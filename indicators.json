@@ -375,11 +375,11 @@
         },
         {
           "id": "10-2-1",
-          "title": "Proportion of people living below 50 per cent of median income, by sex, age and persons with disabilities",
-          "description": "",
+          "title": "Gini Coefficient",
+          "description": "The Gini coefficient is a number between zero and one that measures the relative degree of inequality in the distribution of income. The coefficient would register zero (minimum inequality) for a population in which each person received exactly the same adjusted household income and it would register a coefficient of one (maximum inequality) if one person received all the adjusted household income and the rest received none. Even though a single Gini coefficient value has no simple interpretation, comparisons of the level over time or between populations are very straightforward: the higher the coefficient, the higher the inequality of the distribution.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/10-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "10-3-1",
