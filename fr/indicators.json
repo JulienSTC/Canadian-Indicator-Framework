@@ -55,11 +55,11 @@
         
         {
           "id": "3-1-1",
-          "title": "Taux de mortalité maternelle",
-          "description": "",
+          "title": "Proportion of the population (aged 15+) who are current cigarette smokers",
+          "description": "Indicator description goes here",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-2-1",
