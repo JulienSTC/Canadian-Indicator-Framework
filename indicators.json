@@ -271,11 +271,11 @@
         
         {
           "id": "8-1-1",
-          "title": "Annual growth rate of real GDP per capita",
-          "description": "",
+          "title": "Unemployment rate",
+          "description": "The unemployment rate is the number of unemployed persons expressed as a percentage of the labour force.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/8-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-2-1",
@@ -287,11 +287,11 @@
         },
         {
           "id": "8-3-1",
-          "title": "Proportion of informal employment in non‐agriculture employment, by sex",
-          "description": "",
+          "title": "Proportion of youth not in education, employment or training",
+          "description": "Description",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/8-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-4-1",
@@ -455,11 +455,11 @@
         
         {
           "id": "12-1-1",
-          "title": "Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies",
-          "description": "",
+          "title": "Proportion of new light duty vehicle registrations that are zero-emission vehicles",
+          "description": "The indicator represents the proportion of new registration that was for zero-emission vehicles, by geography.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/12-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "12-2-1",

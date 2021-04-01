@@ -271,11 +271,11 @@
         
         {
           "id": "8-1-1",
-          "title": "Taux de croissance annuelle du PIB réel par habitant",
-          "description": "",
+          "title": "Unemployment rate",
+          "description": "The unemployment rate is the number of unemployed persons expressed as a percentage of the labour force.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-2-1",
@@ -287,11 +287,11 @@
         },
         {
           "id": "8-3-1",
-          "title": "Proportion de l’emploi informel dans les secteurs non agricoles, par sexe",
-          "description": "",
+          "title": "Proportion of youth not in education, employment or training",
+          "description": "Description",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-4-1",
@@ -455,11 +455,11 @@
         
         {
           "id": "12-1-1",
-          "title": "Nombre de pays ayant adopté des plans d’action nationaux relatifs aux modes de consommation et de production durables ou ayant inscrit cette question parmi les priorités ou objectifs de leurs politiques nationales",
-          "description": "",
+          "title": "Proportion of new light duty vehicle registrations that are zero-emission vehicles",
+          "description": "The indicator represents the proportion of new registration that was for zero-emission vehicles, by geography.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/12-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "12-2-1",
