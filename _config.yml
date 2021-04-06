@@ -146,7 +146,7 @@ hide_empty_metadata: true
 
 # Set a base for all goal image URLs. Note that the full goal image path will be
 # the base below, completed with: /[language]/[number].png (eg, /fr/6.png).
-goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
+goal_image_base: https://julienstc.github.io/Canadian-Indicator-Framework/assets/img
 
 # Tell Jekyll to use the Remote Theme plugin.
 plugins:
