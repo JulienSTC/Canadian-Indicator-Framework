@@ -91,7 +91,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Indicator 11.6.1 -  - Indicators For The Sustainable Development Goals</title>
+    <title>Indicator 11.6.1 - Total waste disposal per capita per day - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210406130043">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210406130743">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -387,7 +387,7 @@ var translations = {
         <div>
           <h1>
             Indicator 11.6.1
-            <span class="lead-copy"></span>
+            <span class="lead-copy">Total waste disposal per capita per day</span>
           </h1>
         </div>
       </div>
@@ -410,15 +410,15 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_11-6-1'
   data-id="11-6-1"
-  data-country="Statistics Canada"
-  data-charttitle=""
+  data-country="Canada, Provinces & Territories"
+  data-charttitle="Waste disposal per capita"
   data-charttitles="null"
-  data-measurementunit=""
+  data-measurementunit="kilograms"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
-  data-showmap=""
-  data-startvalues="null"
+  data-showmap="false"
+  data-startvalues="[{&quot;field&quot;:&quot;Geography&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Sources of waste for disposal&quot;,&quot;value&quot;:&quot;All sources of waste for disposal&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -454,7 +454,7 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption></caption>
+      <caption>Waste disposal per capita</caption>
       <thead>
         
       </thead>
@@ -466,7 +466,13 @@ var translations = {
 
   <div id="datatableFooter">
     
+    <p>Source:  Statistics Canada </p>
     
+    
+    <p>Geographical Area: Canada, Provinces & Territories</p>
+    
+    
+    <p>Unit of Measurement: kilograms</p>
     
     
   </div>
@@ -513,7 +519,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title"></h4>
+          <h4 id="chart-heading" class="chart-title">Waste disposal per capita</h4>
           <div id="chart" class="plot-container">
             
 <canvas
@@ -756,9 +762,18 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-
+        <dt>Source:</dt>
+        <dd> Statistics Canada , </dd>
         
 
+        
+        <dt>Geographical Area:</dt>
+        <dd>Canada, Provinces & Territories</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>kilograms</dd>
         
 
         
@@ -792,9 +807,18 @@ opensdg.chartConfigAlter(function(config, info) {
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-
+        <dt>Source:</dt>
+        <dd> Statistics Canada , </dd>
         
 
+        
+        <dt>Geographical Area:</dt>
+        <dd>Canada, Provinces & Territories</dd>
+        
+
+        
+        <dt>Unit of Measurement:</dt>
+        <dd>kilograms</dd>
         
 
         
@@ -886,7 +910,103 @@ data-event-label="Change to indicator.sources tab"
   
       
         
+      
+      
+      <tr>
+        <th scope="row">Indicator name </th>
+        <td>
           
+            <p>Total waste disposal per capita</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Target </th>
+        <td>
+          
+            <p>No specific target</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Indicator description </th>
+        <td>
+          
+            <p>The indicator calculates the amount of waste disposal (in kg) per capita by residential and non-residential sources.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Geographical coverage </th>
+        <td>
+          
+            <p>Canada, Provinces &amp; Territories</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Unit of measurement </th>
+        <td>
+          
+            <p>kilograms</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Calculations </th>
+        <td>
+          
+            <p>The amount of waste disposal is converted in kilograms and divided by the population estimates to obtain an amount per capita.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
           
@@ -898,40 +1018,85 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Comments and limitations </th>
+        <td>
           
+            <p>Total amount of non-hazardous waste disposal in public and private waste disposal facilities includes waste that is exported out of the source province or out of the country for disposal. This does not include waste disposal in hazardous waste disposal facilities or waste managed by the waste generator on site.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Data last updated </th>
+        <td>
           
+            
+            
+            
+            
+
+            
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/b9b2084cc6d33fec36ecbdafed8e88686016a6d8" target="_blank">
+                2021-04-01: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
-          
+      
+      
+      
+  
       
         
+      
+      
+      <tr>
+        <th scope="row">Metadata last updated </th>
+        <td>
           
+            
+            
+            
+            
+
+            
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/dac9851861a2b755592929484962f8a162eb0948" target="_blank">
+                2021-04-06: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
-          
       
-        
-          
       
-        
-          
       
-        
-          
-      
-        
-          
-      
-        
-          
-      
-        
-          
+  
   
   
   
@@ -1035,6 +1200,387 @@ data-event-label="Change to indicator.sources tab"
 
 
 
+  <div class="row no-gutters">
+  
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 1</h4>
+      
+      <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Statistics Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Periodicity </th>
+        <td>
+          
+            <p>Every 2 years</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Geographical coverage </th>
+        <td>
+          
+            <p>Canada, Provinces &amp; Territories</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="https://doi.org/10.25318/3810003201-eng" target="_blank">
+                Statistics Canada. Table 38-10-0032-01  Disposal of waste, by source <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      
+  
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 2</h4>
+      
+      <table class="table">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Link to data source </th>
+        <td>
+          
+            
+            
+            
+            
+
+            
+              <a href="https://doi.org/10.25318/1710000501-eng" target="_blank">
+                Statistics Canada. Table 17-10-0005-01  Population estimates on July 1st, by age and sex <span class="visuallyhidden">opens in a new window</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      
+  
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+    </div>
+    
+  </div>
+
 
       </article>
     </div>
@@ -1125,12 +1671,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210406130043'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210406130743'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210406130043"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210406130743"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
