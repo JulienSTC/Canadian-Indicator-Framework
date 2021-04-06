@@ -19,9 +19,10 @@
 // Goal banners - set background colours.
 
 .goal-1.goal-banner {
-    background-color: #E52B3D;
+  background-color: #E52B3D;
 
 }
+
 .goal-2.goal-banner {
     background-color: #DDA63A;
 }
@@ -29,9 +30,14 @@
 .goal-tiles #goal-2, .goal-tiles .goal-icon-2 {
     background-color: #DDA63A;
 }
-.goal-3.goal-banner {
-    background-color:  #4C9F38;
-}
+
+.goal-3.heading {
+  background-color: white;
+  border-bottom: 15px solid #4C9F38;
+  border-top: 15px solid #4C9F38; }
+//.goal-3.goal-banner {
+//    background-color:  #4C9F38;
+//}
 .goal-4.goal-banner {
     background-color: #C42130;
 }
