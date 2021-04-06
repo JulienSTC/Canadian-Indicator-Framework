@@ -2396,8 +2396,10 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .goal-tiles #goal-2, .goal-tiles .goal-icon-2 {
   background-color: #DDA63A; }
 
-.goal-3.goal-banner {
-  background-color: #4C9F38; }
+.goal-3.heading {
+  background-color: white;
+  border-bottom: 15px solid #4C9F38;
+  border-top: 15px solid #4C9F38; }
 
 .goal-4.goal-banner {
   background-color: #C42130; }
