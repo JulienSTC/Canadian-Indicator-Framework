@@ -87,7 +87,7 @@ frontpage_cards:
   - title: frontpage.second_header
     content: |
       
-    button_label: SDG / ODD
+    button_label: Access / Accéder
     button_link: https://www144.statcan.gc.ca/sdg-odd/index-eng.htm
     
   - title: frontpage.third_header
