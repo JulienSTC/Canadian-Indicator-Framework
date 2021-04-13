@@ -143,11 +143,11 @@
         },
         {
           "id": "4-2-1",
-          "title": "Proportion d’enfants de moins de 5 ans dont le développement est en bonne voie en matière de santé, d’apprentissage et de bien-être psychosocial, par sexe",
-          "description": "",
+          "title": "Postsecondary education attainment rate",
+          "description": "“This indicator measures attainment rate for post-secondary education. Categories represent the highest level of education achieved, and are mutually exclusive.”",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/4-2-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
@@ -295,7 +295,7 @@
         },
         {
           "id": "8-5-1",
-          "title": "",
+          "title": "Gross domestic product per capita",
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-5-1",

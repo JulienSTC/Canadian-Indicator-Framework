@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210413193728">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210413200856">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -415,10 +415,10 @@ var translations = {
   data-charttitles="null"
   data-measurementunit="Percentage"
   data-showdata="true"
-  data-graphtype="line"
+  data-graphtype="bar"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;NAICS Sector&quot;,&quot;value&quot;:&quot;Total, industries and households&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Sector&quot;,&quot;value&quot;:&quot;Total, industries and households&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -716,39 +716,32 @@ opensdg.chartConfigAlter(function(config, info) {
 </script>
 
 <script>
-// For line charts, add the vertical line hover functionality.
 opensdg.chartConfigAlter(function(config, info) {
+  if (info.stackedDisaggregation) {
     var overrides = {
-        options: {
-            tooltips: {
-                intersect: false,
-                axis: 'x'
-            },
-        },
-        plugins: [{
-            beforeDatasetsDraw: function(chart) {
-                if (chart.tooltip._active && chart.tooltip._active.length) {
-                    var activePoint = chart.tooltip._active[0],
-                        ctx = chart.ctx,
-                        x = activePoint.tooltipPosition().x,
-                        topY = chart.scales['y-axis-0'].top,
-                        bottomY = chart.scales['y-axis-0'].bottom;
-
-                    // draw line
-                    ctx.save();
-                    ctx.beginPath();
-                    ctx.moveTo(x, topY);
-                    ctx.lineTo(x, bottomY);
-                    ctx.lineWidth = 2;
-                    ctx.strokeStyle = '#07C';
-                    ctx.stroke();
-                    ctx.restore();
-                }
-            }
-        }],
+      options: {
+        scales: {
+          xAxes: [{ stacked: true }],
+          yAxes: [{ stacked: true }],
+        }
+      }
     };
+    // If we have stackedDisaggregation, we need to group datasets into stacks.
+    config.data.datasets.forEach(function(dataset) {
+      var disaggregation = $.extend({}, dataset.disaggregation);
+      // We're going to "stringify" each combination of disaggregations in order
+      // to place them in their own "stacks". To place "stacked" disaggregations
+      // into the same stack, we set them as "samestack" before stringifying.
+      // Note that the string "samestack" is completely arbitrary.
+      if (typeof disaggregation[info.stackedDisaggregation] !== 'undefined') {
+        disaggregation[info.stackedDisaggregation] = 'samestack';
+      }
+      // Use the disaggregation as a unique id for each stack.
+      dataset.stack = JSON.stringify(disaggregation);
+    });
     // Add these overrides onto the normal config, and return it.
     $.extend(true, config, overrides);
+  }
 });
 </script>
 
@@ -761,9 +754,6 @@ opensdg.chartConfigAlter(function(config, info) {
 <div id="selectionChartFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
-        
-        <dt>La source:</dt>
-        <dd>Statistics Canada</dd>
         
 
         
@@ -806,9 +796,6 @@ opensdg.chartConfigAlter(function(config, info) {
 <div id="selectionTableFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
-        
-        <dt>La source:</dt>
-        <dd>Statistics Canada</dd>
         
 
         
@@ -993,20 +980,7 @@ data-event-label="Change to indicator.sources tab"
           
       
         
-      
-      
-      <tr>
-        <th scope="row">Calculs </th>
-        <td>
           
-            <p>Growth rate</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
           
@@ -1024,7 +998,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Commentaires et limitations </th>
         <td>
           
-            <p>Data for 2009 are based on input-output tables, while data for 2011 onwards are based on the supply and use tables: comparisons with the 2009 data should be done with caution. The estimate for water use does not include the use of water for hydro-electricity production.</p>
+            <p>The estimate for water use does not include the use of water for hydro-electricity production.</p>
 
           
         </td>
@@ -1049,8 +1023,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/1c7e780ee6a5b74a836641d459409783d6f4ed07" target="_blank">
-                2021-03-31: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/0c91e5ae59eeb6dafda7fdb7ec0711cc21e44b21" target="_blank">
+                2021-04-13: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1080,8 +1054,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/773922b9f217c6728a53a6e4432740d6760be064" target="_blank">
-                2021-04-01: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/3ff656115c55db0fd3d6e5b1dc63e384fea0f967" target="_blank">
+                2021-04-13: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1200,216 +1174,6 @@ data-event-label="Change to indicator.sources tab"
 
 
 
-  <div class="row no-gutters">
-  
-    
-    
-    <div class="col-md-6">
-      
-      <table class="table">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Statistics Canada</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Périodicité </th>
-        <td>
-          
-            <p>Every 2 years</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-          
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Couverture géographique </th>
-        <td>
-          
-            <p>Canada</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-      
-      
-      <tr>
-        <th scope="row">Lien vers la source de données </th>
-        <td>
-          
-            
-            
-            
-            
-
-            
-              <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3810025001" target="_blank">
-                Statistics Canada. Table 38-10-0250-01  Physical flow account for water use (x 1,000) <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-        
-      
-      
-      
-  
-      
-        
-          
-      
-        
-          
-      
-        
-          
-      
-        
-          
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</table>
-
-    </div>
-    
-  </div>
-
 
       </article>
     </div>
@@ -1500,12 +1264,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210413193728'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210413200856'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210413193728"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210413200856"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
