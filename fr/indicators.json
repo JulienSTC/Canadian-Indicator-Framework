@@ -287,11 +287,11 @@
         },
         {
           "id": "8-4-1",
-          "title": "Empreinte matérielle, empreinte matérielle par habitant et empreinte matérielle par unité de PIB",
-          "description": "",
+          "title": "Proportion of involuntary part-time workers",
+          "description": "Involuntary part-time rate: The rate of involuntary part-time workers can be derived in different ways. The one used for this indicator is based on all involuntary part-time workers, whether they looked for full-time work or not. The rate is presented as the number of involuntary part-timers as a share of the part-time employed",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-5-1",
