@@ -4,11 +4,9 @@ language: en
 permalink: /analysis/
 layout: page
 ---
-
-<p>This page contains various publications in relation to the Sustainable Development Goals.
-<br>
-<br>
-</p>
+##
+This page contains various publications in relation to the Sustainable Development Goals.
+##
 
 ## Statistics Canada publications 
 ###
