@@ -87,11 +87,11 @@
         },
         {
           "id": "3-5-1",
-          "title": "Couverture des interventions thérapeutiques (services pharmacologiques, psychosociaux, services de désintoxication et de postcure) pour les troubles liés à la toxicomanie",
-          "description": "",
+          "title": "Prévalence de consommation abusive d'alcool",
+          "description": "Par consommation abusive d'alcool, on entend les hommes qui ont déclaré avoir bu cinq verres d'alcool, ou les femmes ayant déclaré avoir bu quatre verres d'alcool, en une même occasion, au moins une fois par mois au cours de la dernière année.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-6-1",
