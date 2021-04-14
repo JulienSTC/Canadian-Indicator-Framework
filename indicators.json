@@ -124,6 +124,30 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/3-9-1",
           "status": "notstarted"
+        },
+        {
+          "id": "3-10-1",
+          "title": "Incidence of selected diseases",
+          "description": "",
+          "keywords": "",
+          "href": "/Canadian-Indicator-Framework/3-10-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-11-1",
+          "title": "Mortality rate for selected causes of death",
+          "description": "",
+          "keywords": "",
+          "href": "/Canadian-Indicator-Framework/3-11-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-12-1",
+          "title": "Tuberculosis incidence per 100,000 population",
+          "description": "",
+          "keywords": "",
+          "href": "/Canadian-Indicator-Framework/3-12-1",
+          "status": "notstarted"
         }]
     }
   },
