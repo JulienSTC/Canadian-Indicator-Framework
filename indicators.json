@@ -71,11 +71,11 @@
         },
         {
           "id": "3-3-1",
-          "title": "Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations",
-          "description": "",
+          "title": "Prevalence of vaping among youth",
+          "description": "Past 30 day smoker refers to someone who has smoked one or more cigarettes in the past 30 days. This category will include current smokers as well as experimental smokers who have tried a cigarette in the past 30 days. E-cigarettes are battery-operated devices that mimic the act and taste of smoking cigarettes but do not contain tobacco. E-cigarettes include vaporizers with e-juice, vape pen, tank, or mod and are available with or without nicotine.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/3-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-4-1",
