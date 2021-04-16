@@ -190,20 +190,12 @@
           "status": "notstarted"
         },
         {
-          "id": "5-2-1",
+          "id": "5-3-1",
           "title": "Proportion de la journée consacré à des activités de travail non-rémunéré",
           "description": "",
           "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/5-2-1",
-          "status": "complete"
-        },
-        {
-          "id": "5-3-1",
-          "title": "Proportion de femmes âgées de 20 à 24 ans qui étaient mariées ou en couple avant l’âge de 15 ans ou de 18 ans",
-          "description": "",
-          "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/5-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-5-1",
@@ -335,11 +327,11 @@
         
         {
           "id": "9-1-1",
-          "title": "Proportion de la population rurale vivant à moins de 2 km d’une route praticable toute l’année",
-          "description": "",
+          "title": "Proportion of technology innovation related to the environment",
+          "description": "The indicator calculates the proportion of patents in environment-related technology out of total patents.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/9-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-2-1",
