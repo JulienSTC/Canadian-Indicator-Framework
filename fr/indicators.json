@@ -262,9 +262,17 @@
           "status": "complete"
         },
         {
-          "id": "7-2-1",
+          "id": "7-1-2",
           "title": "Total energy consumption",
           "description": "The indicator calculates consumption of different type of energy, by geography and per capita.",
+          "keywords": "",
+          "href": "/Canadian-Indicator-Framework/fr/7-1-2",
+          "status": "complete"
+        },
+        {
+          "id": "7-2-1",
+          "title": "",
+          "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/7-2-1",
           "status": "complete"
