@@ -109,7 +109,6 @@ collections:
     output: true
   goals:
     output: true
-    previous_next_links: true
 
 # Menu
 menu:
