@@ -343,11 +343,11 @@
         },
         {
           "id": "9-2-1",
-          "title": "Valeur ajoutée dans l’industrie manufacturière, en proportion du PIB et par habitant",
-          "description": "",
+          "title": "Gross domestic expenditure on research & development (GERD) intensity",
+          "description": "GERD serves as a general indicator of R&D activity and not as a detailed inventory of R&D projects within an organization, sector, or province. It is an estimate and as such can show trends in R&D expenditures by sector and sub-sector, by province and country, from year-to-year. In this capacity, the GERD estimates are sufficiently reliable for their main use as an aggregate indicator for science policy.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/9-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-3-1",
@@ -372,6 +372,14 @@
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/9-5-1",
           "status": "notstarted"
+        },
+        {
+          "id": "9-7-1",
+          "title": "Number of low carbon recharging and refueling stations under development and completed along major highways, and in rural and urban areas across Canada",
+          "description": "This indicator tracks the number of alternative fuel stations (Electric, Hydrogen and Liquified Natural Gas) in Canada",
+          "keywords": "",
+          "href": "/Canadian-Indicator-Framework/fr/9-7-1",
+          "status": "complete"
         }]
     }
   },
