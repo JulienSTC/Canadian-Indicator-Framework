@@ -79,11 +79,11 @@
         },
         {
           "id": "3-4-1",
-          "title": "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease",
-          "description": "",
+          "title": "Proportion of the population that is overweight or obese",
+          "description": "Body mass index (BMI) is calculated by dividing the respondent's body weight (in kilograms) by their height (in metres) squared.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/3-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-5-1",

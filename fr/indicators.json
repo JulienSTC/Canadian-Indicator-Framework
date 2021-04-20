@@ -79,11 +79,11 @@
         },
         {
           "id": "3-4-1",
-          "title": "Taux de mortalité attribuable à des maladies cardiovasculaires, au cancer, au diabète ou à des maladies respiratoires chroniques",
-          "description": "",
+          "title": "Proportion of the population that is overweight or obese",
+          "description": "Body mass index (BMI) is calculated by dividing the respondent's body weight (in kilograms) by their height (in metres) squared.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-5-1",
