@@ -103,19 +103,19 @@
         },
         {
           "id": "3-7-1",
-          "title": "Proportion de femmes en âge de procréer (15 à 49 ans) qui utilisent des méthodes modernes de planification familiale",
-          "description": "",
+          "title": "Proportion of the population who are satisfied or very satisfied with their life",
+          "description": "Population aged 12 and over who reported being satisfied or very satisfied with their life in general.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-7-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-8-1",
-          "title": "Couverture des services de santé essentiels (définie comme la couverture moyenne des services essentiels mesurée à partir des interventions de référence concernant notamment la santé procréative, maternelle, néonatale et infantile, les maladies infectieuses, les maladies non transmissibles, la capacité d’accueil et l’accessibilité des services pour la population en général et les plus défavorisés en particulier)",
-          "description": "",
+          "title": "Proportion of the population who perceived their health as very good to excellent",
+          "description": "Population aged 12 and over who reported perceiving their own health status as being either excellent or very good or fair or poor. Perceived health refers to the perception of a person's health in general, either by the person himself or herself, or, in the case of proxy response, by the person responding. Health means not only the absence of disease or injury but also physical, mental and social well-being.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-8-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-9-1",
@@ -136,10 +136,10 @@
         {
           "id": "3-11-1",
           "title": "Mortality rate for selected causes of death",
-          "description": "",
+          "description": "The age-specific mortality rate represents the number of deaths in a particular age group during a given year per 100,000 population in the same age group of the same year.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/3-11-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-12-1",
