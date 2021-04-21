@@ -511,11 +511,11 @@
         
         {
           "id": "13-1-1",
-          "title": "Nombre de personnes décédées, disparues ou directement touchées lors de catastrophes, pour 100 000 personnes",
-          "description": "",
+          "title": "Greenhouse gas emissions",
+          "description": "Greenhouse gases (GHGs) are the atmospheric gases responsible for causing global warming and climate change. The major GHGs are carbon dioxide (CO2), methane (CH4) and nitrous oxide (N20). (definition from United Nations Climate Change)",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/13-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "13-1-2",
