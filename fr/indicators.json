@@ -447,19 +447,19 @@
         },
         {
           "id": "11-4-1",
-          "title": "Dépenses totales (publiques et privées) par habitant consacrées à la préservation, à la protection et à la conservation de l’ensemble du patrimoine culturel et naturel, par type de patrimoine (culturel, naturel, mixte, inscrit au patrimoine mondial), niveau d’administration (national, régional et local/municipal), type de dépense (dépenses de fonctionnement/investissement) et type de financement privé (dons en nature, secteur privé à but non lucratif, parrainage)",
-          "description": "",
+          "title": "Percentage of the population living within 500 meters of a public transport stop",
+          "description": "This indicator tracks percentage of the population within the geographic unit living within 500 meters of a public transit stop",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-5-1",
-          "title": "Nombre de personnes décédées, disparues ou directement touchées lors de catastrophes, pour 100 000 personnes",
-          "description": "",
+          "title": "Proportion of the population using shared or active transportation for commuting",
+          "description": "This indicator tracks percentage of the population using shared or active transportation for commuting",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/11-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-6-1",
