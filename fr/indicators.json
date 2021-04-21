@@ -351,19 +351,19 @@
         },
         {
           "id": "9-3-1",
-          "title": "Proportion des petites entreprises dans la valeur ajoutée totale de l’industrie",
-          "description": "",
+          "title": "Proportion of households that have access to broadband Internet service at speeds of 50 Mbps for downloads / 10 Mbps for uploads and unlimited data",
+          "description": "This indicator tracks the proportion of households that have access to broadband Internet service at speeds of 50 Mbps for downloads / 10 Mbps for uploads and unlimited data by the type of region",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/9-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-4-1",
-          "title": "Émissions de CO2 par unité de valeur ajoutée",
-          "description": "",
+          "title": "Proportion of Canadians that have access to the latest generally deployed mobile wireless technology",
+          "description": "This indicator tracks the availability of the latest generally deployed mobile wireless technology by the type of region",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/9-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-5-1",
