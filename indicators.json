@@ -439,16 +439,16 @@
         },
         {
           "id": "11-3-1",
-          "title": "Ratio of land consumption rate to population growth rate",
-          "description": "",
+          "title": "Percentage of the population living in areas where the Canadian Ambient Air Quality Standards are met",
+          "description": "Breathing in air pollutants can contribute to health issues such as asthma, cardiovascular diseases and premature mortality. To better inform Canadians, an indicator was devised that monitors general improvements to air quality using the 2020 Canadian Ambient Air Quality Standards (CAAQS, the standards). More specifically, this indicator tracks the percentage of the population living in areas where outdoor concentrations of air pollutants were below the 2020 standards.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/11-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-4-1",
           "title": "Percentage of the population living within 500 meters of a public transport stop",
-          "description": "This indicator tracks percentage of the population within the geographic unit living within 500 meters of a public transit stop",
+          "description": "This indicator tracks the proportion of the population within the geographic unit living within 500 meters of a public transit stop",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/11-4-1",
           "status": "complete"
@@ -623,11 +623,11 @@
         },
         {
           "id": "15-5-1",
-          "title": "Red List Index",
-          "description": "",
+          "title": "Forest area as a proportion of total land area",
+          "description": "This indicator tracks the proportion of forested areas as a proportion of total land area. Forest area is a basic sustainability indicator and is important to monitor closely, particularly in regions where forest area is being lost.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/15-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-6-1",
