@@ -607,11 +607,11 @@
         },
         {
           "id": "15-3-1",
-          "title": "Surface des terres dégradées, en proportion de la surface terrestre",
-          "description": "",
+          "title": "Proportion of terrestrial area conserved",
+          "description": "The Canadian Protected and Conserved Areas Database (CPCAD) contains the most up to date spatial and attribute data on marine and terrestrial protected areas and other effective area-based conservation measures (OECM) in Canada.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/15-3-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-4-1",
