@@ -591,19 +591,19 @@
         
         {
           "id": "15-1-1",
-          "title": "Forest area as a proportion of total land area",
-          "description": "",
+          "title": "Proportion of native species ranked secure or apparently secure according to the national extinction risk level",
+          "description": "Canada supports a remarkable diversity of life. About 80 000 species are known to exist in Canada, excluding bacteria and viruses. However, wild species face a variety of threats, including the loss, fragmentation and degradation of habitat; pollution; overexploitation; and fishery bycatch and other incidental loss due to resource harvesting.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/15-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-2-1",
-          "title": "Progress towards sustainable forest management",
-          "description": "",
+          "title": "Proportion of species at risk showing progress towards their population and distribution objectives",
+          "description": "The indicator shows whether population and distribution trends of species at risk are consistent with the objectives in final recovery strategies or management plans. Results should not be interpreted as a measure of recovery or management success until sufficient time has passed to allow species to respond and to allow enough information to be collected to assess the recovery or management.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/15-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "15-3-1",
