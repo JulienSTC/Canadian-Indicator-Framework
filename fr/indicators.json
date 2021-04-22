@@ -183,11 +183,11 @@
         
         {
           "id": "5-1-1",
-          "title": "Présence ou absence d’un cadre juridique visant à promouvoir, faire respecter et suivre l’application des principes d’égalité des sexes et de non-discrimination fondée sur le sexe",
-          "description": "",
+          "title": "Proportion of population who self-reported being sexually assaulted since in the last 12 months",
+          "description": "This indicator tracks the proportion of people who self-reported being victims of sexual assault since age 15",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/5-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-3-1",
