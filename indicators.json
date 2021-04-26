@@ -119,11 +119,11 @@
         },
         {
           "id": "3-9-1",
-          "title": "Mortality rate attributed to household and ambient air pollution",
-          "description": "",
+          "title": "Vaccination rates for selected diseases",
+          "description": "The Public Health Agency of Canada (PHAC) routinely monitors childhood vaccination coverage in Canada through the childhood National Immunization Coverage Survey (cNICS).",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/3-9-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-10-1",
