@@ -407,11 +407,11 @@
         },
         {
           "id": "10-3-1",
-          "title": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
-          "description": "",
+          "title": "Median hourly wage ratio",
+          "description": "The gender wage ratio can be interpreted as the proportion of a dollar that women earn for every dollar earned by men.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/10-3-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },

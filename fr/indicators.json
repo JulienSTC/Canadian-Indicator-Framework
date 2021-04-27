@@ -407,11 +407,11 @@
         },
         {
           "id": "10-3-1",
-          "title": "Proportion de la population ayant déclaré avoir personnellement fait l’objet de discrimination ou de harcèlement au cours des 12 mois précédents pour des motifs interdits par le droit international des droits de l’homme",
-          "description": "",
+          "title": "Median hourly wage ratio",
+          "description": "The gender wage ratio can be interpreted as the proportion of a dollar that women earn for every dollar earned by men.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/10-3-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
