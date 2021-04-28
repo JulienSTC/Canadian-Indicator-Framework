@@ -615,11 +615,11 @@
         },
         {
           "id": "16-2-1",
-          "title": "Proportion des enfants âgés de 1 à 17 ans ayant subi des châtiments corporels ou des agressions psychologiques infligés par une personne s’occupant d’eux au cours du mois précédent",
-          "description": "",
+          "title": "Crime severity index",
+          "description": "The Crime Severity Index (CSI) measures changes in the level of severity of crime in Canada from year to year. In the index, all crimes are assigned a weight based on their seriousness. The level of seriousness is based on actual sentences handed down by the courts in all provinces and territories. More serious crimes are assigned higher weights, less serious offences lower weights. As a result, more serious offences have a greater impact on changes in the index. The PRCSI is standardized to 100 in base year 2006.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-3-1",
