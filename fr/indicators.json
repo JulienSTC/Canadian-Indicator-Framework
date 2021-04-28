@@ -391,18 +391,10 @@
         
         {
           "id": "10-1-1",
-          "title": "Taux de croissance des dépenses des ménages ou du revenu par habitant pour les 40 pour cent de la population les plus pauvres et pour l’ensemble de la population",
-          "description": "",
-          "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/10-1-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "10-2-1",
           "title": "Gini Coefficient",
           "description": "The Gini coefficient is a number between zero and one that measures the relative degree of inequality in the distribution of income. The coefficient would register zero (minimum inequality) for a population in which each person received exactly the same adjusted household income and it would register a coefficient of one (maximum inequality) if one person received all the adjusted household income and the rest received none. Even though a single Gini coefficient value has no simple interpretation, comparisons of the level over time or between populations are very straightforward: the higher the coefficient, the higher the inequality of the distribution.",
           "keywords": "",
-          "href": "/Canadian-Indicator-Framework/fr/10-2-1",
+          "href": "/Canadian-Indicator-Framework/fr/10-1-1",
           "status": "complete"
         },
         {
