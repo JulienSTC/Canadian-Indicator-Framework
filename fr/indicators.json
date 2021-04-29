@@ -287,11 +287,11 @@
         },
         {
           "id": "8-2-1",
-          "title": "Taux de croissance annuelle du PIB réel par personne pourvue d’un emploi",
-          "description": "",
+          "title": "Proportion of employees earning less than 66% of the median hourly wage for permanent full-time employees",
+          "description": "This indicator tracks the percentage of employees earning less than two-thirds of the annual median wage.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/8-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-3-1",
@@ -631,11 +631,11 @@
         },
         {
           "id": "16-4-1",
-          "title": "Valeur totale des flux financiers illicites entrants et sortants (en dollars des États‐Unis courants)",
-          "description": "",
+          "title": "Incidence of cyber-crime",
+          "description": "This indicators tracks the number of cyber-related violations",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/16-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-5-1",

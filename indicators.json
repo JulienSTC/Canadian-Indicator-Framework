@@ -287,11 +287,11 @@
         },
         {
           "id": "8-2-1",
-          "title": "Annual growth rate of real GDP per employed person",
-          "description": "",
+          "title": "Proportion of employees earning less than 66% of the median hourly wage for permanent full-time employees",
+          "description": "This indicator tracks the percentage of employees earning less than two-thirds of the annual median wage.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/8-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-3-1",
@@ -631,11 +631,11 @@
         },
         {
           "id": "16-4-1",
-          "title": "Total value of inward and outward illicit financial flows (in current United States dollars)",
-          "description": "",
+          "title": "Incidence of cyber-crime",
+          "description": "This indicators tracks the number of cyber-related violations",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/16-4-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-5-1",
