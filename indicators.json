@@ -663,11 +663,11 @@
         
         {
           "id": "17-1-1",
-          "title": "Total government revenue as a proportion of GDP, by source",
-          "description": "",
+          "title": "Number of open datasets published by the Government of Canada",
+          "description": "This indicator tracks the number of open datasets published by the Government of Canada",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/17-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-2-1",
