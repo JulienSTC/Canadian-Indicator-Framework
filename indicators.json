@@ -671,11 +671,11 @@
         },
         {
           "id": "17-2-1",
-          "title": "Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)",
-          "description": "",
+          "title": "Total official support for sustainable development",
+          "description": "The Total Official Support for Sustainable Development (TOSSD) statistical measure includes all officially-supported resource flows to promote sustainable development in developing countries and to support development enablers and/or address global challenges at regional or global levels.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/17-2-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   }]

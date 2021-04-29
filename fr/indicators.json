@@ -671,11 +671,11 @@
         },
         {
           "id": "17-2-1",
-          "title": "Aide publique au développement nette, montant total et montant alloué aux pays les moins avancés, en proportion du revenu national brut (RNB) des pays donateurs membres du Comité d’aide au développement de l’Organisation de coopération et de développement économiques (OCDE)",
-          "description": "",
+          "title": "Total official support for sustainable development",
+          "description": "The Total Official Support for Sustainable Development (TOSSD) statistical measure includes all officially-supported resource flows to promote sustainable development in developing countries and to support development enablers and/or address global challenges at regional or global levels.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/17-2-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   }]
