@@ -136,10 +136,10 @@
         {
           "id": "3-11-1",
           "title": "Tuberculosis incidence per 100,000 population in Inuit Nunangat",
-          "description": "",
+          "description": "This indicator tracks the Tuberculosis incidence rate per 100,000 population in Inuit Nunangat",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/3-11-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-12-1",
@@ -147,7 +147,7 @@
           "description": "",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/3-12-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
