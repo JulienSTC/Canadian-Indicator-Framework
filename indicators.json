@@ -607,11 +607,11 @@
         
         {
           "id": "16-1-1",
-          "title": "Number of victims of intentional homicide per 100,000 population, by sex and age",
-          "description": "",
+          "title": "Proportion of people in Canada who reported feeling safe walking alone in their neighborhood after dark",
+          "description": "This indicators tracks the proportion of people in Canada who reported feeling safe walking alone in their neighborhood after dark",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/16-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-2-1",
@@ -651,6 +651,14 @@
           "description": "Incarceration rates are based on total actual-in counts, as well as population estimates provided by Demography Division of Statistics Canada.",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/16-6-1",
+          "status": "complete"
+        },
+        {
+          "id": "16-7-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/Canadian-Indicator-Framework/16-7-1",
           "status": "complete"
         }]
     }
