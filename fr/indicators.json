@@ -624,10 +624,10 @@
         {
           "id": "15-6-1",
           "title": "Water quality in Canadian rivers",
-          "description": "This indicator tracks the proportion of forested areas as a proportion of total land area. Forest area is a basic sustainability indicator and is important to monitor closely, particularly in regions where forest area is being lost.",
+          "description": "These indicators provide a measure of the ability of river water across Canada to support plants and animals. At each monitoring site, specific water quality data are compared to water quality guidelines to create a rating for the site. If measured water quality remains within the guidelines, it can maintain a healthy ecosystem. Water quality at a monitoring site is considered excellent when parameters in a river almost always meet their guidelines. Conversely, water quality is rated poor when parameters usually do not meet their guidelines, sometimes by a wide margin. (ECCC)",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/15-6-1",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },

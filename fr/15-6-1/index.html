@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210503135406">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210503153829">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -410,22 +410,426 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_15-6-1'
   data-id="15-6-1"
-  data-country="Canada"
+  data-country="Canada and regions"
   data-charttitle="Water quality in Canadian rivers"
-  data-charttitles="null"
-  data-measurementunit="Percentage"
-  data-showdata="false"
-  data-graphtype="line"
+  data-charttitles="[{&quot;series&quot;:&quot;Percentage&quot;,&quot;unit&quot;:&quot;Percent&quot;},{&quot;series&quot;:&quot;Number&quot;,&quot;unit&quot;:&quot;Unit&quot;}]"
+  data-measurementunit="Percentage or unit"
+  data-showdata="true"
+  data-graphtype="bar"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="null"
+  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;National&quot;},{&quot;field&quot;:&quot;Land use&quot;,&quot;value&quot;:&quot;Total&quot;},{&quot;field&quot;:&quot;Water quality&quot;,&quot;value&quot;:&quot;Excellent&quot;},{&quot;field&quot;:&quot;Water quality&quot;,&quot;value&quot;:&quot;Good&quot;},{&quot;field&quot;:&quot;Water quality&quot;,&quot;value&quot;:&quot;Fair&quot;},{&quot;field&quot;:&quot;Water quality&quot;,&quot;value&quot;:&quot;Marginal&quot;},{&quot;field&quot;:&quot;Water quality&quot;,&quot;value&quot;:&quot;Poor&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-indicatordownloads="null"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="sr-only" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Sous-catégories</h4>
+    <p>Choisissez des catégories dans les listes déroulantes ci-dessous pour voir différentes répartitions des données. Certains ne seront pas disponibles jusqu&#39;à ce qu&#39;un niveau supérieur soit choisi.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/Canadian-Indicator-Framework/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    <a href="https://julienstc.github.io/CIF-Data/fr/headline/15-6-1.csv" class="btn btn-primary btn-download" download="indicator_15-6-1.csv" tabindex="0" role="button">Télécharger Headline CSV</a>
+
+    <a href="https://julienstc.github.io/CIF-Data/fr/data/15-6-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_15-6-1.csv' tabindex='0' role='button'>Télécharger Source CSV</a>
+
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Water quality in Canadian rivers</caption>
+      <thead>
+        
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </div>
+
+  <div id="datatableFooter">
+    
+    <p>La source:  Environment and Climate Change Canada </p>
+    
+    
+    <p>Zone géographique: Canada and regions</p>
+    
+    
+    <p>Unité de mesure: Percentage or unit</p>
+    
+    
+  </div>
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/Canadian-Indicator-Framework/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded spacer medium" style="display:none;">
+
+    <div style="display: none;">
+  <span id="table-alternative">Pour une alternative aux données tabulaires, voir l’onglet Tableau.</span>
+</div>
+<ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+  <li role="presentation" class="nav-item active">
+    <a class="nav-link" data-toggle="tab" id="tab-chartview" href="#chartview" aria-controls="chartview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+ aria-describedby="table-alternative">Graphique</a>
+  </li>
+  <li role="presentation" class="nav-item">
+    <a class="nav-link" data-toggle="tab" id="tab-tableview" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+>Table</a>
+  </li></ul>
+
+    <div class="tab-content data-view">
+  <div role="tabpanel" class="tab-pane active" id="chartview">
+    
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Avertissement :</span></i>
+      Il y a trop de jeux de données à afficher sur le graphique. Tout ne sera pas affiché jusqu&#39;à ce que vous supprimiez certaines sélections.
+    </div>
+
+    
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">Water quality in Canadian rivers</h4>
+          <div id="chart" class="plot-container">
+            
+<canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+<script>
+// Add a chart alteration to support the chart_graph_limits metadata field.
+opensdg.chartConfigAlter(function(config, info) {
+  if (info.graphLimits && info.graphLimits.length > 0) {
+    var limit = _.findWhere(info.graphLimits, { unit: info.selectedUnit }) || info.graphLimits[0];
+    var overrides = {
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              min: limit.minimum,
+              max: limit.maximum,
+            }
+          }]
+        }
+      }
+    }
+    // Add these overrides onto the normal config.
+    $.extend(true, config, overrides);
+  }
+});
+</script>
+
+<span style="display: none;" id="chart-annotations" role="status"></span>
+<script>
+opensdg.annotationPresets = {
+    common: {
+        // This "common" preset is applied to all annotations automatically.
+        borderColor: '#505a5f',
+        type: 'line',
+        label: {
+            backgroundColor: 'black',
+            fontColor: 'white',
+        },
+        // This "highContrast" overrides colors when in high-contrast mode.
+        highContrast: {
+            label: {
+                backgroundColor: 'white',
+                fontColor: 'black'
+            }
+        },
+        // This callback is used to generate a generic description for screenreaders.
+        // This can be overridden to be a more specific string, eg:
+        //
+        //     description: 'Chart annotation showing a 2030 target of 15%'
+        //
+        description: function() {
+            var descriptionParts = [translations.indicator.chart_annotation];
+            if (this.label && this.label.content) {
+                descriptionParts.push(translations.t(this.label.content));
+            }
+            else {
+                // If there is no label, just specify whether it is a box or line.
+                if (this.type == 'line') {
+                    descriptionParts.push(this.mode + ' line');
+                }
+                if (this.type == 'box') {
+                    descriptionParts.push('box');
+                }
+            }
+            if (typeof this.value !== 'undefined') {
+                descriptionParts.push(this.value);
+            }
+            return descriptionParts.join(': ');
+        },
+    },
+    target_line: {
+        mode: 'horizontal',
+        borderDash: [5, 5],
+        label: {
+            position: 'right',
+            content: translations.indicator.annotation_2030_target,
+        },
+    },
+};
+
+// Add a chart alteration to support the chart_annotations metadata field.
+opensdg.chartConfigAlter(function(config, info) {
+    if (info.graphAnnotations && info.graphAnnotations.length > 0) {
+        var annotations = info.graphAnnotations.filter(function(annotation) {
+            var match = true;
+            if (match && info.selectedUnit) {
+                match = (info.selectedUnit === annotation.unit);
+            }
+            if (match && info.selectedSeries) {
+                match = (info.selectedSeries === annotation.series);
+            }
+            return match;
+        });
+        // Apply some helpers/fixes to the annotations.
+        annotations = annotations.map(function(annotation) {
+            // Apply the "common" preset.
+            if (opensdg.annotationPresets.common) {
+                annotation = $.extend(true, {}, opensdg.annotationPresets.common, annotation);
+            }
+            // Apply any specified presets.
+            if (annotation.preset) {
+                var preset = annotation.preset;
+                if (opensdg.annotationPresets[preset]) {
+                    annotation = $.extend(true, {}, opensdg.annotationPresets[preset], annotation);
+                }
+            }
+            // Default to horizontal lines.
+            if (!annotation.mode && annotation.type === 'line') {
+                annotation.mode = 'horizontal';
+            }
+            // Provide the obscure scaleID properties on user's behalf.
+            if (!annotation.scaleID && annotation.type === 'line') {
+                if (annotation.mode === 'horizontal') {
+                    annotation.scaleID = 'y-axis-0';
+                }
+                if (annotation.mode === 'vertical') {
+                    annotation.scaleID = 'x-axis-0';
+                }
+            }
+            if (!annotation.xScaleID && annotation.type === 'box') {
+                annotation.xScaleID = 'x-axis-0';
+            }
+            if (!annotation.yScaleID && annotation.type === 'box') {
+                annotation.yScaleID = 'y-axis-0';
+            }
+            // Provide the "enabled" label property on the user's behalf.
+            if (annotation.label && annotation.label.content) {
+                annotation.label.enabled = true;
+            }
+            // Translate any label content.
+            if (annotation.label && annotation.label.content) {
+                annotation.label.content = translations.t(annotation.label.content);
+            }
+            // Save some original values for later used when contrast mode is switched.
+            if (typeof annotation.defaultContrast === 'undefined') {
+                annotation.defaultContrast = {};
+                if (annotation.borderColor) {
+                    annotation.defaultContrast.borderColor = annotation.borderColor;
+                }
+                if (annotation.backgroundColor) {
+                    annotation.defaultContrast.backgroundColor = annotation.backgroundColor;
+                }
+                if (annotation.label) {
+                    annotation.defaultContrast.label = {};
+                    if (annotation.label.fontColor) {
+                        annotation.defaultContrast.label.fontColor = annotation.label.fontColor;
+                    }
+                    if (annotation.label.backgroundColor) {
+                        annotation.defaultContrast.label.backgroundColor = annotation.label.backgroundColor;
+                    }
+                }
+            }
+            return annotation;
+        });
+        if (annotations.length > 0) {
+            var overrides = {
+                options: {
+                    annotation: {
+                        drawTime: 'afterDatasetsDraw',
+                        annotations: annotations
+                    }
+                }
+            };
+            // Add these overrides onto the normal config.
+            $.extend(true, config, overrides);
+
+            // Update the chart annotations element.
+            var descriptions = annotations.map(function(annotation) {
+                var description = '';
+                if (annotation.description) {
+                    if (typeof annotation.description === 'function') {
+                        description = annotation.description.call(annotation);
+                    }
+                    else {
+                        description = translations.t(annotation.description);
+                    }
+                }
+                return description;
+            }).filter(function(description) { return description != ''; });
+
+            var currentDescription = $('#chart-annotations').text();
+            var newDescription = descriptions.join('. ');
+            if (currentDescription != newDescription) {
+                $('#chart-annotations').text(newDescription);
+            }
+        }
+    }
+});
+</script>
+
+<script>
+opensdg.chartConfigAlter(function(config, info) {
+  if (info.stackedDisaggregation) {
+    var overrides = {
+      options: {
+        scales: {
+          xAxes: [{ stacked: true }],
+          yAxes: [{ stacked: true }],
+        }
+      }
+    };
+    // If we have stackedDisaggregation, we need to group datasets into stacks.
+    config.data.datasets.forEach(function(dataset) {
+      var disaggregation = $.extend({}, dataset.disaggregation);
+      // We're going to "stringify" each combination of disaggregations in order
+      // to place them in their own "stacks". To place "stacked" disaggregations
+      // into the same stack, we set them as "samestack" before stringifying.
+      // Note that the string "samestack" is completely arbitrary.
+      if (typeof disaggregation[info.stackedDisaggregation] !== 'undefined') {
+        disaggregation[info.stackedDisaggregation] = 'samestack';
+      }
+      // Use the disaggregation as a unique id for each stack.
+      dataset.stack = JSON.stringify(disaggregation);
+    });
+    // Add these overrides onto the normal config, and return it.
+    $.extend(true, config, overrides);
+  }
+});
+</script>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>La source:</dt>
+        <dd> Environment and Climate Change Canada </dd>
+        
+
+        
+        <dt>Zone géographique:</dt>
+        <dd>Canada and regions</dd>
+        
+
+        
+        <dt>Unité de mesure:</dt>
+        <dd>Percentage or unit</dd>
+        
+
+        
+
+        
+    <dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button id="btnSave" title="Télécharger le graphique en image" class='btn btn-primary btn-download'>
+          Télécharger l'image graphique
+        </button>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="tableview">
+    <div style="display: none;">
+      <span id="column-sort-info">Cliquez pour trier par cette colonne</span>
+    </div>
+    <div id="selectionsTable"></div>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+        <dt>La source:</dt>
+        <dd> Environment and Climate Change Canada </dd>
+        
+
+        
+        <dt>Zone géographique:</dt>
+        <dd>Canada and regions</dd>
+        
+
+        
+        <dt>Unité de mesure:</dt>
+        <dd>Percentage or unit</dd>
+        
+
+        
+
+        
+    <dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+  </div>
+</div>
+
+
+  </div>
+
+</section>
+
   
   <ul class="nav nav-tabs spacer medium" role="tablist">
 
@@ -537,7 +941,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>This indicator tracks the proportion of forested areas as a proportion of total land area. Forest area is a basic sustainability indicator and is important to monitor closely, particularly in regions where forest area is being lost.</p>
+            <p>These indicators provide a measure of the ability of river water across Canada to support plants and animals. At each monitoring site, specific water quality data are compared to water quality guidelines to create a rating for the site. If measured water quality remains within the guidelines, it can maintain a healthy ecosystem. Water quality at a monitoring site is considered excellent when parameters in a river almost always meet their guidelines. Conversely, water quality is rated poor when parameters usually do not meet their guidelines, sometimes by a wide margin. (ECCC)</p>
 
           
         </td>
@@ -553,7 +957,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada</p>
+            <p>Canada and regions</p>
 
           
         </td>
@@ -569,7 +973,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unité de mesure </th>
         <td>
           
-            <p>Percentage</p>
+            <p>Percentage or unit</p>
 
           
         </td>
@@ -588,7 +992,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculs </th>
         <td>
           
-            <p>Forested areas data presented are based on Canada’s National Forest Inventory (2005 base year), and adjusted annually for estimated forest area lost (deforestation) and gained (afforestation)</p>
+            <p>Water quality is reported in these indicators by measuring a number of chemical and physical properties (parameters) in water. The results for each parameter are compared to its water quality guideline. (ECCC)</p>
 
           
         </td>
@@ -607,16 +1011,67 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Commentaires et limitations </th>
+        <td>
           
+            <p>These indicators reflect the state of water quality in rivers in southern Canada. Northern Canada is under-represented. The indicators only use data for a subset of variables where guidelines exist. They do not cover all potential water quality issues in Canada. The indicators are based on the impacts of a number of parameters at each site. These concentrations do not show the effect of spills or other transient events unless samples were collected right after the spill happened or their effect on water quality is long-lasting. (ECCC)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
+      
+      
+      <tr>
+        <th scope="row">Rationnel et interprétation </th>
+        <td>
           
+            <p>Clean freshwater is an essential resource. It protects aquatic plant and animal biodiversity. We use it for manufacturing, energy production, irrigation, swimming, boating, fishing and for domestic use (for example, drinking, washing). Degraded water quality damages the health of all freshwater ecosystems, such as rivers, lakes, reservoirs and wetlands. It can also disrupt fisheries, tourism and agriculture, and make it more expensive to treat to drinking water standards. These indicators provide information about the state of surface water quality and its change through time, to support water resource management. (ECCC)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
+      
+      
+      <tr>
+        <th scope="row">Données mises à jour en dernier </th>
+        <td>
           
+            
+            
+            
+            
+
+            
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/d5d78ad31180c18a16f655199fa2f45fe5a5d17c" target="_blank">
+                2021-05-03: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              </a>
+            
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
-          
+      
+      
+      
+  
       
         
       
@@ -631,7 +1086,7 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/37d0ad48512e874d367e2e60201d1d9ef728d042" target="_blank">
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/74bbd0c3d049e0b37f4bf2da00b6ee6682890e8b" target="_blank">
                 2021-05-03: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
@@ -806,7 +1261,23 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>National Ressources Canada</p>
+            <p>Environment and Climate Change Canada</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Périodicité </th>
+        <td>
+          
+            <p>Annual</p>
 
           
         </td>
@@ -819,16 +1290,13 @@ data-event-label="Change to indicator.sources tab"
           
       
         
-          
-      
-        
       
       
       <tr>
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada</p>
+            <p>Canada and regions</p>
 
           
         </td>
@@ -850,8 +1318,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://www.nrcan.gc.ca/our-natural-resources/forests-forestry/state-canadas-forests-report/how-much-forest-does-canada-have/indicator-forest-area/16397" target="_blank">
-                Canada’s estimated forest area <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://doi.org/10.25318/3810013201-eng" target="_blank">
+                 Environment and Climate Change Canada. Custom tabulation <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1038,12 +1506,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210503135406'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210503153829'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210503135406"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210503153829"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
