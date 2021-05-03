@@ -439,11 +439,11 @@
         },
         {
           "id": "11-2-1",
-          "title": "Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities",
-          "description": "",
+          "title": "Proportion of households in core housing need",
+          "description": "A household is said to be in 'core housing need' if its housing falls below at least one of the adequacy, affordability or suitability standards and it would have to spend 30% or more of its total before-tax income to pay the median rent of alternative local housing that is acceptable (meets all three housing standards).",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/11-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-3-1",
