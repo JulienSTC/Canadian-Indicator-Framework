@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210505134955">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210505180740">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -410,8 +410,8 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_3-2-1'
   data-id="3-2-1"
-  data-country="Canada and Provinces"
-  data-charttitle="Percentage of Canadians (aged 15+) who are current cigarette smokers"
+  data-country="Canada (excluding territories) and province"
+  data-charttitle="Percentage of Canadians who are current cigarette smokers"
   data-charttitles="null"
   data-measurementunit="Percentage"
   data-showdata="true"
@@ -454,7 +454,7 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Percentage of Canadians (aged 15+) who are current cigarette smokers</caption>
+      <caption>Percentage of Canadians who are current cigarette smokers</caption>
       <thead>
         
       </thead>
@@ -469,7 +469,7 @@ var translations = {
     <p>La source: Statistics Canada</p>
     
     
-    <p>Zone géographique: Canada and Provinces</p>
+    <p>Zone géographique: Canada (excluding territories) and province</p>
     
     
     <p>Unité de mesure: Percentage</p>
@@ -519,7 +519,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Percentage of Canadians (aged 15+) who are current cigarette smokers</h4>
+          <h4 id="chart-heading" class="chart-title">Percentage of Canadians who are current cigarette smokers</h4>
           <div id="chart" class="plot-container">
             
 <canvas
@@ -768,7 +768,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada and Provinces</dd>
+        <dd>Canada (excluding territories) and province</dd>
         
 
         
@@ -813,7 +813,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada and Provinces</dd>
+        <dd>Canada (excluding territories) and province</dd>
         
 
         
@@ -948,7 +948,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>This indicator tracks the percentage of Canadians (aged 15+) who are current cigarette smokers</p>
+            <p>This indicator tracks the percentage of Canadians who are current cigarette smokers</p>
 
           
         </td>
@@ -964,7 +964,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada and Provinces</p>
+            <p>Canada (excluding territories) and province</p>
 
           
         </td>
@@ -993,7 +993,20 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Calculs </th>
+        <td>
           
+            <p>Daily smoker refers to those who reported smoking cigarettes every day.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
           
@@ -1005,7 +1018,20 @@ data-event-label="Change to indicator.sources tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Commentaires et limitations </th>
+        <td>
           
+            <p>Population aged 12 and over who reported being a current smoker. Does not take into account the number of cigarettes smoked. Occasional smoker refers to those who reported smoking cigarettes occasionally. This includes former daily smokers who now smoke occasionally.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
           
@@ -1054,8 +1080,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/7ef3901c83b565c8e958fdad1cfe09a1e5a24395" target="_blank">
-                2021-04-30: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/c87a2d9cae8c9363134c2ab16c9cab5bc0283896" target="_blank">
+                2021-05-05: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1245,7 +1271,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Périodicité </th>
         <td>
           
-            <p>Annual</p>
+            <p>Occaisional</p>
 
           
         </td>
@@ -1286,8 +1312,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1310009601" target="_blank">
-                Data from the Canadian Community Health Survey <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://doi.org/10.25318/1310009601-eng" target="_blank">
+                Statistics Canada. Table 13-10-0096-01  Health characteristics, annual estimates <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1476,12 +1502,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210505134955'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210505180740'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210505134955"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210505180740"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
