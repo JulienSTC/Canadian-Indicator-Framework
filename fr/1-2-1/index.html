@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210505125425">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210505134955">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -410,15 +410,15 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_1-2-1'
   data-id="1-2-1"
-  data-country="Canada"
-  data-charttitle="Asset resilience in Canada"
+  data-country="Canada, Province or territory"
+  data-charttitle="Percentage of persons who are asset resilient"
   data-charttitles="null"
   data-measurementunit="Percentage"
   data-showdata="true"
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Géographie&quot;,&quot;value&quot;:&quot;Canada&quot;},{&quot;field&quot;:&quot;Age group and family type&quot;,&quot;value&quot;:&quot;Persons all ages and family types&quot;},{&quot;field&quot;:&quot;Age group and family type&quot;,&quot;value&quot;:&quot;Persons in a couple only family&quot;},{&quot;field&quot;:&quot;Age group and family type&quot;,&quot;value&quot;:&quot;Persons in a couple with children family&quot;},{&quot;field&quot;:&quot;Age group and family type&quot;,&quot;value&quot;:&quot;Persons in a lone-parent family&quot;},{&quot;field&quot;:&quot;Age group and family type&quot;,&quot;value&quot;:&quot;Persons not in an economic family&quot;},{&quot;field&quot;:&quot;Statistics&quot;,&quot;value&quot;:&quot;Asset resilient for at least three months&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -454,7 +454,7 @@ var translations = {
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Asset resilience in Canada</caption>
+      <caption>Percentage of persons who are asset resilient</caption>
       <thead>
         
       </thead>
@@ -469,7 +469,7 @@ var translations = {
     <p>La source: Statistics Canada</p>
     
     
-    <p>Zone géographique: Canada</p>
+    <p>Zone géographique: Canada, Province or territory</p>
     
     
     <p>Unité de mesure: Percentage</p>
@@ -519,7 +519,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Asset resilience in Canada</h4>
+          <h4 id="chart-heading" class="chart-title">Percentage of persons who are asset resilient</h4>
           <div id="chart" class="plot-container">
             
 <canvas
@@ -768,7 +768,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada</dd>
+        <dd>Canada, Province or territory</dd>
         
 
         
@@ -813,7 +813,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Zone géographique:</dt>
-        <dd>Canada</dd>
+        <dd>Canada, Province or territory</dd>
         
 
         
@@ -948,7 +948,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Description de l&#39;indicateur </th>
         <td>
           
-            <p>The ability of Canadians to cover unexpected expenses, or reduced income, by drawing from assets (e.g. a bank account) for a period of three months. (Savings of approximately $6,000 for the three months, based on the low income measure estimate for 2019.) Why is it important? The Asset resilience indicator is one of the four inter-related indicators found in the Resilience and Security pillar of Opportunity for All – Canada’s First Poverty Reduction Strategy. The indicators in the Resilience and Security pillar are meant to track the progress of initiatives used to support the middle class by protecting Canadians from falling into poverty and by supporting income security and resilience.</p>
+            <p>Asset resilience is defined as having enough savings to maintain well-being for a specified period of time. More specifically, the ability of Canadians to cover unexpected expenses, or reduced income, by drawing from assets (e.g. a bank account) for a specified period of time.</p>
 
           
         </td>
@@ -964,7 +964,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada</p>
+            <p>Canada, Province or territory</p>
 
           
         </td>
@@ -999,7 +999,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Calculs </th>
         <td>
           
-            <p>This indicator represents the proportion of people who have enough liquid financial assets to cover at least three months of the low income measure. Liquid financial assets include bank accounts, term deposits, treasury bills, tax-free savings accounts, stocks and bonds (in mutual funds or not), and registered retirement savings plans.</p>
+            <p>Low income measures (LIM), are relative measures of low income, set at 50% of adjusted median household income. These measures are categorized according to the number of persons present in the household, reflecting the economies of scale inherent in household size. The LIM are based on after-tax income (AT). Liquid financial assets include bank accounts, term deposits, treasury bills, tax-free savings accounts, stocks and bonds (in mutual funds or not), and registered retirement savings plans. Economic family types are comprised of economic families (a group of two or more persons who live in the same dwelling and are related to each other by blood, marriage, common law or adoption) and persons not in an economic family (a person living either alone or with others to whom he or she is unrelated).</p>
 
           
         </td>
@@ -1018,20 +1018,7 @@ data-event-label="Change to indicator.sources tab"
           
       
         
-      
-      
-      <tr>
-        <th scope="row">Commentaires et limitations </th>
-        <td>
           
-            <p>In March 2021, the methodology used to estimate the asset resilience indicator was updated to include data from 2019. Historical data was also updated to ensure comparability over time.</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
       
@@ -1062,8 +1049,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/d912c7091cd59b8cb76bba73503caaf3402736ca" target="_blank">
-                2021-04-01: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/4df93303731c665d5c442fc5ef028865a4ce27c6" target="_blank">
+                2021-05-05: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1093,8 +1080,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/6f367270a26d7bd6f01d950e02ea14148d84a6e5" target="_blank">
-                2021-04-01: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/e56e54685c393405e327894f2f89fe4a6d62350b" target="_blank">
+                2021-05-05: see changes on GitHub <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1284,7 +1271,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Périodicité </th>
         <td>
           
-            <p>Every three years</p>
+            <p>Occasional</p>
 
           
         </td>
@@ -1303,7 +1290,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Couverture géographique </th>
         <td>
           
-            <p>Canada</p>
+            <p>Canada, Province or territory</p>
 
           
         </td>
@@ -1325,8 +1312,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://www.statcan.gc.ca/eng/topics-start/poverty" target="_blank">
-                Data from the Survey of Financial Security <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
+              <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1110008301" target="_blank">
+                Statistics Canada. Table 11-10-0083-01  Percentage of persons who are asset resilient, Canada and provinces <span class="visuallyhidden">Ouvre dans une nouvelle fenêtre</span>
               </a>
             
 
@@ -1513,12 +1500,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210505125425'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210505134955'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210505125425"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210505134955"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
