@@ -231,11 +231,11 @@
         },
         {
           "id": "6-2-1",
-          "title": "Proportion de la population utilisant : a) des services d’assainissement gérés en toute sécurité ; b) des équipements pour se laver les mains avec de l’eau et du savon",
-          "description": "",
+          "title": "Percentage of municipalities across Canada with sustained boil water advisories per year",
+          "description": "This indicator tracks the percentage of municipalities across Canada with sustained boil water advisories per year",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/6-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "6-3-1",
@@ -376,10 +376,10 @@
         {
           "id": "9-5-1",
           "title": "Greenhouse gas emission per value-added of infrastructure construction",
-          "description": "This indicator tracks the amount of greenhouse gas emission related to the production of infrastructure assets",
+          "description": "XXXXXXXXXXXXXXXXXXXXXXXXXXX",
           "keywords": "",
           "href": "/Canadian-Indicator-Framework/fr/9-5-1",
-          "status": "inprogress"
+          "status": "complete"
         },
         {
           "id": "9-6-1",
