@@ -5,7 +5,7 @@ permalink: /analysis/
 layout: page
 ---
 
-This page is </strong>under development</strong>. It will contains various publications in relation to the Sustainable Development Goals.
+This page is under development. It will contains various publications in relation to the Sustainable Development Goals.
 
 ## Statistics Canada publications 
   
