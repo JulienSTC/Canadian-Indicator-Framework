@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210510143548">
+        <link rel="stylesheet" href="/Canadian-Indicator-Framework/assets/css/style.css?v=20210511012410">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -410,7 +410,7 @@ var translations = {
   id="indicatorData"
   data-indicatorid='indicator_1-1-1'
   data-id="1-1-1"
-  data-country="Canada, Provinces"
+  data-country="Canada (excluding territories) and provinces"
   data-charttitle="Percentage of persons in low income"
   data-charttitles="null"
   data-measurementunit="Percentage"
@@ -469,7 +469,7 @@ var translations = {
     <p>Source: Statistics Canada</p>
     
     
-    <p>Geographical Area: Canada, Provinces</p>
+    <p>Geographical Area: Canada (excluding territories) and provinces</p>
     
     
     <p>Unit of Measurement: Percentage</p>
@@ -768,7 +768,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Geographical Area:</dt>
-        <dd>Canada, Provinces</dd>
+        <dd>Canada (excluding territories) and provinces</dd>
         
 
         
@@ -813,7 +813,7 @@ opensdg.chartConfigAlter(function(config, info) {
 
         
         <dt>Geographical Area:</dt>
-        <dd>Canada, Provinces</dd>
+        <dd>Canada (excluding territories) and provinces</dd>
         
 
         
@@ -948,7 +948,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Indicator description </th>
         <td>
           
-            <p>This indicator tracks the percentage of persons in low income</p>
+            <p>This indicator measures the percentage of persons in low income as defined by Canada’s official poverty line</p>
 
           
         </td>
@@ -964,7 +964,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>Canada, Provinces</p>
+            <p>Canada (excluding territories) and provinces</p>
 
           
         </td>
@@ -1018,36 +1018,10 @@ data-event-label="Change to indicator.sources tab"
           
       
         
-      
-      
-      <tr>
-        <th scope="row">Comments and limitations </th>
-        <td>
           
-            <p>Estimates from the Survey of Consumer Finances include income data for persons aged 15 years and over. Estimates from the Survey of Labour and Income Dynamics and the Canadian Income Survey include income data for persons aged 16 years and over.</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
-      
-      
-      <tr>
-        <th scope="row">Rational and interpretation </th>
-        <td>
           
-            <p>Rationale and interpretation go here</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
       
         
       
@@ -1093,8 +1067,8 @@ data-event-label="Change to indicator.sources tab"
             
 
             
-              <a href="https://github.com/JulienSTC/CIF-Data/commit/647861ba5c6b24baa3eb4e573298eeeeb25ef40b" target="_blank">
-                2021-05-05: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/JulienSTC/CIF-Data/commit/8fed90ee6daefec586c5c2883954819d9bb53753" target="_blank">
+                2021-05-10: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1326,7 +1300,7 @@ data-event-label="Change to indicator.sources tab"
 
             
               <a href="https://doi.org/10.25318/1110013501-eng" target="_blank">
-                Statistics Canada. Table 11-10-0135-01  Low income statistics by age, sex and economic family type <span class="visuallyhidden">opens in a new window</span>
+                Statistics Canada. Table 11-10-0135-01 Low income statistics by age, sex and economic family type <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1515,12 +1489,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210510143548'></script>
+<script src='/Canadian-Indicator-Framework/assets/js/sdg.js?v=20210511012410'></script>
 
 
     
     
-    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210510143548"></script><script>
+    <script src="/Canadian-Indicator-Framework/assets/js/custom.js?v=20210511012410"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
